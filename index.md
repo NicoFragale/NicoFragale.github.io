@@ -3,8 +3,6 @@ layout: home
 title: Home
 ---
 
-# Nico Fragale
-
 Cybersecurity student focused on:
 
 - 
