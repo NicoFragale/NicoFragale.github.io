@@ -1,0 +1,12 @@
+title: "Nico Fragale"
+description: "Portfolio & Research Notes"
+theme: minima
+
+minima:
+  skin: classic
+
+header_pages:
+  - projects.md
+  - notes.md
+  - now.md
+  - about.md
