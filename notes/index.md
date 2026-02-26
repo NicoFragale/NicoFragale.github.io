@@ -32,4 +32,4 @@ Ogni argomento segue una struttura coerente:
 
 ---
 
-- [WPA2 4-Way Handshake](/notes/network-security/wpa2-4way-handshake/)
+- [WPA2 4-Way Handshake](/notes/network-security/wpa2-4way-handshake.md)
