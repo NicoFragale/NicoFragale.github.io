@@ -42,8 +42,12 @@ Questo sito unisce tutto questo:
 Non è solo un portfolio.  
 È un quaderno tecnico in continua evoluzione.
 
-### External Links
+---
 
-GitHub: https://github.com/NicoFragale  
-LinkedIn: https://www.linkedin.com/in/nicol%C3%B2-mariano-fragale-302586233/  
-YouTube: https://www.youtube.com/@Nico_Fragale/videos
+## External Links
+
+<ul>
+  <li><a href="https://github.com/NicoFragale">GitHub</a></li>
+  <li><a href="https://www.linkedin.com/in/nicol%C3%B2-mariano-fragale-302586233/">LinkedIn</a></li>
+  <li><a href="https://www.youtube.com/@Nico_Fragale/videos">YouTube</a></li>
+</ul>
