@@ -6,7 +6,7 @@ minima:
   skin: classic
 
 header_pages:
-  - projects.md
-  - notes.md
+  - projects/index.md
+  - notes/index.md
   - now.md
   - about.md
