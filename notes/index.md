@@ -29,3 +29,7 @@ Ogni argomento segue una struttura coerente:
 3. **Analisi delle Vulnerabilità** – dove si rompono le assunzioni di sicurezza;
 4. **Scenario Reale** – come il problema si manifesta nella pratica;
 5. **Contromisure Difensive** – come mitigare o prevenire la vulnerabilità;
+
+---
+
+- [WPA2 4-Way Handshake](/notes/network-security/wpa2-4way-handshake/)
