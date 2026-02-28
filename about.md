@@ -1,53 +1,33 @@
 ---
 layout: page
-title: About
+title: About me
 permalink: /about/
 ---
 
 ## EN
 
-I created this website to have a space where I can document what I study, what I build and what genuinely interests me in cybersecurity and related fields.
+Hi, my name is Nicolò and I am a cybersecurity student with a growing interest in understanding what I really like.
 
-While platforms like LinkedIn are useful for sharing information and staying updated, I often find them too focused on polished achievements and formal descriptions. I wanted something more personal and reflective — a place where I can explain ideas, document learning processes, and show how I think.
+Before starting my Bachelor’s degree in Computer Science at Sapienza I had never studied computer science and during that last year I gradually became more interested in cybersecurity and the related fields realizing that is not just about tools or attacks, but about understanding mechanisms, how they works and weaknesses and by the moment I have always been a very courious person who likes broke things I thought this was the path I was meant to follow.
 
-GitHub is where I publish and collaborate on projects, but repositories alone do not tell the full story behind the work. This website complements them by providing context, motivations and technical reasoning.
+For this reason, I decided to begin a new and more demanding chapter at the University of Pisa, enrolling in a Master’s degree in Cybersecurity; it is a shorter but more challenging journey, and I am truly grateful for having taken this decision.
 
-On YouTube, I previously uploaded assembly programming videos to help fellow students prepare for exams, since I struggled to find clear and accessible material at the time. 
+Over these months, I have not only deepened my understanding of cybersecurity, but I have also grown as a person. 
+I am learning to recognize what I genuinely prefer to study and where I would like to specialize, at the same time I am improving my ability to manage time, collaborate genuinely with my colleagues, balance coursework and projects under deadlines.
 
-This website is my way of combining all of that:
-- structured technical projects,
-- research notes,
-- ongoing explorations in network security, wireless systems and hardware security.
-
-It is not just a portfolio.  
-It is a living technical notebook.
+Recently, I have particularly enjoyed studying network security, indeed I am dedicating additional time to explore it further trying to understand whether this is the field I would like to commit my professional career to.
 
 ---
 
 ## IT
 
-Ho creato questo sito per avere uno spazio in cui documentare ciò che studio, ciò che costruisco e ciò che mi interessa davvero nel campo della cybersecurity e delle tecnologie correlate.
+Ciao, mi chiamo Nicolò e sono uno studente di sicurezza informatica con un crescente interesse nel capire cosa mi piace veramente.
 
-Piattaforme come LinkedIn sono utili per condividere informazioni e rimanere aggiornati, ma spesso si concentrano su risultati formali e descrizioni accademiche. Sentivo il bisogno di qualcosa di diverso: uno spazio più personale in cui poter spiegare idee con maggiore profondità, raccontare il mio processo di apprendimento e mostrare come affronto i problemi tecnici.
+Prima di iniziare la mia laurea in Informatica alla Sapienza non avevo mai studiato informatica e durante quell'ultimo anno mi sono gradualmente interessato di più alla sicurezza informatica rendendomi conto non riguarda solo strumenti o attacchi, ma la comprensione di meccanismi, come collaborano e le loro debolezze e dal momento che sono sempre stato un bambino molto curioso e a cui piace rompere cose, pensavo che questa fosse la strada che avrei dovuto seguire.
 
-GitHub è il luogo in cui pubblico i miei progetti, ma le repository da sole non raccontano le motivazioni, le scelte progettuali e il ragionamento dietro al lavoro svolto. Questo sito nasce per aggiungere proprio quel contesto.
+Ho deciso quindi di iniziare un nuovo e più impegnativo percorso all'Università di Pisa, iscrivendomi al corso magistrale in Cybersecurity; è un percorso più breve ma più impegnativo e sono davvero grato per aver preso questa decisione.
 
-In passato ho pubblicato su YouTube alcuni video di assembly per aiutare altri studenti nella preparazione agli esami, dopo aver faticato a trovare materiale chiaro e comprensibile. 
+In questi mesi non solo ho approfondito la mia comprensione della sicurezza informatica, ma sono anche cresciuto molto come persona. 
+Sto imparando a riconoscere cosa preferisco veramente studiare e in cosa vorrei specializzarmi e allo stesso tempo sto migliorando la mia capacità di come gestire il tempo, collaborare genuinamente con i colleghi, conciliare corsi e progetti nel rispetto delle scadenze.
 
-Questo sito unisce tutto questo:
-- progetti strutturati,
-- appunti tecnici,
-- approfondimenti su network security, sistemi wireless e hardware security.
-
-Non è solo un portfolio.  
-È un quaderno tecnico in continua evoluzione.
-
----
-
-## External Links
-
-<ul>
-  <li><a href="https://github.com/NicoFragale">GitHub</a></li>
-  <li><a href="https://www.linkedin.com/in/nicol%C3%B2-mariano-fragale-302586233/">LinkedIn</a></li>
-  <li><a href="https://www.youtube.com/@Nico_Fragale/videos">YouTube</a></li>
-</ul>
+Recentemente mi è piaciuto particolarmente studiare per l'esame di Network Security, tantoché ho deciso di dedicare ulteriore tempo ad esplorarla ulteriormente cercando di capire se questo è il campo in cui vorrei impegnare la mia carriera professionale.
