@@ -43,7 +43,7 @@ Ogni progetto è descritto attraverso:
 - [Pi Hole](/projects/Pi_Hole/)
 - [Pwngotchi](/projects/Pwngotchi/)
 - [Rayhunter](/projects/Rayhunter/)
-- [Software Defined Radio](/projects/SDR/)
+- [Software Defined Radio](/projects/Software_Defined_Radio/)
 - [Shadow Apple](/projects/Shadow_Apple/)
 - [USB Killer](/projects/Usb_Killer/)
 - [WPA2 Deauthentication](/projects/WPA2_Deauthentication/)

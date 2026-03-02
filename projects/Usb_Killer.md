@@ -1,7 +1,7 @@
 ---
 layout: page
 title: USB Killer
-permalink: /projects/USB_Killer/
+permalink: /projects/Usb_Killer/
 ---
 
 Coming soon...
