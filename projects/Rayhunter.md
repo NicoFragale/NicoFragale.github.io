@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Rayhunter
-permalink: /notes/network-security/Rayhunter/
+permalink: /projects/Rayhunter/
 ---
 
 Coming soon...

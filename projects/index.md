@@ -40,9 +40,10 @@ Ogni progetto è descritto attraverso:
 
 - [Bjorn](/projects/Bjorn/)
 - [Bruce](/projects/Bruce/)
-- [Pi_Hole](/projects/Hole/)
+- [Pi Hole](/projects/Hole/)
 - [Pwngotchi](/projects/Pwngotchi/)
 - [Rayhunter](/projects/Rayhunter/)
 - [SDR](/projects/SDR/)
-- [ShadowApple](/projects/ShadowApple/)
-- [USB_Killer](/projects/USB Killer/)
+- [Shadow Apple](/projects/ShadowApple/)
+- [USB Killer](/projects/USB Killer/)
+- [WPA2 Deauthentication](/projects/WPA2_Deauthentication/)

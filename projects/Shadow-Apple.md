@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Shadow Apple
-permalink: /notes/network-security/Shadow-Apple/
+permalink: /projects/Shadow-Apple/
 ---
 
 Coming soon...

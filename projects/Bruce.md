@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Bruce firmware
-permalink: /notes/network-security/Bruce/
+permalink: /projects/Bruce/
 ---
 
 Coming soon...

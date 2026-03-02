@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Pwngotchi project
-permalink: /notes/network-security/Pwngotchi/
+permalink: /projects/Pwngotchi/
 ---
 
 Coming soon...

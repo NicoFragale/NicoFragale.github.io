@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Bjorn
-permalink: /notes/network-security/Bjorn/
+permalink: /projects/Bjorn/
 ---
 
 Coming soon...

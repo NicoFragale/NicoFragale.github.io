@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Software Defined Radio
-permalink: /notes/network-security/SDR/
+permalink: /projects/SDR/
 ---
 
 Coming soon...
