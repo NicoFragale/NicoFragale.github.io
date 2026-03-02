@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Bruce firmware
-permalink: /projects/Bruce/
+permalink: /projects/Bruce_firmware/
 ---
 
 Coming soon...
