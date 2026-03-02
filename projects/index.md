@@ -35,3 +35,14 @@ Ogni progetto è descritto attraverso:
 4. **Sfide Tecniche Principali** – le difficoltà ingegneristiche incontrate;  
 5. **Prospettiva di Sicurezza** – implicazioni o lezioni legate alla sicurezza;  
 6. **Repository** – link all’implementazione.  
+
+---
+
+- [Bjorn](/projects/Bjorn/)
+- [Bruce](/projects/Bruce/)
+- [Pi_Hole](/projects/Hole/)
+- [Pwngotchi](/projects/Pwngotchi/)
+- [Rayhunter](/projects/Rayhunter/)
+- [SDR](/projects/SDR/)
+- [ShadowApple](/projects/ShadowApple/)
+- [USB_Killer](/projects/USB Killer/)
