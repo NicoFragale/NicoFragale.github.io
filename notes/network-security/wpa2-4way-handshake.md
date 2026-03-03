@@ -34,8 +34,6 @@ PMK = PBKDF2(passphrase, SSID, SSID_length, 4096 iterations, 256-bit output)
 
 The PMK is never transmitted over the air.
 
----
-
 ### 1. Message 1 (AP → STA)
 
 **Parameters sent:**
@@ -55,8 +53,6 @@ The PTK is internally divided into:
 - KCK (Key Confirmation Key) – used for MIC computation
 - KEK (Key Encryption Key) – used to encrypt the GTK
 - TK (Temporal Key) – used for encrypting unicast data traffic
-
----
 
 ### 2. Message 2 (STA → AP)
 
