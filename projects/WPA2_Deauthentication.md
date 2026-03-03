@@ -40,9 +40,13 @@ This requires a wireless interface capable of operating in **monitor mode**, whi
 
 Unlike managed mode, monitor mode passively observes all wireless traffic.
 
+![monitor](https://nicofragale.github.io/assets/images/monitor.png/)
+
 In my lab setup, I used compatible the followgin external adapters: TL-WN722Nv1 and AWUS036AXML
 
 Finally I suggest you to use Airgraph-ng to better understand the relationship between access points and associated stations.
+
+![airodump](https://nicofragale.github.io/assets/images/airodump.png/)
 
 
 ## 2. Triggering Reassociation and Capturing the Handshake
@@ -53,12 +57,16 @@ In legacy WPA2 configurations without Protected Management Frames (802.11w), it 
 
 Modern devices, such as recent smartphones, may implement additional protections that prevent forced reconnections or ignore unauthenticated management frames.
 
+![aireplay](https://nicofragale.github.io/assets/images/aireplay.png/)
+
 
 ## 3. Protocol Inspection with Wireshark
 
 The captured traffic can be inspected using Wireshark, by filtering for EAPOL frames it is possible to observe the 4 handshake messages.
 
 Particular attention on Message 1 and 2 by the moment they include data for PTK generation.
+
+![wireshark](https://nicofragale.github.io/assets/images/wireshark.png/)
 
 
 ## 4. Offline Password Verification
@@ -74,5 +82,9 @@ If the values match, the passphrase is correct.
 
 This process does not break AES encryption.  
 It exploits weak passphrase entropy.
+
+![aircrack1](https://nicofragale.github.io/assets/images/aircrack1.png/)
+
+![aircrack2](https://nicofragale.github.io/assets/images/aircrack2.png/)
 
 The experiment confirmed that strong, high-entropy passwords are essential for WPA2-PSK security.
