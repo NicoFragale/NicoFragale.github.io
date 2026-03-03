@@ -142,7 +142,7 @@ If the MIC matches, the password is correct.
 
 This attack does not break AES or the handshake itself, but exploits low-entropy secrets.
 
-Follow the project for more: [WPA2 Deauthentication](/projects WPA2_Deauthentication/)
+Follow the project for more: [WPA2 Deauthentication](/projects/WPA2_Deauthentication/)
 
 ### 3. PMKID-Based Attacks
 
@@ -207,4 +207,4 @@ This vulnerability was implementation-dependent but exposed protocol fragility.
 
 ---
 
-For more about WPA Security I suggest you to consult [Mathy Vanhoef's GitHub progile](https://github.com/vanhoefm), he is Prof. Computer Science at @KU_Leuven (Belgium) who Discovered KRACK and FragAttacks!
+For more about WPA Security I suggest you to consult [Mathy Vanhoef's GitHub profile](https://github.com/vanhoefm), he is Prof. Computer Science at @KU_Leuven (Belgium) who Discovered KRACK and FragAttacks!
