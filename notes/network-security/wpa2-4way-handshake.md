@@ -117,12 +117,13 @@ Management frames are not protected in traditional WPA2.
 
 An attacker can:
 - Send forged deauthentication frames.
+- Cause DoS.
 - Force clients to reconnect.
 - Trigger handshake capture.
 
-Protected Management Frames (802.11w) mitigate this issue.
+Protected Management Frames (802.11w) mitigate this issue, therefore it is mandatory in WPA3.
 
-Follow the projects for more: [Pwngotchi](/projects/Pwngotchi/)
+Follow the projects for more: [Pwngotchi](/projects/Pwngotchi/) and [WPA2 Deauthentication](/projects/WPA2_Deauthentication/)
 
 
 ### 2. Offline Dictionary Attacks
@@ -140,7 +141,7 @@ For each candidate passphrase:
 1. Derive PMK using PBKDF2.
 2. Derive PTK.
 3. Compute MIC.
-4. Compare with captured MIC.
+4. Compare with captured Msg 2 MIC.
 
 If the MIC matches, the password is correct.
 
@@ -154,7 +155,7 @@ An evolution of the dictionary attack allows capturing the PMKID directly from t
 
 This reduces operational complexity for attackers and increases exposure of poorly secured networks.
 
-Unfortunately it is sent rarely.
+Unfortunately it is sent rarely, I never found it in my tests.
 
 
 ### 4. Evil Twin AP
@@ -172,7 +173,7 @@ However, hijacking can still occur at higher layers if:
 
 In this case, the protocol itself is not cryptographically broken, but the trust model at the wireless layer is exploited.
 
-Follow tha ShadowApple project for more: [Shadow Apple](/projects/Shadow_Apple/)
+Follow tha ShadowApple project for more: [Shadow Apple](/projects/Shadow_Apple/) and [Bruce Firmware](https://bruce.computer)
 
 ### 3. Replay Attacks
 
@@ -211,4 +212,4 @@ This vulnerability was implementation-dependent but exposed protocol fragility.
 
 ---
 
-For more about WPA Security I suggest you to consult [Mathy Vanhoef's GitHub profile](https://github.com/vanhoefm), he is Prof. Computer Science at @KU_Leuven (Belgium) who Discovered KRACK and FragAttacks!
+For more about WPA Security I suggest you to consult [Mathy Vanhoef's GitHub profile](https://github.com/vanhoefm), he is Prof. Computer Science at @KU_Leuven (Belgium) who Discovered KRACK and FragAttacks and great resercher for other many reasons!
