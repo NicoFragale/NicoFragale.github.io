@@ -30,6 +30,7 @@ In WPA2-Personal, the PMK is derived from the WiFi passphrase:
 PMK = PBKDF2(passphrase, SSID, SSID_length, 4096 iterations, 256-bit output)
 
 The PMK is never transmitted over the air.
+
 ---
 
 ### 1. Message 1 – AP → STA
@@ -51,6 +52,7 @@ The PTK is internally divided into:
 - KCK (Key Confirmation Key) – used for MIC computation
 - KEK (Key Encryption Key) – used to encrypt the GTK
 - TK (Temporal Key) – used for encrypting unicast data traffic
+
 ---
 
 ### 2. Message 2 – STA → AP
@@ -70,7 +72,6 @@ The PTK is internally divided into:
 
 If the MIC is valid, the AP confirms that the STA possesses the PMK.
 
----
 
 ### 3. Message 3 – AP → STA
 
@@ -87,7 +88,6 @@ If the MIC is valid, the AP confirms that the STA possesses the PMK.
 
 Replay counters ensure that duplicated or delayed Message 3 frames are detected. Improper handling of this step led to vulnerabilities such as KRACK, where key reinstallation caused nonce reuse.
 
----
 
 ### 4. Message 4 – STA → AP
 
@@ -120,7 +120,6 @@ Protected Management Frames (802.11w) mitigate this issue.
 
 Follow the projects for more: [Pwngotchi](/projects/Pwngotchi/)
 
----
 
 ### 2. Offline Dictionary Attacks
 
@@ -145,8 +144,6 @@ This attack does not break AES or the handshake itself, but exploits low-entropy
 
 Follow the project for more: [WPA2 Deauthentication](/projects WPA2_Deauthentication/)
 
----
-
 ### 3. PMKID-Based Attacks
 
 An evolution of the dictionary attack allows capturing the PMKID directly from the first EAPOL exchange, without forcing a full handshake.
@@ -155,7 +152,6 @@ This reduces operational complexity for attackers and increases exposure of poor
 
 Unfortunately it is sent rarely.
 
----
 
 ### 4. Evil Twin AP
 
@@ -173,7 +169,6 @@ However, hijacking can still occur at higher layers if:
 In this case, the protocol itself is not cryptographically broken, but the trust model at the wireless layer is exploited.
 
 Follow tha ShadowApple project for more: [Shadow Apple](/projects/Shadow_Apple/)
----
 
 ### 3. Replay Attacks
 
@@ -200,7 +195,6 @@ Nonce reuse can lead to:
 - Packet forgery under specific conditions
 
 This vulnerability was implementation-dependent but exposed protocol fragility.
-
 
 ---
 
