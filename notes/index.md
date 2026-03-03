@@ -34,3 +34,4 @@ Ogni argomento segue una struttura coerente:
 
 - [WPA2 4-Way Handshake](/notes/network-security/wpa2-4way-handshake/)
 - [WPA3](/notes/network-security/wpa3/)
+- [Aircrack-ng](/notes/network-security/Aircrack-ng/)
