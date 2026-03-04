@@ -38,12 +38,12 @@ Ogni progetto è descritto attraverso:
 
 ---
 
-- [Bjorn](/projects/Bjorn/)
-- [Bruce](/projects/Bruce/)
-- [Pi Hole](/projects/Pi_Hole/)
-- [Pwngotchi](/projects/Pwngotchi/)
-- [Rayhunter](/projects/Rayhunter/)
-- [Software Defined Radio](/projects/Software_Defined_Radio/)
-- [Shadow Apple](/projects/Shadow_Apple/)
-- [USB Killer](/projects/Usb_Killer/)
+- [Bjorn](/projects/Bjorn/) (not ready)
+- [Bruce](/projects/Bruce/) (not ready)
+- [Pi Hole](/projects/Pi_Hole/) (not ready)
+- [Pwngotchi](/projects/Pwngotchi/) (not ready)
+- [Rayhunter](/projects/Rayhunter/) (not ready)
+- [Software Defined Radio](/projects/Software_Defined_Radio/) (not ready)
+- [Shadow Apple](/projects/Shadow_Apple/) (not ready)
+- [USB Killer](/projects/Usb_Killer/) (not ready)
 - [WPA2 Deauthentication](/projects/WPA2_Deauthentication/)
