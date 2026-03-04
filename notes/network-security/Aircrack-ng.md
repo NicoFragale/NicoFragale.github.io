@@ -54,7 +54,7 @@ For the official site check [here](https://www.aircrack-ng.org/doku.php?id=Main)
 
 1. **sudo airmon-ng start wlan0**
 
-You can use this command to create a monitor interface  (typically wlan0mon) which can capture raw wireless frames. Eventually you can specify a channel: *sudo airmon-ng start wlan0 4*.
+    You can use this command to create a monitor interface  (typically wlan0mon) which can capture raw wireless frames. Eventually you can specify a channel: *sudo airmon-ng start wlan0 4*.
 
 2. **sudo airodump-ng wlan0mon**
 Passively scans nearby wireless networks and displays:
@@ -83,6 +83,5 @@ Verifies whether the wireless adapter supports packet injection, which is requir
 This command uses aireplay-ng to transmit deauthentication frames to a wireless client and because these frames are not authenticated in legacy WiFi configurations, they can be forged and transmitted by an external device. *- 0* specifies the attack mode in this case deauthentication management frames (check for other attacks in the official site) and *0* send deauthentication frames continuously.
 
 
-8. **aircrack-ng file.pcap -w /opt/wordlist.txt**
-
+8. **aircrack-ng file.pcap -w /opt/wordlist.txt** 
 Performs an offline dictionary attack against captured WPA/WPA2 authentication handshakes using a wordlist.
