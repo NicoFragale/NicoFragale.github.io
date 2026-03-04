@@ -40,7 +40,7 @@ Places the interface into monitor mode, allowing the capture of raw IEEE 802.11 
 	•	control frames
 	•	data frames
 
-Monitor mode is essential for wireless traffic analysis and packet capture.
+    Monitor mode is essential for wireless traffic analysis and packet capture.
 
 8. **sudo iwconfig wlan0 mode ad-hoc** -> **sudo iwconfig wlan0 essid HTB-Mesh**
 Configures the interface to operate in ad-hoc mode, allowing direct communication between devices without an access point.
@@ -64,8 +64,8 @@ Passively scans nearby wireless networks and displays:
 	•	encryption type
 	•	connected clients
 
-You can specify a channel: **sudo airodump-ng wlan0mon -c 4**, in order to focus on a particular access point.
-You can spcify a frequency band: **sudo airodump-ng wlan0mon --band a/b/g** to show only 5 GHz networks, 2.4 Ghz or both.
+    You can specify a channel (-c 4), in order to focus on a particular access point.
+    You can spcify a frequency band (--band a/b/g) to show only 5 GHz networks, 2.4 Ghz or both.
 
 3. **sudo airodump-ng wlan0mon -w file**
 Captures wireless traffic and saves it into capture files for later analysis.
