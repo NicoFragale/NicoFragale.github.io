@@ -78,9 +78,11 @@ Rayhunter was created to help **detect suspicious cellular behavior** that may i
 
 This is the how It look once installed:
 
-![Rayhunter](https://nicofragale.github.io/assets/images/rayhunter.jpg)
+![rayhunter](https://nicofragale.github.io/assets/images/rayhunter.jpg)
 
 If the bar is green no Fake Base Station are detected. Until now I did not see a red bar fortunately.
+
+---
 
 ## Defensive Considerations
 
