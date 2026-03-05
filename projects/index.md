@@ -41,7 +41,7 @@ Ogni progetto è descritto attraverso:
 - [Bjorn](/projects/Bjorn/) (not ready)
 - [Bruce](/projects/Bruce/) (not ready)
 - [Pi Hole](/projects/Pi_Hole/) (not ready)
-- [Pwngotchi](/projects/Pwngotchi/) (not ready)
+- [Pwnagotchi](/projects/Pwngotchi/) (not ready)
 - [Rayhunter](/projects/Rayhunter/) 
 - [Software Defined Radio](/projects/Software_Defined_Radio/) (not ready)
 - [Shadow Apple](/projects/Shadow_Apple/) (not ready)

@@ -4,9 +4,6 @@ title: Pwngotchi
 permalink: /projects/Pwngotchi/
 ---
 
-
-# Pwnagotchi
-
 [Pwnagotchi](https://pwnagotchi.ai) is an open-source project designed to capture WPA/[WPA2](/notes/network-security/wpa2-4way-handshake/) authentication handshakes from nearby wireless networks and what makes this project particularly interesting is that if it does not detect a 4 way handshake, it sends deauthentication frames to the devices connected in order to obtain the messagges once they try to reconnect; after that it performs dictionary attack too.
 
 ![pwnagotchi](https://nicofragale.github.io/assets/images/got.jpg)
