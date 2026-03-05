@@ -76,7 +76,7 @@ Because mobile devices automatically connect to the strongest available signal, 
 
 Rayhunter was created to help **detect suspicious cellular behavior** that may indicate the presence of an IMSI catcher acting as a **defensive monitoring tool**.
 
-This is the how It look once installed:
+This is the how It looks once installed:
 
 ![rayhunter](https://nicofragale.github.io/assets/images/rayhunter.jpg)
 

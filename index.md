@@ -18,9 +18,6 @@ This website is my way of combining all of that:
 - research notes,
 - ongoing explorations in network security, wireless systems and hardware security.
 
-It is not just a portfolio.  
-It is a living technical notebook.
-
 ---
 
 ## IT
@@ -37,9 +34,6 @@ Questo sito unisce tutto questo:
 - progetti strutturati,
 - appunti tecnici,
 - approfondimenti su network security, sistemi wireless e hardware security.
-
-Non è solo un portfolio.  
-È un quaderno tecnico in continua evoluzione.
 
 ---
 
