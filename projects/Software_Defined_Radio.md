@@ -42,17 +42,17 @@ Further reading on ADS-B security and message injection attacks:
 
 - **Martin Strohmeier, Vincent Lenders, Ivan Martinovic**  
   *On the Security of the ADS-B Protocol*  
-  https://ieeexplore.ieee.org/document/6940209
+  [link](https://ieeexplore.ieee.org/document/6940209)
 
 - **Eren Kocaağa, M. Oguzhan Külekci**  
   *Security Analysis of ADS-B*  
-  https://ieeexplore.ieee.org/document/7960506
+  [link](https://ieeexplore.ieee.org/document/7960506)
 
 - **Matthias Schäfer**  
   *Ghost Planes: Injecting False Aircraft into Air Traffic Control Systems*  
-  https://www.researchgate.net/figure/Attack-scenario-an-attacker-injects-ghost-aircraft-to-mislead-the-instruments-of_fig1_279923668
+  [link](https://www.researchgate.net/figure/Attack-scenario-an-attacker-injects-ghost-aircraft-to-mislead-the-instruments-of_fig1_279923668)
 
 
 - **Mohsen Riahi Manesh, Naima Kaabouch**  
   *Aviation Cybersecurity: ADS-B Vulnerabilities and Defenses*  
-  https://www.sciencedirect.com/science/article/abs/pii/S1874548217300446
+  [link](https://www.sciencedirect.com/science/article/abs/pii/S1874548217300446)

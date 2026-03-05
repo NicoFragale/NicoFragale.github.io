@@ -65,7 +65,7 @@ Qualsiasi uso improprio delle informazioni presenti su questo sito è esclusiva 
 - [Pi Hole](/projects/Pi_Hole/) (not ready)
 - [Pwnagotchi](/projects/Pwngotchi/)
 - [Rayhunter](/projects/Rayhunter/) 
-- [Software Defined Radio](/projects/Software_Defined_Radio/) (not ready)
+- [Software Defined Radio](/projects/Software_Defined_Radio/)
 - [Shadow Apple](/projects/Shadow_Apple/) (not ready)
 - [USB Killer](/projects/Usb_Killer/) (not ready)
 - [WPA2 Deauthentication](/projects/WPA2_Deauthentication/)
