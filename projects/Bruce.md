@@ -26,16 +26,16 @@ Another hardware in my possession that works with this firmware is M5StickCplus2
 
 ## First Module: NRF24L01
 
-![NRF24](https://nicofragale.github.io/assets/images/menu0.jpg) 
+![NRF24](https://nicofragale.github.io/assets/images/menu0.png) 
 
 The first module I want to introduce is the **NRF24L01**, a popular 2.4 GHz transceiver chip developed by Nordic Semiconductor.
 
-![modulo](https://nicofragale.github.io/assets/images/modulo.jpg) 
+![modulo](https://nicofragale.github.io/assets/images/modulo.png) 
 
 As shown in the image below, the module comes with a **very small integrated antenna**.  
 Despite its size, it is capable of interacting with devices operating in the crowded 2.4 GHz ISM band.
 
-![modulo1](https://nicofragale.github.io/assets/images/modulo1.jpg) 
+![modulo1](https://nicofragale.github.io/assets/images/modulo1.png) 
 
 To test its capabilities, I performed a simple experiment using an **iPhone connected to a Bluetooth speaker** in home.
 
