@@ -61,7 +61,7 @@ Qualsiasi uso improprio delle informazioni presenti su questo sito è esclusiva 
 ---
 
 - [Bjorn](/projects/Bjorn/) (not ready)
-- [Bruce](/projects/Bruce/) (not ready)
+- [Bruce](/projects/Bruce/) 
 - [Pi Hole](/projects/Pi_Hole/) (not ready)
 - [Pwnagotchi](/projects/Pwngotchi/)
 - [Rayhunter](/projects/Rayhunter/) 
