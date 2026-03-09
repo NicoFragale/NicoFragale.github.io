@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Bruce 
+title: Bruce ​🦈​
 permalink: /projects/Bruce/
 ---
 

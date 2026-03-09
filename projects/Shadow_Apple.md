@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Shadow Apple
+title: Shadow Apple ​🍎​
 permalink: /projects/Shadow_Apple/
 ---
 

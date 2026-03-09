@@ -1,6 +1,6 @@
 ---
 layout: page
-title: USB Killer
+title: USB Killer 🗡️​
 permalink: /projects/Usb_Killer/
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Pi Hole
+title: Pi Hole 🕳️​
 permalink: /projects/Pi_Hole/
 ---
 

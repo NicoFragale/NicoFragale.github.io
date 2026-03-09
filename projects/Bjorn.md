@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Bjorn ​👾
+title: Bjorn ​​☃️​
 permalink: /projects/Bjorn/
 ---
 

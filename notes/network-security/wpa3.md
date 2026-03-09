@@ -1,6 +1,6 @@
 ---
 layout: page
-title: WPA3
+title: WPA3 💦​
 permalink: /notes/network-security/wpa3/
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Rayhunter
+title: Rayhunter 🦈​
 permalink: /projects/Rayhunter/
 ---
 

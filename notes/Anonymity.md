@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Anonymity
+title: Anonymity 👻​
 permalink: /notes/Anonymity/
 ---
 

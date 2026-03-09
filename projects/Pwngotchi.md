@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Pwnagotchi 
+title: Pwnagotchi 🧸​
 permalink: /projects/Pwngotchi/
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Research Notes
+title: Research Notes 🕵️‍♂️​
 permalink: /notes/
 ---
 

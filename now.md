@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Now
+title: Now 🕰️
 permalink: /now/
 ---
 
-### University Focus
+### University Focus 🤯​
 
 **Computational Models for Complex Systems**
 - Fundamentals of complex systems and population dynamics   
@@ -32,7 +32,7 @@ permalink: /now/
 
 ---
 
-### Personal Study
+### Personal Study 😎​
 
 - WiFi security and WPA vulnerabilities  
 - Mobile network security considerations  
@@ -41,7 +41,7 @@ permalink: /now/
 
 ---
 
-### Current University Project
+### Current University Project ​👁️‍🗨️​
 
 **Network Intrusion Detection System (NIDS)** focused on traffic analysis and attack detection, The repository is still private.
 

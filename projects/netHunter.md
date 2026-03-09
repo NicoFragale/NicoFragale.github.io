@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Kali Linux Net Hunter 
+title: Kali Linux Net Hunter 🐉​
 permalink: /projects/netHunter/
 ---
 
