@@ -5,7 +5,7 @@ permalink: /
 ---
 ## EN
 
-I created this website to have a space where I can document what I study, what I build and what genuinely interests me in cybersecurity and related fields.
+I created this website to have a space where I can document what I study, what I build and what genuinely interests me in cybersecurity and related fields, hence everything you need to create a perfect profile of myself...
 
 While platforms like LinkedIn are useful for sharing information and staying updated, I often find them too focused on polished achievements and formal descriptions. I wanted something more personal and reflective — a place where I can explain ideas, document learning processes, and show how I think.
 
@@ -22,7 +22,7 @@ This website is my way of combining all of that:
 
 ## IT
 
-Ho creato questo sito per avere uno spazio in cui documentare ciò che studio, ciò che costruisco e ciò che mi interessa davvero nel campo della cybersecurity e delle tecnologie correlate.
+Ho creato questo sito per avere uno spazio in cui documentare ciò che studio, ciò che costruisco e ciò che mi interessa davvero nel campo della cybersecurity e delle tecnologie correlate, ovvero tutto ciò di cui hai bisogno per creare un perfetto profilo di me...
 
 Piattaforme come LinkedIn sono utili per condividere informazioni e rimanere aggiornati, ma spesso si concentrano su risultati formali e descrizioni accademiche. Sentivo il bisogno di qualcosa di diverso: uno spazio più personale in cui poter spiegare idee con maggiore profondità, raccontare il mio processo di apprendimento e mostrare come affronto i problemi tecnici.
 

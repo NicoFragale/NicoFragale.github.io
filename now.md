@@ -6,13 +6,13 @@ permalink: /now/
 
 ### University Focus
 
-**Network Experiments & Traffic Analysis**
-- LAN configuration on physical and virtual networks  
-- TCP/IP socket programming  
-- Client-server applications over UDP and TCP  
-- Packet capture using libpcap  
-- Traffic monitoring and network sniffing  
-- Stochastic data structures for fast data processing  
+**Computational Models for Complex Systems**
+- Fundamentals of complex systems and population dynamics   
+- Stochastic modeling and Gillespie algorithm  
+- Probabilistic transition systems and model checking with PRISM  
+- Formal models: multiset rewriting, P systems, Petri nets  
+- Discrete-event simulation, cellular automata, and agent-based modeling  
+- Applications in bioinformatics, ecology, epidemiology, social sciences, and manufacturing
 
 **Electronic & Hardware Technologies**
 - Analog-to-digital and digital-to-analog conversion  
@@ -36,13 +36,12 @@ permalink: /now/
 
 - WiFi security and WPA vulnerabilities  
 - Mobile network security considerations  
-- Practical wireless experimentation (Aircrack-ng suite, Pwnagotchi, Pi-hole, RF-related tools)  
+- Practical wireless experimentation 
 - Exploring the security implications of radio-frequency systems  
 
 ---
 
-### Current Project
+### Current University Project
 
-**Network Intrusion Detection System (NIDS)**  
-University project focused on traffic analysis and attack detection.
+**Network Intrusion Detection System (NIDS)** focused on traffic analysis and attack detection, The repository is still private.
 
