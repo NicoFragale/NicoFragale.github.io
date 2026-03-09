@@ -4,7 +4,7 @@ title: Research Notes
 permalink: /notes/
 ---
 
-## EN
+## EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿
 
 This section collects structured technical notes on topics I am actively studying in cybersecurity and wireless systems in order to understand mechanisms deeply, analyze vulnerabilities rigorously, and connect theory with real-world security scenarios.
 
@@ -18,7 +18,7 @@ Each topic is approached with a consistent structure:
 
 ---
 
-## IT
+## IT 🇮🇹
 
 Questa sezione raccoglie appunti tecnici strutturati sugli argomenti che sto studiando attivamente nel campo della cybersecurity e dei sistemi wireless con l'obiettivo di comprendere a fondo i meccanismi, analizzare le vulnerabilità in modo rigoroso e collegare la teoria agli scenari reali.
 

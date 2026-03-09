@@ -3,7 +3,7 @@ layout: home
 title: Home
 permalink: /
 ---
-## EN
+## EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿
 
 I created this website to have a space where I can document what I study, what I build and what genuinely interests me in cybersecurity and related fields, hence everything you need to create a perfect profile of myself...
 
@@ -20,7 +20,7 @@ This website is my way of combining all of that:
 
 ---
 
-## IT
+## IT 🇮🇹
 
 Ho creato questo sito per avere uno spazio in cui documentare ciò che studio, ciò che costruisco e ciò che mi interessa davvero nel campo della cybersecurity e delle tecnologie correlate, ovvero tutto ciò di cui hai bisogno per creare un perfetto profilo di me...
 

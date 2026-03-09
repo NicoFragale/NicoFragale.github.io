@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 
-## EN
+## EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿
 
 This section presents what I have built during my academic path.
 
@@ -32,7 +32,7 @@ Any misuse of the information provided on this website is the sole responsibilit
 
 ---
 
-## IT
+## IT 🇮🇹
 
 Questa sezione presenta cosa ho sviluppato e studiato durante il mio percorso accademico.
 

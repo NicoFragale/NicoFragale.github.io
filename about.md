@@ -4,7 +4,7 @@ title: About me
 permalink: /about/
 ---
 
-## EN
+## EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿
 
 Hi, my name is Nicolò and I am a cybersecurity student with a growing interest in understanding what I really like.
 
@@ -19,7 +19,7 @@ Recently, I have particularly enjoyed studying network security, indeed I am ded
 
 ---
 
-## IT
+## IT 🇮🇹
 
 Ciao, mi chiamo Nicolò e sono uno studente di sicurezza informatica con un crescente interesse nel capire cosa mi piace veramente.
 
