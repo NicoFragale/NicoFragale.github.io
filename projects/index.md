@@ -69,4 +69,4 @@ Qualsiasi uso improprio delle informazioni presenti su questo sito è esclusiva 
 - [Shadow Apple](/projects/Shadow_Apple/) (not ready)
 - [USB Killer](/projects/Usb_Killer/) (not ready)
 - [WPA2 Deauthentication](/projects/WPA2_Deauthentication/)
-- [KaliNetHunter] (/projects/netHunter/)
+- [KaliNetHunter](/projects/netHunter/)
