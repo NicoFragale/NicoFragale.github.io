@@ -17,6 +17,10 @@ I am learning to recognize what I genuinely prefer to study and where I would li
 
 Recently, I have particularly enjoyed studying network security, indeed I am dedicating additional time to explore it further trying to understand whether this is the field I would like to commit my professional career to.
 
+In the end I want to share with you the most intereseting GitHub's repositories I found:
+- [Mathy Vanhoef](https://github.com/vanhoefm)
+- [Samuel Curry's GitHub](https://github.com/samwcyo), [Samuel Curry's website](https://samcurry.net/)
+
 ---
 
 ## IT 🇮🇹
@@ -31,3 +35,7 @@ In questi mesi non solo ho approfondito la mia comprensione della sicurezza info
 Sto imparando a riconoscere cosa preferisco veramente studiare e in cosa vorrei specializzarmi e allo stesso tempo sto migliorando la mia capacità di come gestire il tempo, collaborare genuinamente con i colleghi, conciliare corsi e progetti nel rispetto delle scadenze.
 
 Recentemente mi è piaciuto particolarmente studiare per l'esame di Network Security, tantoché ho deciso di dedicare ulteriore tempo ad esplorarla ulteriormente cercando di capire se questo è il campo in cui vorrei impegnare la mia carriera professionale.
+
+Infine voglio condividere con voi le repositori di GitHub che mi hanno affascinato tantissimo:
+- [Mathy Vanhoef](https://github.com/vanhoefm)
+- [Samuel Curry's GitHub](https://github.com/samwcyo), [Samuel Curry's website](https://samcurry.net/)
