@@ -81,6 +81,54 @@ Unlike many other browsers that claim to protect users from tracking, Brave actu
 For example, I monitor my website using **Google Analytics** and even when users browse with browsers that advertise privacy features, they are often still detected and counted by Google Analytics. Brave, on the other hand, blocks it and does not appear in analytics dashboards at all.
 
 [About Brave](https://www.youtube.com/watch?v=4mgMZFHv1uM)
+
+---
+
+## Tails OS
+
+**Tails (The Amnesic Incognito Live System)** is a privacy-focused operating system designed to preserve anonymity and leave no traces on the computer you use.
+
+Unlike traditional operating systems that are installed permanently on a disk, Tails is a **live operating system** that runs directly from a **USB stick or DVD**. This means you can boot almost any computer with Tails without modifying the existing system.
+
+### Amnesic system
+
+The word **amnesic** means that the system does not keep memory of your activity after shutdown.
+
+By default:
+
+- no browsing history is saved  
+- no files remain on the system  
+- no logs persist after shutdown  
+
+Everything runs in **RAM**, and when the computer is turned off the memory is wiped.
+
+This makes Tails particularly useful when working on **shared computers or untrusted machines**, unfortunately we know the RAM could contains some traces anyway.
+
+### Built-in privacy tools
+
+Tails comes with several tools already configured for privacy and security:
+
+- **Tor Browser** for anonymous web browsing  
+- **KeePassXC** for password management  
+- **Electrum** for Bitcoin wallets  
+- **OnionShare** for anonymous file sharing  
+- **GnuPG** tools for encryption and secure communication  
+
+These tools are preconfigured so users do not need to manually set up privacy protections.
+
+### Persistent storage (optional)
+
+Although Tails is designed to forget everything, it is possible to create an **encrypted persistent storage** on the USB device.
+
+This allows you to save:
+
+- files
+- encryption keys
+- configuration settings
+- passwords
+
+[Tails by one of my favourites](https://www.youtube.com/watch?v=IOTCGUQ51xo)
+
 ---
 
 A lot lot lot more to talk about obv! Stay Tuned!
