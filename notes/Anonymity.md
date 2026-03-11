@@ -61,4 +61,26 @@ Several mechanisms exist to improve privacy and reduce traceability:
 
 ---
 
+## Browser 
+
+The browser I feel safe with is **Brave** by the moment it focuses strongly on **privacy and security**.
+
+Brave includes:
+
+- **Built-in ad and tracker blocking** – Brave automatically blocks advertising networks and tracking scripts that collect data about your browsing habits.
+- **Fingerprinting protection** – it attempts to prevent websites from uniquely identifying your device using browser and hardware characteristics.
+- **HTTPS upgrades** – whenever possible, Brave automatically forces websites to use the secure HTTPS version instead of HTTP.
+- **Third-party cookie blocking** – reduces cross-site tracking from advertising networks.
+
+All these features can be easely managed from the settings and checked everytime via **brave shields**.
+
+This browser also integrates **Tor private windows**, which route your traffic through the Tor network to increase anonymity when browsing sensitive content. However, it is important to remember that this is **not a full replacement for the Tor Browser**, but rather a convenient way to add an extra layer of privacy.
+
+Unlike many other browsers that claim to protect users from tracking, Brave actually blocks most tracking mechanisms in practice.
+
+For example, I monitor my website using **Google Analytics** and even when users browse with browsers that advertise privacy features, they are often still detected and counted by Google Analytics. Brave, on the other hand, blocks it and does not appear in analytics dashboards at all.
+
+[About Brave](https://www.youtube.com/watch?v=4mgMZFHv1uM)
+---
+
 A lot lot lot more to talk about obv! Stay Tuned!
