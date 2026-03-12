@@ -27,6 +27,10 @@ All experiments described here were performed in controlled environments using d
 
 The techniques discussed are documented to better understand how systems work, how vulnerabilities can arise, and how they can be mitigated.
 
+Unfortunately, university often leaves me with very little time to dedicate to the projects that truly interest me and that I would like to explore with more dedication and passion, therefore I have to find a compromise testing things around me, observing how they work, and satisfying my curiosity.
+
+Finally, I would like to share a brief reflection. I understand that the topics studied in cybersecurity can sometimes be considered sensitive or potentially dangerous, and it is therefore reasonable that universities avoid giving students too much direct practical exposure to them. However, it is a bit disappointing that here in Italy the academic approach is often heavily focused on theory, while practical experience is limited.
+
 The author does not encourage or condone the use of these techniques against systems, networks, or devices without proper authorization.  
 Any misuse of the information provided on this website is the sole responsibility of the user.
 
@@ -55,6 +59,10 @@ Tutti gli esperimenti descritti sono stati eseguiti in ambienti controllati util
 
 Le tecniche discusse sono documentate con l’obiettivo di comprendere meglio il funzionamento dei sistemi, come possano emergere vulnerabilità e come queste possano essere mitigate.
 
+Purtroppo l'università spesso mi lascia molto poco tempo da dedicare ai progetti che mi interessano davvero e che vorrei esplorare con più dedizione e passione. Per questo motivo devo trovare un compromesso: mi limito quindi a fare piccoli test e sperimentazioni, osservando come funzionano le cose intorno a me e cercando di soddisfare la mia curiosità.
+
+Infine, vorrei condividere una breve riflessione. Capisco che gli argomenti trattati nel campo della cybersecurity possano essere considerati sensibili o potenzialmente pericolosi, ed è quindi comprensibile che le università evitino di dare agli studenti troppa esposizione pratica diretta su questi temi. Tuttavia, è un po’ deludente che qui in Italia l’approccio accademico sia spesso molto focalizzato sulla teoria, mentre l’esperienza pratica rimane limitata.
+
 L’autore non incoraggia né approva l’utilizzo di queste tecniche contro sistemi, reti o dispositivi senza la dovuta autorizzazione.  
 Qualsiasi uso improprio delle informazioni presenti su questo sito è esclusiva responsabilità dell’utente.
 
@@ -67,6 +75,6 @@ Qualsiasi uso improprio delle informazioni presenti su questo sito è esclusiva 
 - [Rayhunter](/projects/Rayhunter/) 
 - [Software Defined Radio](/projects/Software_Defined_Radio/)
 - [Shadow Apple](/projects/Shadow_Apple/) (not ready)
-- [USB Killer](/projects/Usb_Killer/) (not ready)
+- [USB Killer](/projects/Usb_Killer/)
 - [WPA2 Deauthentication](/projects/WPA2_Deauthentication/)
 - [KaliNetHunter](/projects/netHunter/)
