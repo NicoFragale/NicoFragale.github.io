@@ -14,9 +14,9 @@ This website is my way of combining:
 
 Latest works:
 
+- [Home Lab](/projects/HomeLab/) 
 - [Bruce](/projects/Bruce/) 
 - [Anonymity](/notes/Anonymity)
-- [Home Lab](/projects/HomeLab/) 
 
 ---
 
