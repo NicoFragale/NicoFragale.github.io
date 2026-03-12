@@ -68,6 +68,7 @@ Qualsiasi uso improprio delle informazioni presenti su questo sito è esclusiva 
 
 ---
 
+- [Home Lab](/projects/HomeLab/) 
 - [Bjorn](/projects/Bjorn/)
 - [Bruce](/projects/Bruce/) 
 - [Pi Hole](/projects/Pi_Hole/) (not ready)

@@ -15,7 +15,8 @@ This website is my way of combining:
 Latest works:
 
 - [Bruce](/projects/Bruce/) 
-- [Rayhunter](/projects/Rayhunter/)
+- [Anonymity](/notes/Anonymity)
+- [Home Lab](/projects/HomeLab/) 
 
 ---
 
