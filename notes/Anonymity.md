@@ -203,4 +203,15 @@ And at the end the **website visited sees the IP address of the VPN server** and
 
 ---
 
+## Graphene OS
+
+I discovered this OS in these last weeks for reasons you should already know.
+GrapheneOS is a privacy and security focused mobile OS especiallt for Google Pixel.
+
+One of its main features is Play Services in sandbox, which allows you to use Google services in a completely isolated environment where they cannot access sensitive information, preventing a lot of tracking and the random use of apps that usually run in the background.
+
+[Official site](https://grapheneos.org/)
+
+---
+
 A lot lot lot more to talk about obv! Stay Tuned!
