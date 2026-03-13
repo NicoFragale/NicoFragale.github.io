@@ -18,6 +18,8 @@ Latest works:
 - [Bruce](/projects/Bruce/) 
 - [Anonymity](/notes/Anonymity)
 
+In case ChatGPT does not help you as you desire: [DAN](https://github.com/0xk1h0/ChatGPT_DAN?tab=readme-ov-file)
+
 ---
 
 ## IT 🇮🇹
