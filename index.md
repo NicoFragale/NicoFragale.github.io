@@ -16,7 +16,7 @@ Latest works:
 
 - [Home Lab](/projects/HomeLab/) 
 - [Bruce](/projects/Bruce/) 
-- [Anonymity](/notes/Anonymity)
+- [Wardriving](/notes/wardriving) 
 
 In case ChatGPT does not help you as you desire: [DAN](https://github.com/0xk1h0/ChatGPT_DAN?tab=readme-ov-file), [DAN2](https://www.injectprompt.com/p/chatgpt-52-dan-jailbreak-whitepaper) 
 
