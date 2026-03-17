@@ -1,5 +1,6 @@
 ---
-layout: Airgeddon 🚜​
+layout: page ​
+title: Airgeddon 🚜
 permalink: /notes/airgeddon/
 ---
 
