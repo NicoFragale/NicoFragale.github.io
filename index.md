@@ -5,6 +5,8 @@ permalink: /
 ---
 ## EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿
 
+Cybersecurity Student | Network & Off/Defensive Security
+
 I created this website to have a space where I can document what I study, what I build and what genuinely interests me in cybersecurity and related fields, hence everything you need to create a perfect profile of myself...
 
 This website is my way of combining:

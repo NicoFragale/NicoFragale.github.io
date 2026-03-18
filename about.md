@@ -39,3 +39,15 @@ Recentemente mi è piaciuto particolarmente studiare per l'esame di Network Secu
 Infine voglio condividere con voi le repositori di GitHub che mi hanno affascinato tantissimo:
 - [Mathy Vanhoef](https://github.com/vanhoefm)
 - [Samuel Curry's GitHub](https://github.com/samwcyo), [Samuel Curry's website](https://samcurry.net/)
+
+---
+
+## Soft Skills 🏅
+
+- **Analytical thinking and problem solving**  
+- **Curiosity & continuous learning**  
+- **Hands-on experimentation**  
+- **Self-directed learning and Persistence**  
+- **Technical communication**  
+- **Adaptability**  
+
