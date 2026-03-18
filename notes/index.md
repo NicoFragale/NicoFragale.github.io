@@ -36,7 +36,6 @@ Ogni argomento segue una struttura coerente:
 - [WPA3](/notes/network-security/wpa3/)
 - [Aircrack-ng](/notes/network-security/Aircrack-ng/)
 - [Anonymity](/notes/Anonymity)
-- [Wardriving](/notes/wardriving) (not ready)
+- [Wardriving](/notes/wardriving) 
 - [Airgeddon](/notes/airgeddon) (not ready)
 - [Kismet](/notes/kismet) (not ready)
-- [Maltego](/notes/maltego) (not ready)

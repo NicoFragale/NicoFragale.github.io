@@ -77,4 +77,7 @@ For this reason, **active wardriving raises more legal and ethical questions**, 
 
 Some wardrivers reduce the likelihood of their device being registered on the network by configuring a **static IP address**, avoiding the automatic assignment of an address through DHCP.
 
+---
+
+You can easely found how to wardrive on internet!
 
