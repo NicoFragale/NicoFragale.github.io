@@ -38,4 +38,4 @@ Ogni argomento segue una struttura coerente:
 - [Anonymity](/notes/Anonymity)
 - [Wardriving](/notes/wardriving) 
 - [Airgeddon](/notes/airgeddon) (not ready)
-- [Kismet](/notes/kismet) (not ready)
+- [Kismet](/notes/kismet)
