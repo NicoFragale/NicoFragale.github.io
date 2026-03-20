@@ -42,12 +42,26 @@ Infine voglio condividere con voi le repositori di GitHub che mi hanno affascina
 
 ---
 
+## Technical Skills 🏅
+
+- **Operating Systems:** Linux, Windows, macOS  
+- **Programming & Data:** Python, SQL  
+- **Tools:** Git  
+- **Cybersecurity:** Strong understanding of cybersecurity concepts  
+
+
 ## Soft Skills 🏅
 
-- **Analytical thinking and problem solving**  
-- **Curiosity & continuous learning**  
-- **Hands-on experimentation**  
-- **Self-directed learning and Persistence**  
-- **Technical communication**  
-- **Adaptability**  
+- Strong communication skills and ability to work in international teams  
+- Analytical mindset and problem-solving attitude  
+- Self-management, reliability, and ability to prioritize tasks effectively  
+- Proactive attitude and initiative  
+- Customer-oriented approach  
+- Ability to work under pressure  
+- High endurance and adaptability based on workload demands  
 
+
+## Languages 🏅
+
+- **English:** Advanced  
+- **Italian:** Native
