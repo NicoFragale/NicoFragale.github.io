@@ -84,13 +84,13 @@ The **donut chart** labeled **Packet Types** shows the nature of the traffic:
 
 ## SSID Behavior
 
-### Advertised SSID
+#### Advertised SSID
 
 - The network name actively broadcasted by the AP  
 - Sent through **beacon frames**  
 - Visible during passive scanning  
 
-### Responded SSID
+#### Responded SSID
 
 - The network name returned when a client actively searches for networks  
 - Sent via **probe response frames**  
@@ -100,7 +100,7 @@ This distinction highlights the difference between:
 - active probing  
 
 
-## Security Feature: MFP
+#### Security Feature: MFP
 
 **MFP (Management Frame Protection)** protects management frames from tampering.
 
@@ -111,7 +111,7 @@ For example, lack of MFP allows attacks such as:
 - **deauthentication attacks**
 
 
-## Channel Width (HT Mode)
+#### Channel Width (HT Mode)
 
 The **HT mode** indicates the channel bandwidth:
 
@@ -121,7 +121,7 @@ The **HT mode** indicates the channel bandwidth:
 Wider channels allow higher throughput but increase interference risk.
 
 
-## WiFi Bridging
+#### WiFi Bridging
 
 When a device is marked as **WiFi Bridged**, it means:
 
