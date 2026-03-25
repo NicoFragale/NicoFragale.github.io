@@ -4,6 +4,20 @@ title: Projects 🦾​
 permalink: /projects/
 ---
 
+- [Home Lab](/projects/HomeLab/) 
+- [Bjorn](/projects/Bjorn/)
+- [Bruce](/projects/Bruce/) 
+- [Pi Hole](/projects/Pi_Hole/) (not ready)
+- [Pwnagotchi](/projects/Pwngotchi/)
+- [Rayhunter](/projects/Rayhunter/) 
+- [Software Defined Radio](/projects/Software_Defined_Radio/)
+- [Shadow Apple](/projects/Shadow_Apple/) (not ready)
+- [USB Killer](/projects/Usb_Killer/)
+- [WPA2 Deauthentication](/projects/WPA2_Deauthentication/)
+- [KaliNetHunter](/projects/netHunter/)
+
+---
+
 ## EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿
 
 This section presents what I have built during my academic path.
@@ -44,28 +58,3 @@ Purtroppo l'università spesso mi lascia molto poco tempo da dedicare ai progett
 
 Infine, vorrei condividere una breve riflessione. Capisco che gli argomenti trattati nel campo della cybersecurity possano essere considerati sensibili o potenzialmente pericolosi, ed è quindi comprensibile che le università evitino di dare agli studenti troppa esposizione pratica diretta su questi temi. Tuttavia, è un po’ deludente che qui in Italia l’approccio accademico sia spesso molto focalizzato sulla teoria, mentre l’esperienza pratica rimane limitata.
 
----
-
-### My games
-
-- [Home Lab](/projects/HomeLab/) 
-- [Bjorn](/projects/Bjorn/)
-- [Bruce](/projects/Bruce/) 
-- [Pi Hole](/projects/Pi_Hole/) (not ready)
-- [Pwnagotchi](/projects/Pwngotchi/)
-- [Rayhunter](/projects/Rayhunter/) 
-- [Software Defined Radio](/projects/Software_Defined_Radio/)
-- [Shadow Apple](/projects/Shadow_Apple/) (not ready)
-- [USB Killer](/projects/Usb_Killer/)
-- [WPA2 Deauthentication](/projects/WPA2_Deauthentication/)
-- [KaliNetHunter](/projects/netHunter/)
-
----
-
-### Disclaimer 🏴󠁧󠁢󠁥󠁮󠁧󠁿🇮🇹
-
-The author does not encourage or condone the use of these techniques against systems, networks, or devices without proper authorization.  
-Any misuse of the information provided on this website is the sole responsibility of the user.
-
-L’autore non incoraggia né approva l’utilizzo di queste tecniche contro sistemi, reti o dispositivi senza la dovuta autorizzazione.  
-Qualsiasi uso improprio delle informazioni presenti su questo sito è esclusiva responsabilità dell’utente.

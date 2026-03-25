@@ -4,6 +4,16 @@ title: Research Notes 🕵️‍♂️​
 permalink: /notes/
 ---
 
+- [WPA2 4-Way Handshake](/notes/network-security/wpa2-4way-handshake/)
+- [WPA3](/notes/network-security/wpa3/)
+- [Aircrack-ng](/notes/network-security/Aircrack-ng/)
+- [Anonymity](/notes/Anonymity)
+- [Wardriving](/notes/wardriving) 
+- [Airgeddon](/notes/airgeddon) (not ready)
+- [Kismet](/notes/kismet)
+
+---
+
 ## EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿
 
 This section collects structured technical notes on topics I am actively studying in cybersecurity and wireless systems in order to understand mechanisms deeply, analyze vulnerabilities rigorously, and connect theory with real-world security scenarios.
@@ -29,13 +39,3 @@ Ogni argomento segue una struttura coerente:
 3. **Analisi delle Vulnerabilità** – dove si rompono le assunzioni di sicurezza;
 4. **Scenario Reale** – come il problema si manifesta nella pratica;
 5. **Contromisure Difensive** – come mitigare o prevenire la vulnerabilità;
-
----
-
-- [WPA2 4-Way Handshake](/notes/network-security/wpa2-4way-handshake/)
-- [WPA3](/notes/network-security/wpa3/)
-- [Aircrack-ng](/notes/network-security/Aircrack-ng/)
-- [Anonymity](/notes/Anonymity)
-- [Wardriving](/notes/wardriving) 
-- [Airgeddon](/notes/airgeddon) (not ready)
-- [Kismet](/notes/kismet)
