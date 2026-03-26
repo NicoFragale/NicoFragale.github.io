@@ -1,9 +1,8 @@
 ---
 layout: page
-title: Deauthentication Attacks 
+title: Deauthentication Attacks 🔫
 permalink: /notes/deauthentication
 ---
-
 
 Deauthentication attacks are one of the most common and important techniques in Wi-Fi security auditing.  
 They exploit a fundamental weakness in the IEEE 802.11 protocol: **management frames are not authenticated** in many configurations (especially WPA2 without protection mechanisms like 802.11w).
@@ -76,7 +75,6 @@ Limitations:
 | Typical use              | Force any reconnection        | Targeted disconnection       |
 
 
----
 
 #### Defensive Measures
 
