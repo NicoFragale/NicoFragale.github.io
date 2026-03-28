@@ -13,6 +13,7 @@ permalink: /notes/
 - [Kismet](/notes/kismet)
 - [Deauthentication Attacks](/notes/deauthentication)
 - [Bettercap](/notes/bettercap) (not ready)
+
 ---
 
 ## EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿
