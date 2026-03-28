@@ -9,7 +9,7 @@ permalink: /notes/
 - [Aircrack-ng](/notes/network-security/Aircrack-ng/)
 - [Anonymity](/notes/Anonymity)
 - [Wardriving](/notes/wardriving) 
-- [Airgeddon](/notes/airgeddon) 
+- [Airgeddon](/notes/Airgeddon) 
 - [Kismet](/notes/kismet)
 - [Deauthentication Attacks](/notes/deauthentication)
 
