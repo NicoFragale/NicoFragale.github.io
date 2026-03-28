@@ -4,15 +4,15 @@ title: Research Notes 🕵️‍♂️​
 permalink: /notes/
 ---
 
+- [Aircrack-ng](/notes/network-security/Aircrack-ng/)
+- [Airgeddon](/notes/Airgeddon)
+- [Anonymity](/notes/Anonymity)
+- [Bettercap](/notes/bettercap) (not ready)
+- [Deauthentication Attacks](/notes/deauthentication)
+- [Kismet](/notes/kismet)
+- [Wardriving](/notes/wardriving) 
 - [WPA2 4-Way Handshake](/notes/network-security/wpa2-4way-handshake/)
 - [WPA3](/notes/network-security/wpa3/)
-- [Aircrack-ng](/notes/network-security/Aircrack-ng/)
-- [Anonymity](/notes/Anonymity)
-- [Wardriving](/notes/wardriving) 
-- [Airgeddon](/notes/Airgeddon) 
-- [Kismet](/notes/kismet)
-- [Deauthentication Attacks](/notes/deauthentication)
-- [Bettercap](/notes/bettercap) (not ready)
 
 ---
 

@@ -4,17 +4,17 @@ title: Projects 🦾​
 permalink: /projects/
 ---
 
-- [Home Lab](/projects/HomeLab/) 
 - [Bjorn](/projects/Bjorn/)
 - [Bruce](/projects/Bruce/) 
+- [Home Lab](/projects/HomeLab/) 
+- [KaliNetHunter](/projects/netHunter/)
 - [Pi Hole](/projects/Pi_Hole/) (not ready)
 - [Pwnagotchi](/projects/Pwngotchi/)
 - [Rayhunter](/projects/Rayhunter/) 
-- [Software Defined Radio](/projects/Software_Defined_Radio/)
 - [Shadow Apple](/projects/Shadow_Apple/) (not ready)
+- [Software Defined Radio](/projects/Software_Defined_Radio/)
 - [USB Killer](/projects/Usb_Killer/)
 - [WPA2 Deauthentication](/projects/WPA2_Deauthentication/)
-- [KaliNetHunter](/projects/netHunter/)
 
 ---
 
