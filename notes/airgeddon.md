@@ -1,7 +1,7 @@
 ---
-layout: page ​
-title: Airgeddon 🚜
-permalink: /notes/airgeddon/
+layout: page
+title: Airgeddon 🤖
+permalink: /notes/airgeddon
 ---
 
-coming soon ...
+Coming soon ...
