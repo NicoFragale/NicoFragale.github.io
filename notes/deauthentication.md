@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Deauthentication Attacks 🔫
-permalink: /notes/deauthentication
+permalink: /notes/deauthentication/
 ---
 
 Deauthentication attacks are one of the most common and important techniques in Wi-Fi security auditing.  
