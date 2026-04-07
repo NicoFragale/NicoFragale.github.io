@@ -8,7 +8,7 @@ permalink: /projects/
 - [Bruce](/projects/Bruce/) 
 - [Home Lab](/projects/HomeLab/) 
 - [KaliNetHunter](/projects/netHunter/)
-- [Pi Hole](/projects/Pi_Hole/) (not ready)
+<!-- - [Pi Hole](/projects/Pi_Hole/) (not ready) -->
 - [Pwnagotchi](/projects/Pwngotchi/)
 - [Rayhunter](/projects/Rayhunter/) 
 - [Shadow Apple](/projects/Shadow_Apple/)
