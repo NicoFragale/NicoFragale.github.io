@@ -16,7 +16,7 @@ This website is my way of combining:
 
 Latest works:
 
-- [Airgeddon](/notes/Airgeddon)
+- [Shadow Apple](/projects/Shadow_Apple/)
 - [Bruce](/projects/Bruce/) 
 - [Kismet](/notes/kismet) 
 
