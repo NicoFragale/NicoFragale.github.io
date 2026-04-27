@@ -7,7 +7,7 @@ permalink: /notes/
 - [Aircrack-ng](/notes/network-security/Aircrack-ng/)
 - [Airgeddon](/notes/Airgeddon)
 - [Anonymity](/notes/Anonymity)
-- [Bettercap](/notes/bettercap) (not ready)
+<!-- - [Bettercap](/notes/bettercap) (not ready) -->
 - [Deauthentication Attacks](/notes/deauthentication)
 - [Kismet](/notes/kismet)
 - [Wardriving](/notes/wardriving) 
