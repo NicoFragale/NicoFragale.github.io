@@ -8,7 +8,7 @@ permalink: /about/
 
 Hi, my name is Nicolò and I am a cybersecurity student with a growing interest in understanding what I really like.
 
-Before starting my Bachelor’s degree in Computer Science at Sapienza I had never studied computer science and during that last year I gradually became more interested in cybersecurity and the related fields realizing that is not just about tools or attacks, but about understanding mechanisms, how they works and weaknesses and by the moment I have always been a very courious person who likes broke things I thought this was the path I was meant to follow.
+Before starting my Bachelor’s degree in Computer Science at Sapienza I had never studied computer science and during that last year I gradually became more interested in cybersecurity.
 
 For this reason, I decided to begin a new and more demanding chapter at the University of Pisa, enrolling in a Master’s degree in Cybersecurity; it is a shorter but more challenging journey, and I am truly grateful for having taken this decision.
 
@@ -27,7 +27,7 @@ In the end I want to share with you the most intereseting GitHub's repositories 
 
 Ciao, mi chiamo Nicolò e sono uno studente di sicurezza informatica con un crescente interesse nel capire cosa mi piace veramente.
 
-Prima di iniziare la mia laurea in Informatica alla Sapienza non avevo mai studiato informatica e durante quell'ultimo anno mi sono gradualmente interessato di più alla sicurezza informatica rendendomi conto non riguarda solo strumenti o attacchi, ma la comprensione di meccanismi, come collaborano e le loro debolezze e dal momento che sono sempre stato un bambino molto curioso e a cui piace rompere cose, pensavo che questa fosse la strada che avrei dovuto seguire.
+Prima di iniziare la mia laurea in Informatica alla Sapienza non avevo mai studiato informatica e durante l'ultimo anno mi sono gradualmente interessato di più alla sicurezza informatica.
 
 Ho deciso quindi di iniziare un nuovo e più impegnativo percorso all'Università di Pisa, iscrivendomi al corso magistrale in Cybersecurity; è un percorso più breve ma più impegnativo e sono davvero grato per aver preso questa decisione.
 
@@ -44,10 +44,10 @@ Infine voglio condividere con voi le repositori di GitHub che mi hanno affascina
 
 ## Technical Skills 🏅
 
-- **Operating Systems:** Linux, Windows, macOS  
-- **Programming & Data:** Python, SQL  
-- **Tools:** Git  
-- **Cybersecurity:** Strong understanding of cybersecurity concepts  
+- **Operating Systems:** Linux, Windows, macOS, VirtualBox, Docker  
+- **Programming & Data:** Visual Studio Code, PyCharm, Jupyter Notebook, Git, GitHub, Bash, Terminale Linux, Python, Java, C, C++, Rust, MySQL
+- **Cybersecurity:** Wireshark, Nmap, Metasploit, Aircrack-ng, Airgeddon, Kismet, Hashcat, John the Ripper, Netcat
+- **Other:** Microsoft Word, Excel, PowerPoint, Outlook, Teams, Notion,LaTeX, Overleaf
 
 
 ## Soft Skills 🏅
@@ -65,3 +65,10 @@ Infine voglio condividere con voi le repositori di GitHub che mi hanno affascina
 
 - **English:** Advanced  
 - **Italian:** Native
+
+
+## Personal Interests 🏅
+
+- **Sport:** Running, Bodybuilding, Swim 
+- **Reading:** Fantasy (Manga, Marvel, DC, Tolkien, Rowling), Scientifics (Focus)
+- **Drawing**

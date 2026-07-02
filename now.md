@@ -6,14 +6,12 @@ permalink: /now/
 
 ### University Focus 🤯​
 
-**Electronic & Hardware Technologies**
-- Analog-to-digital and digital-to-analog conversion  
-- Digital logic (combinational and sequential circuits)  
-- HDL-based design flow  
-- FPGA and MCU platforms  
-- Hardware/software co-design methodologies  
-- Microcontroller architectures for cybersecurity applications  
+**Artificial Intelligence**
+**Cryptography**
+**System and Network Hacking**
+**Rust for network**
 
+A lot of stuff to study... so much that I am not updating with new projects... sad story :(
 ---
 
 ### Personal Study 😎​
@@ -21,10 +19,4 @@ permalink: /now/
 - WiFi security and WPA vulnerabilities  
 - Mobile network security considerations  
 - Practical wireless experimentation 
-
----
-
-### Current University Project ​👁️‍🗨️​
-
-**Network Intrusion Detection System (NIDS)** focused on traffic analysis and attack detection, The repository is still private.
-
+- Cybersecurity in Satellites

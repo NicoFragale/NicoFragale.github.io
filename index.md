@@ -30,7 +30,7 @@ Github profile: [Range](https://github.com/NicoFragale)
 
 Ciao, sono Nicolò e frequento la magistrale di Cybersecurity.
 
-Ho creato questo sito per avere uno spazio in cui documentare ciò che studio, ciò che costruisco e ciò che mi interessa davvero nel campo della cybersecurity e delle tecnologie correlate, ovvero tutto ciò di cui hai bisogno per creare un perfetto profilo di me...
+Ho creato questo sito per avere uno spazio in cui documentare ciò che studio, ciò che costruisco e ciò che mi interessa davvero nel campo della cybersecurity e delle tecnologie correlate, in pratica tutto ciò di cui hai bisogno per creare un perfetto profilo di me...
 
 Questo sito unisce:
 - progetti strutturati,
