@@ -6,17 +6,17 @@ permalink: /now/
 
 ### University Focus 🤯​
 
-**Artificial Intelligence**
-**Cryptography**
-**System and Network Hacking**
-**Rust for network**
 
-A lot of stuff to study... so much that I am not updating with new projects... sad story :(
+**Cryptography**
+
+**System and Network Hacking**
+
+**Network Programming laboratory in Rust**
+
 ---
 
 ### Personal Study 😎​
 
-- WiFi security and WPA vulnerabilities  
-- Mobile network security considerations  
-- Practical wireless experimentation 
-- Cybersecurity in Satellites
+- Certified Wifi Pentesting Expert on Hack The Box 
+- Certified Penetration Testing Specialist on Hack The Box
+- Hack The Box labs
