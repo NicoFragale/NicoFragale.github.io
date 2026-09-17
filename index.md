@@ -17,12 +17,12 @@ Questi sono gli ultimi push:
 
 ---
 
-### Technical Skills 🏅
+### Skills tecniche 🏅
 
-- **Operating Systems:** Linux, Windows, macOS, VirtualBox, Docker  
+- **OS:** Linux, Windows, macOS, VirtualBox, Docker  
 - **Programming & Data:** Visual Studio Code, PyCharm, Jupyter Notebook, Git, GitHub, Bash, Terminale Linux, Python, Java, C, C++, Rust, MySQL
 - **Cybersecurity:** Wireshark, Nmap, Metasploit, Aircrack-ng, Airgeddon, Kismet, Hashcat, John the Ripper, Netcat
-- **Other:** Microsoft Word, Excel, PowerPoint, Outlook, Teams, Notion,LaTeX, Overleaf
+- **Altro:** Microsoft Word, Excel, PowerPoint, Outlook, Teams, Notion,LaTeX, Overleaf
 
 
 ### Soft Skills 🏅

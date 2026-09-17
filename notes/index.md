@@ -4,7 +4,7 @@ title: Research Notes 🕵️‍♂️​
 permalink: /notes/
 ---
 
-Questa sezione raccoglie appunti tecnici strutturati sugli argomenti che sto studiando.
+Questa sezione raccoglie appunti tecnici strutturati riguardo ciò che sto studiando.
 
 - [Aircrack-ng](/notes/network-security/Aircrack-ng/)
 - [Airgeddon](/notes/Airgeddon)
