@@ -3,43 +3,53 @@ layout: home
 title: Home 🏠​
 permalink: /
 ---
-## EN 🏴󠁧󠁢󠁥󠁮󠁧󠁿
 
-Hi, my name is Nicolò and I am a cybersecurity student with a growing interest in understanding what I really like.
+Ciao, sono Nicolò e studio Cybersecurity.
 
-I created this website to have a space where I can document what I study, what I build and what genuinely interests me in cybersecurity and related fields, hence everything you need to create a perfect profile of myself...
+Qua condivido quello che studio e che sperimento, siano semplicemente cheat sheet che progetti spicy!
+In questo periodo sto studiando Crittografia e Malware Analysis e nel mentre sto cercando di dedicare molto più tempo ad Hack The Box.
 
-This website is my way of combining:
-- projects,
-- research notes,
-- ongoing explorations in network security, wireless systems and hardware security.
-
-Latest works:
+Questi sono gli ultimi push:
 
 - [Shadow Apple](/projects/Shadow_Apple/)
 - [Bruce](/projects/Bruce/) 
 - [Kismet](/notes/kismet) 
 
-In case ChatGPT does not help you as you desire: [DAN](https://github.com/0xk1h0/ChatGPT_DAN?tab=readme-ov-file), [DAN2](https://www.injectprompt.com/p/chatgpt-52-dan-jailbreak-whitepaper) 
+---
 
-Github profile: [Range](https://github.com/NicoFragale)
+## Technical Skills 🏅
+
+- **Operating Systems:** Linux, Windows, macOS, VirtualBox, Docker  
+- **Programming & Data:** Visual Studio Code, PyCharm, Jupyter Notebook, Git, GitHub, Bash, Terminale Linux, Python, Java, C, C++, Rust, MySQL
+- **Cybersecurity:** Wireshark, Nmap, Metasploit, Aircrack-ng, Airgeddon, Kismet, Hashcat, John the Ripper, Netcat
+- **Other:** Microsoft Word, Excel, PowerPoint, Outlook, Teams, Notion,LaTeX, Overleaf
+
+
+## Soft Skills 🏅
+
+- Ottime capacità comunicative e capacità di lavorare in team  
+- Mentalità analitica e atteggiamento di risoluzione dei problemi 
+- Autogestione, affidabilità e capacità di stabilire le priorità dei compiti in modo efficace 
+- Atteggiamento proattivo e iniziativa 
+- Capacità di lavorare sotto pressione 
+- Elevata resistenza e adattabilità 
+
+
+## Lingue 🏅
+
+- **Italiano:** Madre Lingua
+- **Inglese:** Ottimo  
+
+
+## Interessi Personali 🏅
+
+- **Sport:** Running, Bodybuilding 
+- **Lettura:** Fantasy (Manga, Marvel, DC, Tolkien, Rowling), Scientifiche (Focus)
+- **Disegno**
 
 ---
 
-## IT 🇮🇹
-
-Ciao, sono Nicolò e frequento la magistrale di Cybersecurity.
-
-Ho creato questo sito per avere uno spazio in cui documentare ciò che studio, ciò che costruisco e ciò che mi interessa davvero nel campo della cybersecurity e delle tecnologie correlate, in pratica tutto ciò di cui hai bisogno per creare un perfetto profilo di me...
-
-Questo sito unisce:
-- progetti strutturati,
-- appunti,
-- approfondimenti su network security, sistemi wireless e hardware security.
-
----
-
-## External Links
+## Links
 
 <ul>
   <li><a href="https://github.com/NicoFragale">GitHub</a></li>
