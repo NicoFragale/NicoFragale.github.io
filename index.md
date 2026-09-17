@@ -17,7 +17,7 @@ Questi sono gli ultimi push:
 
 ---
 
-## Technical Skills 🏅
+### Technical Skills 🏅
 
 - **Operating Systems:** Linux, Windows, macOS, VirtualBox, Docker  
 - **Programming & Data:** Visual Studio Code, PyCharm, Jupyter Notebook, Git, GitHub, Bash, Terminale Linux, Python, Java, C, C++, Rust, MySQL
@@ -25,7 +25,7 @@ Questi sono gli ultimi push:
 - **Other:** Microsoft Word, Excel, PowerPoint, Outlook, Teams, Notion,LaTeX, Overleaf
 
 
-## Soft Skills 🏅
+### Soft Skills 🏅
 
 - Ottime capacità comunicative e capacità di lavorare in team  
 - Mentalità analitica e atteggiamento di risoluzione dei problemi 
@@ -35,13 +35,13 @@ Questi sono gli ultimi push:
 - Elevata resistenza e adattabilità 
 
 
-## Lingue 🏅
+### Lingue 🏅
 
 - **Italiano:** Madre Lingua
 - **Inglese:** Ottimo  
 
 
-## Interessi Personali 🏅
+### Interessi Personali 🏅
 
 - **Sport:** Running, Bodybuilding 
 - **Lettura:** Fantasy (Manga, Marvel, DC, Tolkien, Rowling), Scientifiche (Focus)
@@ -49,7 +49,7 @@ Questi sono gli ultimi push:
 
 ---
 
-## Links
+### Links
 
 <ul>
   <li><a href="https://github.com/NicoFragale">GitHub</a></li>
