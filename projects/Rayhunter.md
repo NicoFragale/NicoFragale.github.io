@@ -1,168 +1,156 @@
 ---
 layout: page
-title: Rayhunter 🦈​
+title: Rayhunter 🦈
 permalink: /projects/Rayhunter/
 ---
 
 ## Rayhunter
 
-[Rayhunter](https://github.com/EFForg/rayhunter) is a project designed to detect **IMSI catchers**, also known as **cell-site simulators** or **Stingrays**.
+[Rayhunter](https://github.com/EFForg/rayhunter) è un progetto progettato per rilevare gli **IMSI catcher**, noti anche come **cell-site simulator** o **Stingray**.
 
-I came across this project while studying **mobile network infrastructures** during my Network Security course. In particular, the topic was related to the moment when a mobile device connects to a new cellular base station in order to authenticate itself and gain access to the services provided by the mobile operator, such as voice calls, SMS and mobile data connectivity.
-
----
-
-## Hardware Platform
-
-The project was originally designed to run on a **cheap mobile hotspot device called the Orbic RC400L** and works only in the United States.
-
-Thanks to community efforts, the same project can also be deployed using the **TP-Link M7350** in the rest of the world.
-
-This device can usually be found at a relatively low price on platforms such as Amazon, and often even cheaper on second-hand marketplaces like Vinted or eBay. When buying used hardware, it is important to check the **exact hardware revision**, since not all versions are compatible with the firmware.
-
-The official guide describing the installation process for the TP-Link M7350 and working versions can be found [here](https://efforg.github.io/rayhunter/tplink-m7350.html).
-
-Installing the firmware is relatively straightforward and the official documentation on GitHub provides a clear step-by-step procedure, and there are also several video tutorials available online.
+Mi sono imbattuto in questo progetto mentre studiavo le **infrastrutture di rete mobile** durante il mio corso di *Network Security*. In particolare, l'argomento riguardava il momento in cui un dispositivo mobile si connette a una nuova stazione radio base cellulare per autenticarsi e ottenere l'accesso ai servizi forniti dall'operatore mobile, come chiamate vocali, SMS e connettività dati.
 
 ---
 
-## Why Does This Project Exist?
+## Piattaforma Hardware
 
-To understand the motivation behind Rayhunter, it is necessary to briefly look at how **mobile devices authenticate to cellular networks**.
+Il progetto è stato originariamente progettato per funzionare su un **economico hotspot mobile chiamato Orbic RC400L**, operativo esclusivamente negli Stati Uniti.
 
-When a smartphone powers on or moves into the coverage area of a new base station connects to a new cell for the first time, it must first establish communication with the network. During this process the device needs to identify itself so that the mobile operator can:
+Grazie al contributo della community, lo stesso progetto può essere installato anche sul **TP-Link M7350** nel resto del mondo.
 
-- verify the subscriber
-- authorize network access
-- associate the device with a specific account
-- enable services such as calls, SMS and mobile data
+Questo dispositivo si trova solitamente a un prezzo relativamente contenuto su piattaforme come Amazon, e spesso a cifre ancora più basse su mercati dell'usato come Vinted o eBay. Quando si acquista hardware usato, è fondamentale verificare l'**esatta revisione hardware**, poiché non tutte le versioni sono compatibili con il firmware.
 
-The identifier used for this purpose, sent from the Station to the Base Station is the **IMSI (International Mobile Subscriber Identity)**.
+La guida ufficiale che descrive la procedura di installazione per il TP-Link M7350 e le versioni supportate è disponibile [qui](https://efforg.github.io/rayhunter/tplink-m7350.html).
 
----
-
-## What is the IMSI?
-
-The IMSI is a unique identifier stored in the **SIM card** that identifies the subscriber within the mobile network.
-
-It is composed of three main parts:
-
-- **MCC (Mobile Country Code)** – identifies the country
-- **MNC (Mobile Network Code)** – identifies the mobile operator
-- **MSIN (Mobile Subscriber Identification Number)** – uniquely identifies the subscriber
-
-Together, these values uniquely identify a user in the global cellular network.
+Installare il firmware è relativamente semplice: la documentazione ufficiale su GitHub fornisce una chiara procedura passo-passo e online sono disponibili anche diversi video tutorial.
 
 ---
 
-## The Problem: IMSI Catchers
+## Perché esiste questo progetto?
 
-The weakness arises from the fact that a mobile device **cannot initially verify whether a base station is legitimate** because only the station autheticates itself.
+Per comprendere le motivazioni alla base di Rayhunter, è necessario osservare brevemente come i **dispositivi mobili si autenticano alle reti cellulari**.
 
-An attacker can exploit this behavior by deploying a fake base station, commonly referred to as an **IMSI catcher**.
+Quando uno smartphone viene acceso o entra nell'area di copertura di una nuova stazione radio base connettendosi a una nuova cella per la prima volta, deve prima stabilire una comunicazione con la rete. Durante questo processo il dispositivo deve identificarsi affinché l'operatore mobile possa:
 
-These devices simulate a legitimate cellular tower and trick nearby phones into connecting to them. Once connected, the attacker can:
+- verificare l'abbonato
+- autorizzare l'accesso alla rete
+- associare il dispositivo a uno specifico account
+- abilitare servizi come chiamate, SMS e rete dati
 
-- force devices to reveal their IMSI
-- track subscriber identities
-- monitor device presence in a geographic area
-- potentially downgrade network security
-
-Because mobile devices automatically connect to the strongest available signal, they may unknowingly attach to these rogue base stations.
+L'identificativo utilizzato a questo scopo, inviato dal terminale mobile alla stazione radio base, è l'**IMSI (International Mobile Subscriber Identity)**.
 
 ---
 
-## Rayhunter's Role
+## Cos'è l'IMSI?
 
-Rayhunter was created to help **detect suspicious cellular behavior** that may indicate the presence of an IMSI catcher acting as a **defensive monitoring tool**.
+L'IMSI è un identificativo univoco memorizzato all'interno della **scheda SIM** che identifica l'abbonato all'interno della rete mobile.
 
-This is the how It looks once installed:
+È composto da tre parti principali:
 
-![rayhunter](https://nicofragale.github.io/assets/images/rayhunter.jpg)
+- **MCC (Mobile Country Code)** – identifica il Paese
+- **MNC (Mobile Network Code)** – identifica l'operatore mobile
+- **MSIN (Mobile Subscriber Identification Number)** – identifica univocamente l'abbonato
 
-If the bar is green no Fake Base Station are detected. Until now I did not see a red bar fortunately.
-
----
-
-## Defensive Considerations
-
-### Temporary Subscriber Identifiers
-
-Modern cellular networks attempt to reduce IMSI exposure by using temporary identifiers such as **TMSI (Temporary Mobile Subscriber Identity)** that changes frequently.
-
-Instead of transmitting the permanent IMSI every time the device connects to the network, the operator assigns a temporary identifier that changes periodically, limiting the possibility of attackers to track users over time.
-
-
-### Mutual Authentication in Modern Networks
-
-Newer cellular technologies such as **4G (LTE)** and **5G** introduce stronger authentication mechanisms between the device and the network and **mutual authentication**, and the second one introduces **SUPI** and **SUCI** which are the encrypted version of **IMSI** and **TMSI**.
-
-In these systems:
-
-- the device authenticates to the network
-- the network must also prove its legitimacy to the device
-
-This mutual authentication significantly reduces the effectiveness of rogue base stations compared to earlier generations such as 2G.
-
-
-### Avoiding Legacy Networks
-
-Many IMSI catcher attacks rely on forcing devices to **downgrade to older cellular technologies**, especially **2G** where security protections are weaker, this is the mosto common type of attack by the moment the devices have priority to keep the connectivity in any situation.
+Insieme, questi valori identificano in modo univoco un utente nella rete cellulare globale.
 
 ---
 
-## How Modern IMSI Catchers Operate
+## Il Problema: gli IMSI Catcher
 
+La vulnerabilità nasce dal fatto che un dispositivo mobile **non può verificare inizialmente se una stazione radio base sia legittima**, poiché è solo il terminale mobile ad autenticarsi verso la rete.
 
-1. The attacker simulates a **4G or 3G base station**.
-2. Nearby mobile devices attempt to connect to this cell.
-3. The rogue base station signals that **LTE service is unavailable**.
-4. The mobile device automatically **downgrades to a legacy network**, typically 2G.
-5. The attacker then activates a **fake GSM base station** in order to catch subscriber identifiers.
+Un attaccante può sfruttare questo comportamento dispiegando una falsa stazione radio base, comunemente definita **IMSI catcher**.
 
-Mobile devices select the serving cell based on several radio parameters, including:
+Questi dispositivi simulano una torre cellulare legittima e inducono i telefoni nelle vicinanze a connettersi ad essi. Una volta stabilita la connessione, l'attaccante può:
 
-- **Signal strength**
-- **Radio priority**
-- **Broadcast configuration parameters**
+- costringere i dispositivi a rivelare il proprio IMSI
+- tracciare l'identità degli abbonati
+- monitorare la presenza dei dispositivi in una determinata area geografica
+- effettuare potenzialmente un *downgrade* della sicurezza di rete
 
-As a result, devices may automatically attach to the malicious infrastructure.
+Poiché i dispositivi mobili si connettono automaticamente al segnale disponibile più forte, possono agganciarsi inconsapevolmente a queste stazioni radio base malevole (*rogue base stations*).
 
----
+<img src="https://nicofragale.github.io/assets/images/rayhunter.jpg" alt="rayhunter" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 
-## Why IMSI Catchers Are Difficult to Detect
-
-IMSI catchers are designed to behave similarly to legitimate cellular base stations, which makes them difficult to detect.
-
-However, they often exhibit unusual characteristics such as:
-
-- **missing or very few neighboring cells**
-- **abnormal radio parameters**
-- **unusually high signal strength**
-- **frequent identity requests from the network**
+Se la barra è verde, non viene rilevata alcuna falsa stazione radio base. Fortunatamente, finora non ho mai visto una barra rossa.
 
 ---
 
-## Tracking Captured IMSIs
+## Considerazioni Difensive
 
-Tracking devices using captured IMSIs does not necessarily involve intercepting communications.  
-In most cases, the objective is simply to determine whether a specific device is present in a given area and, if possible, estimate its location.
-Once a target device has been identified, tracking can be performed by measuring the **received signal strength (RSSI)**.
-By moving the antenna or receiver — for example from a vehicle or drone — it is possible to observe how the signal strength changes. 
+### Identificativi Temporanei dell'Abbonato
 
-In case of multiple receivers or antennas, it is possible to estimate the location of a device through **triangulation** measuring the RSSI od the target device.
+Le moderne reti cellulari cercano di ridurre l'esposizione dell'IMSI utilizzando identificativi temporanei come il **TMSI (Temporary Mobile Subscriber Identity)**, che cambia frequentemente.
 
+Invece di trasmettere l'IMSI permanente ogni volta che il dispositivo si connette alla rete, l'operatore assegna un identificativo temporaneo che viene aggiornato periodicamente, limitando la possibilità per gli attaccanti di tracciare gli utenti nel tempo.
 
-Even without triangulation, IMSI catchers can still perform **temporal tracking**. By recording when and where an IMSI is observed, it becomes possible to reconstruct an approximate movement path of the device over time.
+### Autenticazione Reciproca nelle Reti Moderne
+
+Le tecnologie cellulari più recenti, come il **4G (LTE)** e il **5G**, introducono meccanismi di autenticazione più robusti tra dispositivo e rete e l'**autenticazione reciproca** (*mutual authentication*); inoltre, il 5G introduce **SUPI** e **SUCI**, che rappresentano la versione cifrata di **IMSI** e **TMSI**.
+
+In questi sistemi:
+
+- il dispositivo si autentica verso la rete
+- anche la rete deve dimostrare la propria legittimità al dispositivo
+
+Questa autenticazione reciproca riduce significativamente l'efficacia delle stazioni radio base malevole rispetto alle generazioni precedenti come il 2G.
+
+### Evitare le Reti Legacy
+
+Molti attacchi basati su IMSI catcher puntano a forzare i dispositivi a effettuare un **downgrade verso tecnologie cellulari più datate**, in particolare il **2G**, dove le protezioni di sicurezza sono più deboli. Questo è il tipo di attacco più comune, dal momento che i dispositivi danno priorità al mantenimento della connettività in qualsiasi situazione.
 
 ---
 
-## Limitations of IMSI-Based Tracking
+## Come operano i moderni IMSI Catcher
 
-Although IMSI catchers can provide useful location information, this method has several limitations:
+1. L'attaccante simula una **stazione radio base 4G o 3G**.
+2. I dispositivi mobili nelle vicinanze tentano di connettersi a questa cella.
+3. La stazione radio base malevola segnala che il **servizio LTE non è disponibile**.
+4. Il dispositivo mobile effettua automaticamente il **downgrade a una rete legacy**, tipicamente 2G.
+5. L'attaccante attiva quindi una **falsa stazione radio base GSM** per catturare gli identificativi degli abbonati.
 
-- the accuracy is generally **lower than GPS-based positioning**
-- signal measurements can be unreliable in **dense urban environments**
-- buildings and reflections can distort radio measurements
+I dispositivi mobili selezionano la cella servente in base a diversi parametri radio, tra cui:
 
-For these reasons, IMSI-based tracking is often combined with other investigative or analytical techniques.
+- **Potenza del segnale**
+- **Priorità radio**
+- **Parametri di configurazione broadcast**
+
+Di conseguenza, i dispositivi possono agganciarsi automaticamente all'infrastruttura malevola.
+
+---
+
+## Perché gli IMSI Catcher sono difficili da rilevare
+
+Gli IMSI catcher sono progettati per comportarsi in modo simile alle stazioni radio base legittime, il che li rende difficili da individuare.
+
+Tuttavia, presentano spesso caratteristiche anomale come:
+
+- **celle adiacenti (*neighboring cells*) assenti o in numero molto ridotto**
+- **parametri radio anomali**
+- **potenza del segnale insolitamente elevata**
+- **frequenti richieste di identità da parte della rete**
+
+---
+
+## Tracciamento degli IMSI Catturati
+
+Tracciare i dispositivi utilizzando gli IMSI catturati non implica necessariamente l'intercettazione delle comunicazioni.  
+Nella maggior parte dei casi, l'obiettivo è semplicemente determinare se uno specifico dispositivo sia presente in una determinata area e, se possibile, stimarne la posizione.  
+Una volta identificato un dispositivo target, il tracciamento può essere effettuato misurando l'**intensità del segnale ricevuto (RSSI)**.  
+Spostando l'antenna o il ricevitore — ad esempio tramite un veicolo o un drone — è possibile osservare come varia la potenza del segnale.
+
+In presenza di più ricevitori o antenne, è possibile stimare la posizione di un dispositivo tramite **triangolazione**, misurando l'RSSI del dispositivo target.
+
+Anche senza triangolazione, gli IMSI catcher possono comunque eseguire un **tracciamento temporale**. Registrando quando e dove viene osservato un IMSI, diventa possibile ricostruire un percorso approssimativo degli spostamenti del dispositivo nel tempo.
+
+---
+
+## Limiti del Tracciamento basato su IMSI
+
+Sebbene gli IMSI catcher possano fornire informazioni utili sulla localizzazione, questo metodo presenta diversi limiti:
+
+- la precisione è generalmente **inferiore rispetto al posizionamento basato su GPS**
+- le misurazioni del segnale possono risultare inaffidabili in **ambienti urbani densi**
+- edifici e riflessioni possono distorcere le misurazioni radio
+
+Per queste ragioni, il tracciamento basato su IMSI viene spesso combinato con altre tecniche investigative o analitiche.

@@ -1,24 +1,24 @@
 ---
 layout: page
-title: Kali Linux Net Hunter 🐉​
+title: Kali Linux Net Hunter 🐉
 permalink: /projects/netHunter/
 ---
 
-What I am talking about is **Kali NetHunter**, essentially a version of Kali Linux adapted to run on Android devices.  
-There are plenty of tutorials and demonstrations online—especially on YouTube and If you're looking for good walkthroughs, I recommend the videos by David Bombal where the comment sections are often full of useful tips from people who tried the setup themselves.
+**Kali NetHunter** è essenzialmente una versione di Kali Linux adattata per essere eseguita su dispositivi Android.  
+Online si trovano moltissimi tutorial e dimostrazioni — specialmente su YouTube — e se cercate delle buone guide passo-passo, consiglio i video di David Bombal, dove le sezioni dei commenti sono spesso piene di consigli utili da parte di chi ha provato personalmente la configurazione.
 
-I installed it on my **Samsung A50** in a couple of hours and after testing it for a while, I came to a somewhat disappointing conclusion.
+L'ho installato sul mio **Samsung A50** in un paio d'ore e, dopo averlo testato per un po', sono giunto a una conclusione piuttosto deludente.
 
-**The game is not worth the candle.**
+**Il gioco non vale la candela.**
 
-While the idea of having a penetration testing platform in your pocket sounds exciting, in practice it is quite limited because many advanced features require specific hardware support (like compatible Wi-Fi chipsets capable of monitor mode or packet injection), which most smartphones simply do not have.
+Sebbene l'idea di avere una piattaforma di penetration testing in tasca sembri entusiasmante, nella pratica risulta piuttosto limitata: molte funzionalità avanzate richiedono infatti un supporto hardware specifico (come chipset Wi-Fi compatibili con la *monitor mode* o la *packet injection*), di cui la maggior parte degli smartphone è semplicemente sprovvista.
 
-In reality, if you want portable security tools today, there are far better options. Small dedicated devices can do the job much more effectively. For example:
+In realtà, se oggi si cercano strumenti portatili per la sicurezza informatica, esistono opzioni nettamente migliori. Piccoli dispositivi dedicati possono svolgere questo compito in modo molto più efficace, ad esempio:
 
-- a **Flipper Zero**, which works as a versatile multi-tool for interacting with various wireless protocols, 
-- portable SDR devices as **HackRF PortaPack H4M**, useful for RF experimentation and signal analysis
-- and a classic **Raspberry Pi**, which can run full Kali Linux with proper USB adapters
+- un **Flipper Zero**, che funge da multi-tool versatile per interagire con diversi protocolli wireless;
+- dispositivi SDR portatili come l'**HackRF PortaPack H4M**, utili per la sperimentazione RF e l'analisi dei segnali;
+- un classico **Raspberry Pi**, in grado di eseguire una versione completa di Kali Linux abbinata ad appositi adattatori USB.
 
-These setups are more flexible, more powerful, and often easier to use in real-world scenarios.
+Queste configurazioni sono più flessibili, più potenti e spesso molto più pratiche da utilizzare in scenari reali.
 
-![Kali NetHunter](https://nicofragale.github.io/assets/images/nethunter.jpg)
+<img src="https://nicofragale.github.io/assets/images/nethunter.jpg" alt="Kali NetHunter" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />

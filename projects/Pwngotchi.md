@@ -1,63 +1,61 @@
 ---
 layout: page
-title: Pwnagotchi 🧸​
+title: Pwnagotchi 🧸
 permalink: /projects/Pwngotchi/
 ---
 
-[Pwnagotchi](https://pwnagotchi.ai) is an open-source project designed to capture WPA/[WPA2](/notes/network-security/wpa2-4way-handshake/) authentication handshakes from nearby wireless networks and what makes this project particularly interesting is that if it does not detect a 4 way handshake, it sends deauthentication frames to the devices connected in order to obtain the messagges once they try to reconnect; after that it performs dictionary attack too.
+[Pwnagotchi](https://pwnagotchi.ai) è un progetto open-source progettato per catturare gli handshake di autenticazione WPA/[WPA2](/notes/network-security/wpa2-4way-handshake/) dalle reti wireless circostanti. Ciò che rende questo progetto particolarmente interessante è che, qualora non rilevi un *4-way handshake*, invia frame di deautenticazione ai dispositivi connessi per intercettare i messaggi nel momento in cui tentano di riconnettersi; successivamente, esegue anche attacchi a dizionario.
 
-![pwnagotchi](https://nicofragale.github.io/assets/images/got.jpg)
-
+<img src="https://nicofragale.github.io/assets/images/got.jpg" alt="pwnagotchi" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 ---
 
-## Hardware Platform
+## Piattaforma Hardware
 
-The project is typically deployed on small and inexpensive hardware platforms, such as:
+Il progetto viene solitamente implementato su piattaforme hardware piccole ed economiche, come:
 
 - **Raspberry Pi Zero W/2W**
-- Battery, mine is [Pisugar](https://www.pisugar.com/products/pisugar-s-raspberry-pi-zero-battery)
-- 2.13inch E-paper Display, mine is [this](https://www.amazon.it/dp/B07Q5PZMGT?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1)
+- Batteria, la mia è una [PiSugar](https://www.pisugar.com/products/pisugar-s-raspberry-pi-zero-battery)
+- Display e-Paper da 2.13 pollici, il mio è [questo](https://www.amazon.it/dp/B07Q5PZMGT?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1)
 
-The entire system is designed to be portable and energy-efficient, allowing it to run for extended periods of time.
+L'intero sistema è progettato per essere portatile ed efficiente dal punto di vista energetico, consentendogli di funzionare per lunghi periodi di tempo.
 
-The display shows a simple animated character that reflects the current state of the device, including:
+Il display mostra un semplice personaggio animato che riflette lo stato attuale del dispositivo, includendo:
 
-- nearby networks
-- captured handshakes
-- interaction with other Pwnagotchi devices.
-- battery and memory status 
-
----
-
-## Learning Algorithm
-
-One of the most distinctive aspects of Pwnagotchi is its use of **reinforcement learning**.
-
-Instead of performing the same actions repeatedly, the device tries to learn which strategies are most effective in its environment.
-
-For example, it can learn:
-
-- which channels are most active
-- which networks frequently generate authentication events
-- how to optimize its observation behavior over time
-
-The learning model adjusts the device's behavior in order to maximize the number of handshakes captured.
+- reti nelle vicinanze
+- handshake catturati
+- interazione con altri dispositivi Pwnagotchi
+- stato della batteria e della memoria
 
 ---
 
-## Once catched Handshakes
+## Algoritmo di Apprendimento
 
-You can connect to the device via SSH and transfer the capture files to your computer that can be analyzed using tools from the [Aircrack-ng suite](/notes/network-security/Aircrack-ng/).
-You can connect to the Web UI too if you want change some functionalities and UI on the waveshare.
+Uno degli aspetti più distintivi di Pwnagotchi è l'utilizzo del **reinforcement learning** (apprendimento per rinforzo).
+
+Invece di ripetere sempre le stesse azioni, il dispositivo cerca di apprendere quali strategie siano più efficaci nell'ambiente in cui si trova.
+
+Ad esempio, può imparare:
+
+- quali canali sono più attivi
+- quali reti generano più frequentemente eventi di autenticazione
+- come ottimizzare nel tempo il proprio comportamento di osservazione
+
+Il modello di apprendimento adatta il comportamento del dispositivo con l'obiettivo di massimizzare il numero di handshake catturati.
 
 ---
 
-## What I Learned
+## Una volta catturati gli Handshake
 
-This project was also my first time working with a **Raspberry Pi**, which helped me better understand how this type of hardware works,
-I also learned how to install and configure firmware on the system, which was an important step in getting the device ready for use.
+È possibile connettersi al dispositivo tramite SSH e trasferire i file di cattura sul proprio computer per analizzarli utilizzando gli strumenti della [suite Aircrack-ng](/notes/network-security/Aircrack-ng/).  
+È inoltre possibile accedere alla Web UI per modificare alcune funzionalità e l'interfaccia grafica visualizzata sul display Waveshare.
 
-One of the most interesting parts of the project was upgrading the device to the **“g0d” version** (as referred to by the project's creator). This enhanced version introduces additional features and improvements, and the project can be found here:  
+---
+
+## Cosa ho imparato
+
+Questo progetto ha rappresentato anche la mia prima esperienza con un **Raspberry Pi**, aiutandomi a comprendere meglio il funzionamento di questo tipo di hardware; ho inoltre imparato a installare e configurare il firmware sul sistema, un passaggio fondamentale per rendere il dispositivo operativo.
+
+Una delle parti più interessanti del progetto è stata l'aggiornamento del dispositivo alla **versione “g0d”** (così chiamata dal creatore del progetto). Questa versione potenziata introduce funzionalità aggiuntive e diversi miglioramenti, e il progetto è disponibile qui:  
 [Project Pwnag0dchi](https://github.com/SHUR1K-N/Project-Pwnag0dchi).
 
-![pwng0dchi](https://nicofragale.github.io/assets/images/god.jpg)
+<img src="https://nicofragale.github.io/assets/images/god.jpg" alt="pwng0dchi" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
