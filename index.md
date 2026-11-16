@@ -6,46 +6,14 @@ permalink: /
 
 Ciao, sono Nicolò e studio Cybersecurity.
 
-Qua condivido quello che studio e che sperimento, siano semplicemente cheat sheet che progetti spicy!
-In questo periodo sto studiando Crittografia e Malware Analysis e nel mentre sto cercando di dedicare molto più tempo ad Hack The Box.
+Ho deciso di sfruttare GitHub pages per condividere quello che studio e che sperimento.
+In questo periodo sto studiando Crittografia, Malware Analysis e IoT, e il tempo per HTB non esiste più!
 
-Questi sono gli ultimi push:
+Qui gli ultimi push:
 
 - [Shadow Apple](/projects/Shadow_Apple/)
 - [Bruce](/projects/Bruce/) 
 - [Kismet](/notes/kismet) 
-
----
-
-### Skills tecniche 🏅
-
-- **OS:** Linux, Windows, macOS, VirtualBox, Docker  
-- **Programming & Data:** Visual Studio Code, PyCharm, Jupyter Notebook, Git, GitHub, Bash, Terminale Linux, Python, Java, C, C++, Rust, MySQL
-- **Cybersecurity:** Wireshark, Nmap, Metasploit, Aircrack-ng, Airgeddon, Kismet, Hashcat, John the Ripper, Netcat
-- **Altro:** Microsoft Word, Excel, PowerPoint, Outlook, Teams, Notion,LaTeX, Overleaf
-
-
-### Soft Skills 🏅
-
-- Ottime capacità comunicative e capacità di lavorare in team  
-- Mentalità analitica e atteggiamento di risoluzione dei problemi 
-- Autogestione, affidabilità e capacità di stabilire le priorità dei compiti in modo efficace 
-- Atteggiamento proattivo e iniziativa 
-- Capacità di lavorare sotto pressione 
-- Elevata resistenza e adattabilità 
-
-
-### Lingue 🏅
-
-- **Italiano:** Madre Lingua
-- **Inglese:** Ottimo  
-
-
-### Interessi Personali 🏅
-
-- **Sport:** Running, Bodybuilding 
-- **Lettura:** Fantasy (Manga, Marvel, DC, Tolkien, Rowling), Scientifiche (Focus)
-- **Disegno**
 
 ---
 
