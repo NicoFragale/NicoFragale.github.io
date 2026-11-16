@@ -6,7 +6,7 @@ permalink: /projects/Bjorn/
 
 Questo è il mio **Bjorn**!
 
-<img src="https://nicofragale.github.io/assets/images/bjorn.jpg" alt="Bjorn" width="250" />
+<img src="https://nicofragale.github.io/assets/images/bjorn.jpg" alt="Bjorn" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); />
 
 Sviluppato da [infinition](https://github.com/infinition/Bjorn), **Bjorn** esegue *network scanning*, *vulnerability assessment* e *offensive security*, è progettato per girare su **Raspberry Pi Zero W / Zero 2 W** abbinato a un display **Waveshare e-Paper (e-Ink) da 2.13 pollici**.
 
