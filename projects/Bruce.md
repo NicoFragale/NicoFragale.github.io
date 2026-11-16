@@ -42,7 +42,7 @@ Al fine di migliorare le capacità di ricezione e trasmissione del modulo, ho de
 
 Per farlo, ho aperto con attenzione i fori sul retro del dispositivo:
 
-<img src="https://nicofragale.github.io/assets/images/c1antenna.png" alt="antenna" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); />
+<img src="https://nicofragale.github.io/assets/images/c1antenna.jpg" alt="c1antenna" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); />
 
 Dopo aver installato la nuova antenna, ho ripetuto lo stesso esperimento descritto in precedenza e i risultati hanno mostrato un **leggero miglioramento nel raggio di interferenza**, sebbene la differenza non sia stata significativa quanto sperato. Il disturbo del segnale si verifica ancora quando ci si posiziona tra i due dispositivi, ma l'impatto complessivo rimane relativamente limitato.
 
