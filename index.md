@@ -23,7 +23,7 @@ Qui gli ultimi push:
   </a>
 
   <a href="/notes/kismet" style="text-decoration: none; color: inherit; text-align: center;">
-    <img src="/assets/images/kismet.jpg" alt="Kismet" width="200" height="200" style="object-fit: cover; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
+    <img src="/assets/images/kismet.png" alt="Kismet" width="200" height="200" style="object-fit: cover; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
     <div style="margin-top: 8px; font-weight: bold;">Kismet 📡</div>
   </a>
 </div>
