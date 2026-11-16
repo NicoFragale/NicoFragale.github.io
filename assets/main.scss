@@ -1,15 +1,15 @@
 ---
 ---
 // ===== PALETTE =====
-$bg:        #2f2d30;   // grigio topo scuro (sfondo)
+$bg:        #343434;   // grigio topo scuro (sfondo)
 $surface:   #3a373b;   // card, blocchi di codice
 $border:    #4a464b;   // bordi
-$fg:        #d8d6d9;   // testo principale (grigio chiaro)
+$fg:        #bebebe;   // testo principale (grigio chiaro)
 $muted:     #a29fa5;   // testo secondario
 
 // Colore dei link: scommenta UNA sola riga
-$link:      #8ecae6;   // celeste
-// $link:   #b9a6e8;   // lilla
+//$link:      #8ecae6;   // celeste
+$link:   #b9a6e8;   // lilla
 
 // ===== VARIABILI MINIMA =====
 $background-color: $bg;
