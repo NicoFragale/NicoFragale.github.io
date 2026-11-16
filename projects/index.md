@@ -1,25 +1,68 @@
 ---
 layout: page
-title: Projects 🦾​
+title: Projects 🦾
 permalink: /projects/
 ---
 
 Questa pagina raccoglie i progetti extra universitari a cui mi sono interessato:
 
+<div style="display: flex; flex-wrap: wrap; gap: 24px; margin: 25px 0;">
 
-1. **[Bjorn](/projects/Bjorn/)** – Strumento autonomo di network scanning e vulnerability assessment basato su Raspberry Pi Zero, progettato per individuare servizi esposti e automatizzare test di sicurezza sulla rete locale.
-2. **[Bruce](/projects/Bruce/)** – Firmware offensivo multi-tool per dispositivi basati su ESP32 (come M5Stack e LilyGO), pensato per il pentesting hardware su segnali RF, IR, RFID, Wi-Fi e Bluetooth.
-3. **[Home Lab](/projects/HomeLab/)** – Infrastruttura virtualizzata e isolata per simulare ambienti reali.
-4. **[KaliNetHunter](/projects/netHunter/)** – Piattaforma mobile di penetration testing basata su Kali Linux.
-<!-- 5. **[Pi Hole](/projects/Pi_Hole/)** – Server DNS sinkhole configurato per bloccare pubblicità, tracker e domini malevoli a livello di rete locale. (not ready) -->
-5. **[Pwnagotchi](/projects/Pwngotchi/)** – Dispositivo portatile basato su intelligenza artificiale (reinforcement learning) che ottimizza la cattura di handshake WPA/WPA2 e PMKID analizzando l'ambiente Wi-Fi circostante.
-6. **[Rayhunter](/projects/Rayhunter/)** – Tool sviluppato da EFF per rilevare IMSI catcher (Stingray) e stazioni radio base cellulari sospette tramite analisi del traffico su hotspot mobili.
-7. **[Shadow Apple](/projects/Shadow_Apple/)** – Dispositivo DIY hardware progettato per simulare reti Wi-Fi legittime e intercettare il traffico wireless.
-8. **[Software Defined Radio](/projects/Software_Defined_Radio/)** – Esplorazione dello spettro elettromagnetico tramite hardware SDR per intercettare, decodificare e analizzare segnali radio, telemetria IoT e protocolli wireless non convenzionali.
-9. **[USB Killer](/projects/Usb_Killer/)** – Analisi del funzionamento hardware e dei meccanismi di protezione contro dispositivi progettati per scaricare picchi di tensione attraverso le porte USB e danneggiare i circuiti host.
-10. **[WPA2 Deauthentication](/projects/WPA2_Deauthentication/)** – Studio pratico sulla vulnerabilità dei frame di gestione non protetti nello standard 802.11, finalizzato alla disconnessione forzata dei client e all'acquisizione di handshake.
+  <a href="/projects/Bjorn/" style="text-decoration: none; color: inherit; text-align: center; width: 200px;">
+    <img src="/assets/images/bjorn.jpg" alt="Bjorn" width="200" height="200" style="object-fit: cover; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
+    <div style="margin-top: 8px; font-weight: bold;">Bjorn ☃️</div>
+  </a>
 
+  <a href="/projects/Bruce/" style="text-decoration: none; color: inherit; text-align: center; width: 200px;">
+    <img src="/assets/images/menu0.png" alt="Bruce" width="200" height="200" style="object-fit: cover; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
+    <div style="margin-top: 8px; font-weight: bold;">Bruce 🦈</div>
+  </a>
 
+  <a href="/projects/HomeLab/" style="text-decoration: none; color: inherit; text-align: center; width: 200px;">
+    <img src="/assets/images/homelab.jpg" alt="Home Lab" width="200" height="200" style="object-fit: cover; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
+    <div style="margin-top: 8px; font-weight: bold;">Home Lab 🦇</div>
+  </a>
 
+  <a href="/projects/netHunter/" style="text-decoration: none; color: inherit; text-align: center; width: 200px;">
+    <img src="/assets/images/nethunter.jpg" alt="Kali NetHunter" width="200" height="200" style="object-fit: cover; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
+    <div style="margin-top: 8px; font-weight: bold;">Kali NetHunter 🐉</div>
+  </a>
 
+  <!--
+  <a href="/projects/Pi_Hole/" style="text-decoration: none; color: inherit; text-align: center; width: 200px;">
+    <img src="/assets/images/pihole.jpg" alt="Pi Hole" width="200" height="200" style="object-fit: cover; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
+    <div style="margin-top: 8px; font-weight: bold;">Pi Hole 🛡️</div>
+  </a>
+  -->
 
+  <a href="/projects/Pwngotchi/" style="text-decoration: none; color: inherit; text-align: center; width: 200px;">
+    <img src="/assets/images/got.jpg" alt="Pwnagotchi" width="200" height="200" style="object-fit: cover; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
+    <div style="margin-top: 8px; font-weight: bold;">Pwnagotchi 🧸</div>
+  </a>
+
+  <a href="/projects/Rayhunter/" style="text-decoration: none; color: inherit; text-align: center; width: 200px;">
+    <img src="/assets/images/rayhunter.jpg" alt="Rayhunter" width="200" height="200" style="object-fit: cover; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
+    <div style="margin-top: 8px; font-weight: bold;">Rayhunter 🦈</div>
+  </a>
+
+  <a href="/projects/Shadow_Apple/" style="text-decoration: none; color: inherit; text-align: center; width: 200px;">
+    <img src="/assets/images/shadow.jpg" alt="Shadow Apple" width="200" height="200" style="object-fit: cover; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
+    <div style="margin-top: 8px; font-weight: bold;">Shadow Apple 🍎</div>
+  </a>
+
+  <a href="/projects/Software_Defined_Radio/" style="text-decoration: none; color: inherit; text-align: center; width: 200px;">
+    <img src="/assets/images/dump1090.png" alt="Software Defined Radio" width="200" height="200" style="object-fit: cover; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
+    <div style="margin-top: 8px; font-weight: bold;">Software Defined Radio ✈️</div>
+  </a>
+
+  <a href="/projects/Usb_Killer/" style="text-decoration: none; color: inherit; text-align: center; width: 200px;">
+    <img src="/assets/images/rp2040.png" alt="USB Killer" width="200" height="200" style="object-fit: cover; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
+    <div style="margin-top: 8px; font-weight: bold;">USB Killer 🗡️</div>
+  </a>
+
+  <a href="/projects/WPA2_Deauthentication/" style="text-decoration: none; color: inherit; text-align: center; width: 200px;">
+    <img src="/assets/images/aireplay.png" alt="WPA2 Deauthentication" width="200" height="200" style="object-fit: cover; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
+    <div style="margin-top: 8px; font-weight: bold;">WPA2 Deauthentication 👾</div>
+  </a>
+
+</div>
