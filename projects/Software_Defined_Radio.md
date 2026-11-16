@@ -1,44 +1,43 @@
 ---
 layout: page
-title: Software Defined Radio ✈️​
+title: Software Defined Radio ✈️
 permalink: /projects/Software_Defined_Radio/
 ---
 
-## Hardware used
+## Hardware utilizzato
 - RTL-SDR v3
-- 1090 MHz antenna (dipole antenna)
+- Antenna a 1090 MHz (antenna a dipolo)
 
-## Aircraft Tracking with RTL-SDR
+## Tracciamento degli Aerei con RTL-SDR
 
-Using an RTL-SDR receiver it is possible to passively monitor aircraft broadcasts transmitted on the **1090 MHz** frequency band because commercial aircraft periodically transmit telemetry information using the **ADS-B (Automatic Dependent Surveillance–Broadcast)** protocol, whom signals are unencrypted and publicly broadcast so that air traffic control systems and nearby aircraft can receive situational information.
+Utilizzando un ricevitore RTL-SDR è possibile monitorare passivamente le trasmissioni degli aeromobili sulla banda di frequenza a **1090 MHz**, poiché gli aerei commerciali inviano periodicamente informazioni telemetriche tramite il protocollo **ADS-B (Automatic Dependent Surveillance–Broadcast)**, i cui segnali sono trasmessi in chiaro (non cifrati) e in broadcast affinché i sistemi di controllo del traffico aereo e gli altri velivoli nelle vicinanze possano ricevere informazioni sulla posizione e sullo stato del volo.
 
-In my setup I used an RTL-SDR dongle together with the tool `dump1090`, which decodes raw Mode-S / ADS-B frames received by the SDR device.
+Nel mio setup ho utilizzato un dongle RTL-SDR insieme al tool `dump1090`, che decodifica i frame grezzi Mode-S / ADS-B ricevuti dal dispositivo SDR.
 
+<img src="https://nicofragale.github.io/assets/images/dump1090.png" alt="dump1090" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 
-![dump1090](https://nicofragale.github.io/assets/images/dump1090.png)
+Il software analizza i frame ricevuti e mostra informazioni come:
 
-The tool parses the received frames and displays information such as:
+- **Hex** – identificativo univoco di uno specifico aeromobile assegnato dall'International Civil Aviation Organization (ICAO)
+- **Flight** – nominativo di chiamata (*callsign*) del volo  
+- **Alt** – altitudine (espressa in piedi)  
+- **Spd** – velocità al suolo (*ground speed*)  
+- **Hdg** – la **direzione del movimento dell'aereo** (*heading*) rispetto al nord geografico, espressa in gradi (0–360°). Ad esempio, una rotta di **90°** indica che l'aereo si sta dirigendo verso est, mentre **180°** indica sud.
+- **Lat / Long** – posizione GPS trasmessa dall'aeromobile  
+- **RSSI** – potenza del segnale ricevuto  
+- **Msgs** – numero di messaggi decodificati
 
-- **Hex** – unique identifier of a specific aircraft assigned by the International Civil Aviation Organization (ICAO)
-- **Flight** – aircraft callsign  
-- **Alt** – altitude (feet)  
-- **Spd** – ground speed  
-- **Hdg** – The **direction of the aircraft’s movement** relative to geographic north, expressed in degrees (0–360°). For example, a heading of **90°** means the aircraft is moving east, while **180°** indicates south.
-- **Lat / Long** – GPS position transmitted by the aircraft  
-- **RSSI** – received signal strength  
-- **Msgs** – number of decoded messages
+Ogni aeromobile trasmette periodicamente questi pacchetti, tipicamente **due volte al secondo**, consentendo ai ricevitori di aggiornarne costantemente la posizione.
 
-Each aircraft periodically broadcasts these packets, typically **twice per second**, allowing receivers to continuously update its position.
+Per visualizzare su mappa le posizioni decodificate, ho confrontato i dati con aggregatori pubblici come **OpenSky Network**, che raccoglie telemetria ADS-B da migliaia di ricevitori in tutto il mondo; nell'esempio seguente si possono osservare diversi aerei in volo intorno a Roma.
 
-To visualize the decoded aircraft positions, I compared the data with public aggregators such as **OpenSky Network**, which collects ADS-B telemetry from thousands of receivers around the world, and in the example below you can observe several aircraft flying around Rome.
+<img src="https://nicofragale.github.io/assets/images/opensky.png" alt="opensky" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 
-![opensky](https://nicofragale.github.io/assets/images/opensky.png)
+### Vulnerabilità
 
-### Vulnerabilities 
+Diversi studi accademici hanno dimostrato che il protocollo ADS-B è privo di meccanismi di autenticazione e cifratura, rendendolo teoricamente vulnerabile ad attacchi di *message injection* e *spoofing* in grado di generare "aerei fantasma" (*ghost aircraft*) mediante specifici trasmettitori SDR.  
 
-Several academic studies have demonstrated that ADS-B lacks authentication and encryption mechanisms, making it theoretically vulnerable to message injection and spoofing attacks that could generate “ghost aircraft” using specific SDRs.  
-
-Further reading on ADS-B security and message injection attacks:
+Approfondimenti sulla sicurezza ADS-B e sugli attacchi di iniezione dei messaggi:
 
 - **Martin Strohmeier, Vincent Lenders, Ivan Martinovic**  
   *On the Security of the ADS-B Protocol*  
@@ -51,7 +50,6 @@ Further reading on ADS-B security and message injection attacks:
 - **Matthias Schäfer**  
   *Ghost Planes: Injecting False Aircraft into Air Traffic Control Systems*  
   [link](https://www.researchgate.net/figure/Attack-scenario-an-attacker-injects-ghost-aircraft-to-mislead-the-instruments-of_fig1_279923668)
-
 
 - **Mohsen Riahi Manesh, Naima Kaabouch**  
   *Aviation Cybersecurity: ADS-B Vulnerabilities and Defenses*  

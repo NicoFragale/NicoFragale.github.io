@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Home 🏠​
+title: Home 🏠
 permalink: /
 ---
 
@@ -11,9 +11,22 @@ In questo periodo sto studiando Crittografia, Malware Analysis e IoT, e il tempo
 
 Qui gli ultimi push:
 
-- [Shadow Apple](/projects/Shadow_Apple/)
-- [Bruce](/projects/Bruce/) 
-- [Kismet](/notes/kismet) 
+<div style="display: flex; flex-wrap: wrap; gap: 20px; margin: 20px 0;">
+  <a href="/projects/Shadow_Apple/" style="text-decoration: none; color: inherit; text-align: center;">
+    <img src="/assets/images/shadow.jpg" alt="Shadow Apple" width="200" height="200" style="object-fit: cover; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
+    <div style="margin-top: 8px; font-weight: bold;">Shadow Apple 🍎</div>
+  </a>
+
+  <a href="/projects/Bruce/" style="text-decoration: none; color: inherit; text-align: center;">
+    <img src="/assets/images/menu0.png" alt="Bruce" width="200" height="200" style="object-fit: cover; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
+    <div style="margin-top: 8px; font-weight: bold;">Bruce 🦈</div>
+  </a>
+
+  <a href="/notes/kismet" style="text-decoration: none; color: inherit; text-align: center;">
+    <img src="/assets/images/kismet.jpg" alt="Kismet" width="200" height="200" style="object-fit: cover; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
+    <div style="margin-top: 8px; font-weight: bold;">Kismet 📡</div>
+  </a>
+</div>
 
 ---
 
@@ -25,4 +38,3 @@ Qui gli ultimi push:
   <li><a href="https://www.youtube.com/@Range2200/videos">YouTube</a></li>
   <li><a href="https://profile.hackthebox.com/profile/019dbc2a-91d5-722e-a8a1-a41b67af3ee8?utm_medium=copy_url">Hack The Box</a></li>
 </ul>
-

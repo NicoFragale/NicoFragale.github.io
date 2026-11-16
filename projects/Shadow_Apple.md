@@ -1,26 +1,19 @@
 ---
 layout: page
-title: Shadow Apple ​🍎​
+title: Shadow Apple 🍎
 permalink: /projects/Shadow_Apple/
 ---
 
+<img src="/assets/images/shadow.jpg" alt="Shadow" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 
-![Shadow]( /assets/images/shadow.jpg )
+Questa è una delle cose più interessanti che vedrai mai: il mio primo e nuovissimo **WiFi Pineapple** fatto in casa, realizzato per i miei test di penetrazione Wi-Fi e molto altro.
 
-This is one of the coolest thing you will ever see, my first and newest home made Pineapple that I made for my wifi penetration tesing and more.
-
-I list the links that helped me:
+Di seguito riporto i link che mi sono stati d'aiuto:
 
 - [GitHub](https://github.com/SHUR1K-N/WiFi-Shadowapple-Resources)
 - [Build](https://www.youtube.com/watch?v=67sGUzKJ8IU)
 - [Boost](https://www.youtube.com/watch?v=pHtpso21P0o)
 
-and higly suggest to read and watch each inch of the repo and video carefully, especiallt for the hardware to purchase before starting the build. 
+Consiglio vivamente di leggere e guardare con attenzione ogni singolo dettaglio del repository e dei video, specialmente per quanto riguarda l'hardware da acquistare prima di iniziare l'assemblaggio.
 
-I didn’t find this project difficult at all, mainly because everything is clearly explained, up to date, and continuously improved with new modules and features.
-
-In the near future, I’ll share a walkthrough of each page of the GUI to make it easier for anyone interested in getting started and joining this kind of experimentation.
-
----
-
-Stay tuned for more!
+Non ho trovato questo progetto affatto difficile, soprattutto perché tutto è spiegato in modo chiaro, costantemente aggiornato e continuamente migliorato con nuovi moduli e funzionalità.

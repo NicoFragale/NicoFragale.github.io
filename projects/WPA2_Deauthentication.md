@@ -1,90 +1,91 @@
 ---
 layout: page
-title: WPA2 Deauthentication ​👾
+title: WPA2 Deauthentication 👾
 permalink: /projects/WPA2_Deauthentication/
 ---
 
-## Project Overview
+## Panoramica del Progetto
 
-This project describes the phases involved in assessing the security of my own WiFi network in a controlled environment.
+Questo progetto descrive le fasi necessarie per valutare la sicurezza della mia rete Wi-Fi in un ambiente controllato.
 
-The objective was to understand how WPA2-PSK security behaves in practice and how the 4-Way Handshake can be leveraged for offline password auditing.
+L'obiettivo era comprendere come si comporta nella pratica la sicurezza WPA2-PSK e come il *4-Way Handshake* possa essere sfruttato per l'auditing offline delle password.
 
-The analysis was performed using tools from the [Aircrack-ng](/notes/network-security/Aircrack-ng/) suite and  
-The attack was successfully reproduced against my own TV device, while modern devices such as my iPhone did not respond in the same way.
+L'analisi è stata eseguita utilizzando gli strumenti della suite [Aircrack-ng](/notes/network-security/Aircrack-ng/) e l'attacco è stato riprodotto con successo contro la mia Smart TV, mentre dispositivi più moderni come il mio iPhone non hanno risposto allo stesso modo.
 
-If you are unfamiliar with the WPA2 4-Way Handshake, refer to the detailed explanation [here](/notes/network-security/wpa2-4way-handshake/).
+Se non hai familiarità con il 4-Way Handshake di WPA2, puoi consultare la spiegazione dettagliata [qui](/notes/network-security/wpa2-4way-handshake/).
 
 ---
 
-## 1. Reconnaissance and Environment Mapping (Passive Observation)
+## 1. Ricognizione e Mappatura dell'Ambiente (Osservazione Passiva)
 
-The first phase consists of observing the wireless environment.
+La prima fase consiste nell'osservare l'ambiente wireless circostante.
 
-The goal is to identify:
+L'obiettivo è identificare:
 
 - SSID  
-- BSSID (AP MAC address)  
-- Channel and frequency band  
-- Signal strength  
-- Security configuration (WPA2-PSK, WPA2-Enterprise, PMF support)  
-- Encryption type  
-- Active client devices  
+- BSSID (indirizzo MAC dell'Access Point)  
+- Canale e banda di frequenza  
+- Intensità del segnale  
+- Configurazione di sicurezza (WPA2-PSK, WPA2-Enterprise, supporto PMF)  
+- Tipo di cifratura  
+- Dispositivi client attivi  
 
-This requires a wireless interface capable of operating in **monitor mode**, which allows capturing raw IEEE 802.11 frames at Layer 2, including:
+Questo richiede un'interfaccia wireless in grado di operare in **monitor mode**, che consente di catturare frame IEEE 802.11 grezzi a Livello 2 (Data Link), inclusi:
 
-- Management frames  
-- Control frames  
-- Data frames  
-- Frames not addressed to the local device  
+- Management frame  
+- Control frame  
+- Data frame  
+- Frame non indirizzati direttamente al dispositivo locale  
 
-Unlike managed mode, monitor mode passively observes all wireless traffic.
+A differenza della *managed mode*, la *monitor mode* osserva passivamente tutto il traffico wireless presente nell'etere.
 
-![monitor](https://nicofragale.github.io/assets/images/monitor.png)
+<img src="https://nicofragale.github.io/assets/images/monitor.png" alt="monitor" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 
-In my lab setup, I used compatible the followgin external adapters: TL-WN722Nv1 and AWUS036AXML
+Nel mio setup di laboratorio ho utilizzato i seguenti adattatori esterni compatibili: **TL-WN722N v1** e **AWUS036AXML**.
 
-Finally I suggest you to use Airgraph-ng to better understand the relationship between access points and associated stations.
+Infine, consiglio l'utilizzo di **Airgraph-ng** per visualizzare graficamente e comprendere meglio le relazioni tra gli access point e le relative stazioni associate.
 
-![airodump](https://nicofragale.github.io/assets/images/airodump.png)
+<img src="https://nicofragale.github.io/assets/images/airodump.png" alt="airodump" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 
+---
 
-## 2. Triggering Reassociation and Capturing the Handshake
+## 2. Innesco della Riassociazione e Cattura dell'Handshake
 
-The 4-Way Handshake occurs whenever a client connects or reconnects to an access point.
+Il *4-Way Handshake* avviene ogni volta che un client si connette o si riconnette a un access point.
 
-In legacy WPA2 configurations without Protected Management Frames (802.11w), it may be possible to induce a reconnection event via Aireplay-ng deauthenticating the victim, and when this happens the monitoring interface can capture the handshake in a .pcap file and store it which contains the EAPOL-Key frames exchanged between the AP and the client.
+Nelle configurazioni WPA2 legacy prive di *Protected Management Frames* (standard **802.11w**), è possibile indurre un evento di riconnessione tramite **Aireplay-ng** inviando frame di deautenticazione al dispositivo target; quando ciò accade, l'interfaccia in monitor mode può catturare l'handshake salvandolo in un file `.pcap` contenente i frame **EAPOL-Key** scambiati tra l'AP e il client.
 
-Modern devices, such as recent smartphones, may implement additional protections that prevent forced reconnections or ignore unauthenticated management frames.
+I dispositivi moderni, come gli smartphone recenti, implementano spesso protezioni aggiuntive che impediscono riconnessioni forzate o ignorano i *management frame* non autenticati.
 
-![aireplay](https://nicofragale.github.io/assets/images/aireplay.png)
+<img src="https://nicofragale.github.io/assets/images/aireplay.png" alt="aireplay" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 
+---
 
-## 3. Protocol Inspection with Wireshark
+## 3. Ispezione del Protocollo con Wireshark
 
-The captured traffic can be inspected using Wireshark, by filtering for EAPOL frames it is possible to observe the 4 handshake messages.
+Il traffico catturato può essere analizzato tramite **Wireshark**: filtrando per i frame `eapol` è possibile osservare i 4 messaggi dell'handshake.
 
-Particular attention on Message 1 and 2 by the moment they include data for PTK generation.
+Particolare attenzione va posta sui **Messaggi 1 e 2**, poiché contengono i parametri necessari (ANonce e SNonce) per la generazione della *Pairwise Transient Key* (PTK).
 
-![wireshark](https://nicofragale.github.io/assets/images/wireshark.png)
+<img src="https://nicofragale.github.io/assets/images/wireshark.png" alt="wireshark" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 
+---
 
-## 4. Offline Password Verification
+## 4. Verifica Offline della Password
 
-For each candidate passphrase from the dictionary (i.e rockyou.txt):
+Per ciascuna passphrase candidata presente nel dizionario (ad esempio `rockyou.txt`):
 
-1. Derive The PMK using PBKDF2.
-2. Derive The PTK using the captured nonces and MAC addresses.
-3. The MIC is recomputed.
-4. The computed MIC is compared to the captured one.
+1. Viene derivata la **PMK** (*Pairwise Master Key*) utilizzando la funzione **PBKDF2**.
+2. Viene derivata la **PTK** (*Pairwise Transient Key*) combinando la PMK con i nonce e gli indirizzi MAC catturati.
+3. Viene ricalcolato il **MIC** (*Message Integrity Code*).
+4. Il MIC calcolato viene confrontato con quello presente nei frame catturati.
 
-If the values match, the passphrase is correct.
+Se i due valori coincidono, la passphrase individuata è corretta.
 
-This process does not break AES encryption.  
-It exploits weak passphrase entropy.
+Questo processo non viola la cifratura AES in sé, ma sfrutta la bassa entropia di passphrase deboli.
 
-![aircrack1](https://nicofragale.github.io/assets/images/aircrack1.png)
+<img src="https://nicofragale.github.io/assets/images/aircrack1.png" alt="aircrack1" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 
-![aircrack2](https://nicofragale.github.io/assets/images/aircrack2.png)
+<img src="https://nicofragale.github.io/assets/images/aircrack2.png" alt="aircrack2" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 
-The experiment confirmed that strong, high-entropy passwords are essential for WPA2-PSK security.
+L'esperimento ha confermato che l'utilizzo di password robuste e ad alta entropia è essenziale per garantire la sicurezza delle reti WPA2-PSK.

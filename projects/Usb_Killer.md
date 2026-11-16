@@ -1,34 +1,32 @@
 ---
 layout: page
-title: USB Killer 🗡️​
+title: USB Killer 🗡️
 permalink: /projects/Usb_Killer/
 ---
 
-Something not difficult I have made during these days is an USB Killer that did not kill, but activated windows defender that detected a threat in my computer, I consider it a win anyway.
+Un progetto non particolarmente difficile che ho realizzato in questi giorni è un "USB Killer" (più precisamente un dispositivo **BadUSB / HID**) che non ha "ucciso" nulla, ma ha attivato Windows Defender rilevando una minaccia sul mio computer: lo considero comunque una vittoria.
 
-For this project you can use a RP2040 (you can buy it on AliExpress), or an official Raspberry Pi PICO, or an official Rubber Ducky by Hack5.
+Per questo progetto è possibile utilizzare un **RP2040** (acquistabile facilmente su AliExpress), un **Raspberry Pi Pico** ufficiale oppure una **USB Rubber Ducky** originale di Hak5.
 
 ## RP2040
 
-The **RP2040** is a microcontroller very versatile for embedded systems and hardware projects designed to control hardware and interact with electronic components such as sensors, LEDs, motors, and displays programmable in **C/C++ or MicroPython**.
+L'**RP2040** è un microcontrollore molto versatile per sistemi embedded e progetti hardware, progettato per controllare e interagire con componenti elettronici come sensori, LED, motori e display, programmabile in **C/C++ o MicroPython**.
 
-![rp2040](https://nicofragale.github.io/assets/images/rp2040.png) 
+<img src="https://nicofragale.github.io/assets/images/rp2040.png" alt="rp2040" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 
+Una delle caratteristiche più interessanti dell'RP2040 è il suo sottosistema **Programmable I/O (PIO)**, che consente agli sviluppatori di implementare interfacce hardware personalizzate direttamente via software — anche se questo aspetto esula dai miei interessi principali per questo test.
 
-One of the most interesting features of the RP2040 is its **Programmable I/O (PIO)** subsystem, which allows developers to implement custom hardware interfaces directly in software, but this is not in mine personal interests...
+## Come funziona il progetto
 
-## How USB Killer
+In realtà non ho dovuto fare molto, perché mi è bastato configurare l'RP2040 seguendo [questa guida](https://github.com/dbisu/pico-ducky) per emulare una Rubber Ducky di Hak5 e caricare il payload disponibile [qui](https://github.com/hak5/usbrubberducky-payloads/tree/master/payloads/library/prank/-RD-ADV-RickRoll).
 
-Actually I did not do a lot, because I just setup the RP2040 following this [link](https://github.com/dbisu/pico-ducky) of Hack5 e uploaded the payload founde [here](https://github.com/hak5/usbrubberducky-payloads/tree/master/payloads/library/prank/-RD-ADV-RickRoll).
+Una volta pronto, ho collegato il dispositivo USB al mio PC Windows per testare il payload.  
+Lo script è stato eseguito quasi correttamente, ma il passaggio finale non è andato a buon fine come previsto.
 
-Once everything was ready, I plugged the USB device into my Windows PC to test the payload.  
-The script executed almost correctly, but the final step failed to run as expected.
+Per verificare se si trattasse solo di un problema temporaneo, ho scollegato il dispositivo e l'ho ricollegato. Tuttavia, al secondo tentativo, Windows Defender ha rilevato immediatamente l'attività sospetta e ha bloccato l'esecuzione del payload USB.
 
-To verify whether it was just a temporary issue, I disconnected the device and plugged it in again. However, during the second attempt Windows Defender immediately detected the activity and blocked the USB payload.
+## Considerazioni Finali
 
-## Final Thoughts
+Sono consapevole che non si tratti di nulla di particolarmente impressionante, dato che si è trattato principalmente di una semplice configurazione, del caricamento del payload e di un test.
 
-I am aware that this was nothing particularly impressive by the moment it was mostly a simple setup, uploading the payload, and testing it. 
-
-However, I still wanted to try it because these kinds of techniques are often mentioned in cybersecurity courses and widely portrayed in movies, so I was curious to see **how they actually work in practice** and to understand firsthand whether something like this is difficult or surprisingly simple to implement.
-
+Volevo comunque provarlo perché questo genere di tecniche viene spesso citato nei corsi di cybersecurity e ampiamente rappresentato nei film: ero quindi curioso di vedere **come funzionassero realmente nella pratica** e capire in prima persona se realizzare qualcosa del genere fosse difficile o sorprendentemente semplice.
