@@ -1,47 +1,22 @@
 ---
 layout: page
-title: Home Lab ​🦇​
+title: Home Lab 🦇
 permalink: /projects/HomeLab/
 ---
 
-Sooner or later I knew this moment would come, starting from now (March 2026) I will start my own Home Lab, therefore stay tuned beacuse I will update this page meanwhile I upgrade my Bat lab! 🦇​
+Questo progetto nasce con l'obiettivo di costruire un **Home Lab** personale partendo dal recupero di hardware già in mio possesso: un vecchio PC portatile riconvertito in un nodo server dedicato.
 
-## Why a Home Lab?
-
-My curiosity about building a home lab started because many people I follow on YouTube have one. They always talk about it with a lot of enthusiasm and seem genuinely proud of having built their own environment from scratch. That made me want to understand what it really means to design and manage a personal infrastructure: starting from zero, studying the components involved, and gradually creating something that is truly mine.
-
-A home lab also gives me a personal environment where I can experiment, learn, and make mistakes without causing real damage. 🦇​ I find it interesting to understand how to make different systems work together: Linux and Windows machines, firewalls, DNS filtering, VPNs, monitoring systems, and security tools. It allows me to have a safe playground where I can have fun without putting myself or others at risk.
-
-To build this environment I chose Proxmox, a platform that is widely used and designed to transform a regular computer into a server capable of running multiple systems at the same time. It also provides useful features such as snapshots and backups, which make experimentation much safer because it’s always possible to revert changes if something goes wrong.🦇​
+Al momento il sistema è nella sua fase iniziale: ho completato l'installazione e la configurazione di base di **Proxmox VE**.
 
 ---
 
-### Hypervisor
+## Obiettivi del Progetto e Servizi Pianificati
 
-Proxmox is a **type-1 hypervisor**, meaning it runs directly on the hardware (often referred to as *bare metal*). This is different from tools like VirtualBox, which are **type-2 hypervisors** and run on top of another operating system.
-
-An hypervisor’s role is to manage the physical resources of a computer — CPU, RAM, storage, and networking — and distribute them between multiple isolated systems.🦇​
+L'idea alla base di questo laboratorio domestico è riprendere il controllo sui propri dati, ridurre la dipendenza da servizi cloud di terze parti e fare pratica concreta con l'amministrazione di sistemi, il networking e la sicurezza delle infrastrutture iniziando ad installare servizi come: Pi-hole, Jellyfin e Immich, il tutto accessibile da remoto tramite VPN
 
 ---
 
-### Virtual Machines (VM)
+## Cos'è Proxmox VE e come funziona un Hypervisor
 
-A **virtual machine**, or **VM**, is essentially a simulated computer. It behaves almost exactly like a real physical machine: it has its own operating system, virtual disk, memory allocation, and network interface.🦇​
-
-One of the most important aspects of a VM is **isolation**, for example I can run a Kali Linux machine for security testing, a Windows machine for compatibility experiments, and a separate VM acting as a firewall — all on the same physical computer.
-
----
-
-### Containers
-
-A 🦇​ **container** is another type of isolated environment ideal when you want to run many small services efficiently, like Pi-Hole, without dedicating a full virtual machine to each one; because of this, containers start much faster and use fewer resources.
-
----
-
-### Snapshots
-
-A **snapshot** is essentially a saved state of a virtual machine at a specific moment in time. It captures the system’s configuration, disk state, and sometimes memory, allowing 🦇​ you to return to that exact point later, therefore it is essential when I will break the system.
-
----
-
-Stay tuned! 🦇​🦇​🦇​
+Per gestire tutti questi servizi su una singola macchina fisica senza creare conflitti tra dipendenze, librerie o configurazioni di rete, il cuore del sistema è **Proxmox Virtual Environment (Proxmox VE)**,
+un **Hypervisor di Tipo 1 (Bare-Metal)** basato su **Debian Linux** che si interpone tra l'hardware fisico e i sistemi operativi, permettendo di astrarre e suddividere le risorse della macchina (CPU, RAM, storage e schede di rete) in più ambienti virtuali indipendenti.
