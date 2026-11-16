@@ -1,29 +1,89 @@
 ---
 ---
-$background-color: #0a0a0a;
-$text-color: #e6e6e6;
-$brand-color: #10dc9f9d;
-$grey-color: #8a8a8a;
-$grey-color-light: #363636;
-$grey-color-dark: #b5b5b5;
+// ===== PALETTE =====
+$bg:        #2f2d30;   // grigio topo scuro (sfondo)
+$surface:   #3a373b;   // card, blocchi di codice
+$border:    #4a464b;   // bordi
+$fg:        #d8d6d9;   // testo principale (grigio chiaro)
+$muted:     #a29fa5;   // testo secondario
+
+// Colore dei link: scommenta UNA sola riga
+$link:      #8ecae6;   // celeste
+// $link:   #b9a6e8;   // lilla
+
+// ===== VARIABILI MINIMA =====
+$background-color: $bg;
+$text-color:       $fg;
+$brand-color:      $link;
+$grey-color:       $muted;
+$grey-color-light: $border;
+$grey-color-dark:  $fg;
 
 @import "minima";
 
+// ===== OVERRIDE =====
+a {
+  color: $link;
+  &:visited { color: $link; }
+  &:hover   { color: lighten($link, 10%); text-decoration: underline; }
+}
+
 .site-header, .site-footer {
-  border-color: #222;
+  border-color: $border;
 }
 
 .site-title, .site-title:visited,
 .site-nav .page-link {
-  color: #00e5a0;
+  color: $fg;
+  &:hover { color: $link; text-decoration: none; }
 }
 
 pre, code {
-  background: #141414;
-  border-color: #222;
-  color: #e6e6e6;
+  background: $surface;
+  border-color: $border;
+  color: $fg;
 }
 
 table, th, td {
-  border-color: #222;
+  border-color: $border;
+}
+
+blockquote {
+  color: $muted;
+  border-left-color: $border;
+}
+
+// ===== GRIGLIA NOTE =====
+.note-grid {
+  ul {
+    list-style: none;
+    margin: 2rem 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 1rem;
+  }
+
+  li {
+    margin: 0;
+    background: $surface;
+    border: 1px solid $border;
+    border-radius: 12px;
+    transition: border-color .2s, transform .2s;
+
+    &:hover {
+      border-color: $link;
+      transform: translateY(-2px);
+    }
+  }
+
+  a {
+    display: block;
+    padding: 1.2rem 1.4rem;
+    color: $fg;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover { color: $link; }
+  }
 }
