@@ -6,7 +6,6 @@ permalink: /notes/
 
 Questa pagine raccoglie appunti universitari:
 
-1. **[Aircrack-ng](/notes/network-security/Aircrack-ng/)** – Suite di strumenti da riga di comando per l'auditing di reti Wi-Fi, packet sniffing, iniezione di pacchetti e cracking di chiavi WEP e WPA/WPA2-PSK.
 2. **[Airgeddon](/notes/Airgeddon)** – Script bash multi-uso per Linux che automatizza diverse tecniche di audit wireless, tra cui attacchi Evil Twin, cattura di handshake, exploitation WPS e DoS.
 3. **[Anonymity](/notes/Anonymity)** – Raccolta di concetti, protocolli e contromisure operative per ridurre la superficie di tracciamento e preservare l'anonimato online.
 <!-- 4. **[Bettercap](/notes/bettercap)** – Framework modulare per attacchi Man-in-the-Middle (MITM), spoofing, network reconnaissance e auditing su reti Wi-Fi, Bluetooth Low Energy ed Ethernet. (not ready) -->

@@ -1,33 +1,35 @@
 ---
 layout: page
-title: Anonymity 👻​
+title: Anonymity 👻
 permalink: /notes/Anonymity/
 ---
 
+Ogni dispositivo connesso a una rete deve identificarsi per poter comunicare con altri sistemi tramite il proprio **indirizzo IP**; ciò significa che ogni volta che accediamo a un sito web o a un servizio, una qualche forma di **identità di rete** viene inevitabilmente esposta.
 
-Every device connected to a network must identify itself in order to communicate with other systems via the **IP address** and this means that every time we access a website or service, some form of **network identity** is exposed.
+### 1. Indirizzi IP Locali (Reti Private)
+All'interno di una rete domestica o aziendale, i dispositivi sono collegati a una **rete locale (LAN)** gestita da un router che assegna a ciascun dispositivo un **indirizzo IP privato** utilizzando il protocollo **DHCP (Dynamic Host Configuration Protocol)**.
 
+I tipici intervalli di indirizzi privati rientrano nel range `192.168.0.0 – 192.168.255.255`: questi sono validi **esclusivamente all'interno della rete locale** e non sono direttamente raggiungibili da Internet.
 
-### 1. Local IP Addresses (Private Networks)
-Inside a home or office network, devices are connected to a **local network (LAN)** managed by a router that assigns each device a **private IP address** using the **DHCP (Dynamic Host Configuration Protocol)**.
+### 2. Dalla Rete Locale a Internet (NAT)
+Il **NAT (Network Address Translation)** consente a più dispositivi all'interno di una rete locale di condividere un singolo indirizzo pubblico. Pertanto, quando un dispositivo invia un pacchetto verso Internet:
 
-Typical private address ranges is 192.168.0.0 – 192.168.255.255 and are only valid **inside the local network** and cannot be reached from the Internet.
+1. Il pacchetto lascia il dispositivo con il proprio IP privato.
+2. Il router lo sostituisce con l'IP pubblico.
+3. Il pacchetto viene instradato verso Internet.
 
+Il router tiene traccia di queste traduzioni utilizzando una tabella NAT.
 
-### 2. From Local Network to the Internet (NAT)
-NAT allows multiple devices inside a network to share a single public address, therefore When a device sends a packet to the Internet:
-1. The packet leaves the device with its private IP
-2. The router replaces it with the public IP
-3. The packet is sent to the Internet
+### 3. Indirizzo IP Pubblico e Routing su Internet
+L'indirizzo IP pubblico viene assegnato dal tuo Internet Service Provider (ISP, come TIM, Vodafone, ecc.) nel momento in cui il router si connette alla rete ed è l'indirizzo che i siti web e i server vedono quando ti colleghi.
 
-The router keeps track of these translations using a NAT table.
+Puoi scoprire il tuo IP pubblico eseguendo da terminale:
 
+```bash
+curl ipinfo.io
+```
 
-### 3. Public IP Address and Internet Routing
-Public IP address is assigned by your Internet Service Provider (ISP) (TIM, Vodafone ...) when your router connects to the network and is the address that websites and servers see when you connect.
-
-You can discover your public IP using: curl ipinfo.io
-
+```json
 {
   "ip": "93.45.210.17",
   "city": "Rome",
@@ -35,183 +37,173 @@ You can discover your public IP using: curl ipinfo.io
   "country": "IT",
   "org": "AS3269 Telecom Italia"
 }
+```
 
+### 4. L'IP può rivelare informazioni
+Sebbene un indirizzo IP non riveli direttamente l'identità anagrafica di una persona, può comunque esporre diverse informazioni utili alla profilazione:
 
-### 4. IP Can Reveal Information
-Even though an IP address does not directly reveal a person’s identity, it can expose several pieces of information.
-
-Examples include:
-- approximate geographic location
-- Internet provider
+- posizione geografica approssimativa
+- provider Internet (ISP)
 - Autonomous System (ASN)
-- country and region
-- type of network (residential, hosting provider, mobile)
+- Paese e regione
+- tipologia di rete (residenziale, hosting provider, rete mobile)
 
-Even if the IP address changes, users can still be tracked through other mechanisms such as Browser Fingerprinting ([link](https://amiunique.org))
+Inoltre, anche se l'indirizzo IP cambia, gli utenti possono comunque essere tracciati attraverso altri meccanismi come il **Browser Fingerprinting** ([testalo qui](https://amiunique.org)).
 
+### 5. Meccanismi Difensivi
+Esistono diversi strumenti e meccanismi per migliorare la privacy e ridurre la tracciabilità:
 
-### 5. Defensive Mechanisms
-Several mechanisms exist to improve privacy and reduce traceability:
-- Web Browser (i.e Brave)
-- OS (i.e Tails or Linux Kodachi)
+- Web Browser orientati alla privacy (es. Brave)
+- Sistemi Operativi dedicati (es. Tails o Linux Kodachi)
 - VPN (Virtual Private Network)
-- Tor Network
-- DNS over HTTPS
-- DNS over TLS
+- Rete Tor
+- DNS over HTTPS (DoH)
+- DNS over TLS (DoT)
 
 ---
 
-## Browser 
+## Browser
 
-The browser I feel safe with is **Brave** by the moment it focuses strongly on **privacy and security**.
+Il browser con cui mi sento più sicuro è **Brave**, poiché si concentra fortemente su **privacy e sicurezza**.
 
-Brave includes:
+Brave include nativamente:
 
-- **Built-in ad and tracker blocking** – Brave automatically blocks advertising networks and tracking scripts that collect data about your browsing habits.
-- **Fingerprinting protection** – it attempts to prevent websites from uniquely identifying your device using browser and hardware characteristics.
-- **HTTPS upgrades** – whenever possible, Brave automatically forces websites to use the secure HTTPS version instead of HTTP.
-- **Third-party cookie blocking** – reduces cross-site tracking from advertising networks.
+- **Blocco integrato di annunci e tracker** – Blocca automaticamente le reti pubblicitarie e gli script di tracciamento che raccolgono dati sulle tue abitudini di navigazione.
+- **Protezione dal Fingerprinting** – Impedisce ai siti web di identificare univocamente il tuo dispositivo sfruttando le caratteristiche del browser e dell'hardware.
+- **Upgrade automatico a HTTPS** – Quando possibile, forza automaticamente i siti web a utilizzare la versione sicura HTTPS invece di HTTP.
+- **Blocco dei cookie di terze parti** – Riduce il tracciamento *cross-site* da parte dei network pubblicitari.
 
-All these features can be easely managed from the settings and checked everytime via **brave shields**.
+Tutte queste funzionalità possono essere gestite facilmente dalle impostazioni e controllate in tempo reale tramite i **Brave Shields**.
 
-This browser also integrates **Tor private windows**, which route your traffic through the Tor network to increase anonymity when browsing sensitive content. However, it is important to remember that this is **not a full replacement for the Tor Browser**, but rather a convenient way to add an extra layer of privacy.
+Questo browser integra inoltre le **finestre private con Tor**, che instradano il traffico attraverso la rete Tor per aumentare l'anonimato durante la navigazione di contenuti sensibili. È tuttavia importante ricordare che questa funzione **non sostituisce completamente il Tor Browser**, ma rappresenta piuttosto un modo pratico per aggiungere un ulteriore livello di privacy.
 
-Unlike many other browsers that claim to protect users from tracking, Brave actually blocks most tracking mechanisms in practice.
+A differenza di molti altri browser che dichiarano di proteggere gli utenti dal tracciamento, Brave blocca effettivamente la maggior parte dei meccanismi di tracking nella pratica.
 
-For example, I monitor my website using **Google Analytics** and even when users browse with browsers that advertise privacy features, they are often still detected and counted by Google Analytics. Brave, on the other hand, blocks it and does not appear in analytics dashboards at all.
+Ad esempio, monitoro il mio sito web utilizzando **Google Analytics** e, anche quando gli utenti navigano con browser che pubblicizzano funzionalità di privacy, vengono spesso comunque rilevati e conteggiati da Analytics. Brave, al contrario, lo blocca completamente e non compare affatto nelle dashboard analitiche.
 
-[About Brave](https://www.youtube.com/watch?v=4mgMZFHv1uM)
+[Approfondimento su Brave](https://www.youtube.com/watch?v=4mgMZFHv1uM)
 
 ---
 
 ## Tails OS
 
-**Tails (The Amnesic Incognito Live System)** is a privacy-focused operating system designed to preserve anonymity and leave no traces on the computer you use.
+**Tails (The Amnesic Incognito Live System)** è un sistema operativo incentrato sulla privacy, progettato per preservare l'anonimato e non lasciare tracce sul computer utilizzato.
 
-Unlike traditional operating systems that are installed permanently on a disk, Tails is a **live operating system** that runs directly from a **USB stick or DVD**. This means you can boot almost any computer with Tails without modifying the existing system.
+A differenza dei sistemi operativi tradizionali che vengono installati permanentemente su disco, Tails è un **sistema operativo live** che viene eseguito direttamente da una **chiavetta USB o da un DVD**. Ciò significa che è possibile avviare quasi qualsiasi computer con Tails senza modificare il sistema esistente.
 
-### Amnesic system
+### Sistema amnesico
 
-The word **amnesic** means that the system does not keep memory of your activity after shutdown.
+Il termine **amnesico** indica che il sistema non conserva memoria delle attività svolte dopo lo spegnimento.
 
-By default:
+Per impostazione predefinita:
 
-- no browsing history is saved  
-- no files remain on the system  
-- no logs persist after shutdown  
+- non viene salvata alcuna cronologia di navigazione  
+- nessun file rimane memorizzato sul sistema  
+- nessun log persiste dopo lo spegnimento  
 
-Everything runs in **RAM**, and when the computer is turned off the memory is wiped.
+Tutto viene eseguito nella **RAM** e, quando il computer viene spento, la memoria viene cancellata.
 
-This makes Tails particularly useful when working on **shared computers or untrusted machines**, unfortunately we know the RAM could contains some traces anyway.
+Questo rende Tails particolarmente utile quando si lavora su **computer condivisi o macchine non fidate**, anche se sappiamo che a livello forense la RAM può talvolta trattenere tracce residue per un breve intervallo dopo lo spegnimento (*cold boot attacks*).
 
-### Built-in privacy tools
+### Strumenti per la privacy integrati
 
-Tails comes with several tools already configured for privacy and security:
+Tails include diversi strumenti già preconfigurati per la privacy e la sicurezza:
 
-- **Tor Browser** for anonymous web browsing  
-- **KeePassXC** for password management  
-- **Electrum** for Bitcoin wallets  
-- **OnionShare** for anonymous file sharing  
-- **GnuPG** tools for encryption and secure communication  
+- **Tor Browser** per la navigazione web anonima  
+- **KeePassXC** per la gestione delle password  
+- **Electrum** per i wallet Bitcoin  
+- **OnionShare** per la condivisione anonima di file  
+- Strumenti **GnuPG** per la cifratura e le comunicazioni sicure  
 
-These tools are preconfigured so users do not need to manually set up privacy protections.
+Questi tool sono già configurati affinché l'utente non debba impostare manualmente le protezioni di base.
 
-### Persistent storage (optional)
+### Archiviazione persistente (opzionale)
 
-Although Tails is designed to forget everything, it is possible to create an **encrypted persistent storage** on the USB device.
+Sebbene Tails sia progettato per dimenticare tutto, è possibile creare uno **spazio di archiviazione persistente cifrato** (*Encrypted Persistent Storage*) sulla chiavetta USB.
 
-This allows you to save:
+Questo consente di salvare in sicurezza:
 
-- files
-- encryption keys
-- configuration settings
-- passwords
+- file
+- chiavi crittografiche
+- impostazioni di configurazione
+- password
 
-[Tails by one of my favourites](https://www.youtube.com/watch?v=IOTCGUQ51xo)
+[Tails spiegato da uno dei miei creator preferiti](https://www.youtube.com/watch?v=IOTCGUQ51xo)
 
 ---
 
 ## VPN
 
+Una **VPN (Virtual Private Network)** è una tecnologia che cifra il traffico Internet e lo instrada attraverso un server remoto prima di raggiungere la destinazione finale. Invece di vedere il tuo indirizzo IP pubblico, i siti web vedono l'indirizzo IP del server VPN. Questo fornisce un ulteriore livello di privacy e impedisce al tuo Internet Service Provider (ISP), agli amministratori di rete o ad eventuali attaccanti su reti pubbliche di monitorare facilmente la tua attività online.
 
-A **VPN (Virtual Private Network)** is a technology that encrypts your internet traffic and routes it through a remote server before reaching the final destination. Instead of websites seeing your pubblic IP address, they see the IP address of the VPN server. This provides an additional layer of privacy and can help prevent your internet service provider (ISP), network administrators, or attackers on public networks from easily monitoring your online activity.
+Le VPN vengono spesso utilizzate per aumentare **privacy e sicurezza**, specialmente quando ci si connette a reti Wi-Fi pubbliche come quelle di bar, aeroporti o hotel. La cifratura fornita dalla VPN crea un tunnel sicuro tra il tuo dispositivo e il server VPN, riducendo il rischio di *eavesdropping*, *packet sniffing* o attacchi *Man-in-the-Middle* (MITM).
 
-VPNs are often used to increase **privacy and security**, especially when connecting to public Wi-Fi networks such as those in cafés, airports, or hotels. The encryption provided by the VPN creates a secure tunnel between your device and the VPN server, reducing the risk of eavesdropping, packet sniffing, or man-in-the-middle attacks.
+Un altro utilizzo comune delle VPN è il **mascheramento dell'indirizzo IP**, che rende più difficile per siti web e servizi online associare direttamente la tua attività alla tua posizione fisica o alla tua identità.
 
-Another common use of VPNs is **masking your IP address**, which can make it harder for websites and online services to directly associate your activity with your physical location or identity.
+Tuttavia, le VPN presentano anche limiti e svantaggi importanti:
 
-However, VPNs also have important limitations and drawbacks.
+1. **Non garantiscono il vero anonimato:** sebbene il tuo ISP non possa più vedere i siti che visiti, il **provider VPN stesso può potenzialmente osservare il tuo traffico**; di fatto, stai semplicemente spostando la fiducia dal tuo ISP all'azienda che gestisce la VPN.
+2. **Politiche "No-Logs" non sempre verificabili:** molti provider dichiarano di non conservare log di navigazione, ma non è sempre possibile verificarlo. In diversi casi alcune aziende sono state costrette dalle forze dell'ordine a fornire dati degli utenti, dimostrando che determinati log di attività esistevano ancora.
+3. **Riduzione delle prestazioni:** poiché il traffico deve attraversare un server aggiuntivo, le connessioni VPN possono introdurre maggiore latenza e velocità di download inferiori.
+4. **Nessuna protezione contro il tracciamento applicativo:** le VPN non proteggono da tecniche come **browser fingerprinting, cookie o login agli account**, che possono comunque rivelare l'identità dell'utente anche con una VPN attiva — ed è proprio qui che entrano in gioco browser orientati alla privacy come **Brave**.
 
-First, using a VPN **does not make you truly anonymous**. While your ISP can no longer see the websites you visit, the **VPN provider itself can potentially see your traffic**, meaning you are simply shifting trust from your ISP to the VPN company.
+Per queste ragioni, una VPN va considerata come **uno strumento che migliora privacy e sicurezza**, ma non come una soluzione definitiva per l'anonimato.
 
-Second, many VPN providers claim to keep **“no logs”**, but this is not always verifiable. In some cases, companies have been required by law enforcement to provide user data, showing that activity logs may still exist.
+Per capire cosa fa realmente una VPN, è utile confrontare il funzionamento di una connessione normale con quello di una connessione protetta da VPN.
 
-Another drawback is **reduced performance**. Because traffic must travel through an additional server, VPN connections can introduce higher latency and slower download speeds.
+### Senza VPN (`Tu → ISP → Sito Web`)
 
-Finally, VPNs do not protect against other tracking techniques such as **browser fingerprinting, cookies, or account logins**, which can still reveal a user's identity even when a VPN is in use and this is where privacy-focused browsers such as **Brave** become useful.
+Il tuo **ISP ti assegna un indirizzo IP pubblico**, ed è questo l'indirizzo che i siti web vedono quando ti connetti.
 
-For these reasons, VPNs should be seen as **a tool that improves privacy and security**, but not as a complete solution for anonymity.
+Utilizzando HTTPS, l'ISP può comunque vedere:
 
-To understand what a VPN does, it is useful to first understand how a normal internet connection works.
+- l'**indirizzo IP del sito web**
+- il **nome di dominio** a cui ti connetti (esempio: `google.com`, tramite SNI/DNS)
+- la **quantità di traffico** scambiato
+- l'**orario della connessione**
 
-### Without a VPN (You → ISP → Website)
+Ma l'ISP **non può vedere**:
 
-Your **ISP assigns you a public IP address**, and this is the address that websites see when you connect to them.
+- le pagine specifiche che apri  
+- i dati che invii  
+- le password  
+- i messaggi  
+- il contenuto delle pagine web  
 
-This means, using HTTPS, The ISP can see:
+*(Se la connessione non è cifrata, ovvero in HTTP, l'ISP potrebbe invece leggere in chiaro anche l'intero contenuto del traffico).*
 
-- the **IP address of the website**
-- the **domain name** you connect to (example: google.com)
-- the **amount of traffic**
-- the **time of the connection**
+### Con VPN (`Tu → ISP → Server VPN → Sito Web`)
 
-But the ISP **cannot see**:
+Quando utilizzi una VPN, il tuo traffico passa comunque attraverso il tuo Internet Service Provider (ISP), poiché è l'entità che ti fornisce l'accesso fisico a Internet. Tuttavia, l'ISP non può vedere la destinazione finale né il contenuto del traffico una volta stabilito il tunnel VPN.
 
-- the pages you open  
-- the data you send  
-- passwords  
-- messages  
-- the content of the website  
+Il processo funziona in questo modo:
 
-If the connection is not encrypted (HTTP), the ISP could even see the **content of the traffic**. 
+1. Il tuo dispositivo si connette al server VPN tramite la normale connessione Internet.
+2. La richiesta di connessione attraversa il tuo router e il tuo ISP.
+3. Il tuo dispositivo e il server VPN stabiliscono un **tunnel cifrato**.
+4. Da quel momento in poi, tutto il traffico Internet viene inviato attraverso questo tunnel.
 
+Di conseguenza, il tuo ISP può vedere soltanto:
 
-### With a VPN (You → ISP → VPN → Website)
+- che sei connesso a un server VPN
+- l'indirizzo IP del server VPN
+- la quantità di traffico generato
 
-When using a VPN, your traffic still passes through your Internet Service Provider (ISP), because the ISP is the entity that provides your access to the internet. However, the ISP cannot see the content of your traffic once the VPN tunnel is established.
+Tuttavia, l'ISP non può vedere:
 
-The process works roughly as follows:
+- quali siti web visiti
+- quali pagine apri
+- il contenuto del tuo traffico
 
-1. Your device connects to the VPN server through the normal internet connection.
-2. The connection request travels through your router and your ISP.
-3. Your device and the VPN server establish an **encrypted tunnel**.
-4. From that moment on, all your internet traffic is sent through this encrypted tunnel.
-
-As a result your ISP can still see:
-
-- that you are connected to a VPN server
-- the IP address of the VPN server
-- the amount of traffic you generate
-
-However, the ISP cannot see:
-
-- which websites you visit
-- which pages you open
-- the content of your traffic
-
-And at the end the **website visited sees the IP address of the VPN server** and not yours
+Infine, il **sito web visitato vedrà esclusivamente l'indirizzo IP del server VPN** e non il tuo.
 
 ---
 
-## Graphene OS
+## GrapheneOS
 
-I discovered this OS in these last weeks for reasons you should already know.
-GrapheneOS is a privacy and security focused mobile OS especiallt for Google Pixel.
+**GrapheneOS** è un sistema operativo mobile fortemente incentrato su privacy e sicurezza, sviluppato specificamente per i dispositivi **Google Pixel**.
 
-One of its main features is Play Services in sandbox, which allows you to use Google services in a completely isolated environment where they cannot access sensitive information, preventing a lot of tracking and the random use of apps that usually run in the background.
+Una delle sue caratteristiche principali è l'esecuzione dei **Google Play Services in sandbox**, che consente di utilizzare i servizi Google in un ambiente completamente isolato in cui non possono accedere a informazioni sensibili né godere di privilegi di sistema, prevenendo gran parte del tracciamento e l'esecuzione incontrollata di app in background.
 
-[Official site](https://grapheneos.org/)
+[Sito ufficiale](https://grapheneos.org/)
 
----
-
-A lot lot lot more to talk about obv! Stay Tuned!

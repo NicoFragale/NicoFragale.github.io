@@ -4,80 +4,76 @@ title: Wardriving 🚗
 permalink: /notes/wardriving/
 ---
 
-**Wardriving** is the activity of detecting and recording Wi-Fi networks while physically moving through an area, typically by car, bicycle, or on foot.  
-To perform wardriving, people usually use a **laptop or portable device equipped with a Wi-Fi adapter** combined with a **GPS receiver** in order to record the geographic coordinates of each detected network.
+Il **Wardriving** è l'attività di rilevamento e registrazione delle reti Wi-Fi mentre ci si sposta fisicamente attraverso un'area, tipicamente in auto, in bicicletta o a piedi.  
+Per praticare il wardriving si utilizza solitamente un **laptop o un dispositivo portatile dotato di un adattatore Wi-Fi** abbinato a un **ricevitore GPS**, al fine di registrare le coordinate geografiche di ciascuna rete rilevata.
 
-The main goal of wardriving is to **identify wireless access points (APs) and log their location**, effectively creating a map of the Wi-Fi networks available in a given area.  
-The collected information can later be shared or uploaded to online databases that map wireless networks.
+L'obiettivo principale del wardriving è **identificare gli access point (AP) wireless e registrarne la posizione**, creando di fatto una mappa delle reti Wi-Fi disponibili in una determinata area.  
+Le informazioni raccolte possono essere successivamente condivise o caricate su database online dedicati alla mappatura delle reti wireless (come WiGLE).
 
-A useful analogy is to think of wardriving as **mapping house numbers in a neighborhood**: instead of listing buildings and mailboxes, the wardriver records the position of wireless access points broadcasting their signals.
+Un'analogia efficace consiste nel pensare al wardriving come alla **mappatura dei numeri civici di un quartiere**: invece di annotare edifici e cassette postali, il *wardriver* registra la posizione degli access point wireless che trasmettono il proprio segnale nell'etere.
 
 ---
 
-### Legitimate Use and Misuse
+### Uso Legittimo e Abuso
 
-Wardriving itself does not necessarily involve illegal behavior. In its basic form, it simply consists of **detecting wireless networks and collecting technical information about them**.
+Il wardriving di per sé non implica necessariamente un comportamento illegale. Nella sua forma base, consiste semplicemente nel **rilevare le reti wireless e raccogliere informazioni tecniche** trasmesse pubblicamente.
 
-However, some individuals take advantage of **weak or poorly configured security settings** to access the network they discover. In these situations the goals may include:
+Tuttavia, alcuni soggetti approfittano di **impostazioni di sicurezza deboli o mal configurate** per accedere alle reti individuate. In questi scenari, gli obiettivi possono includere:
 
-- accessing files available on the local network
-- using the Internet connection without authorization
-- exploiting available bandwidth for free
+- accedere ai file condivisi sulla rete locale
+- utilizzare la connessione Internet senza autorizzazione
+- sfruttare gratuitamente la banda disponibile
 
-When wardriving is used for these purposes, it falls under the broader category of **unauthorized use of wireless networks**, sometimes referred to as *wireless theft* or *thiefing*.
+Quando il wardriving viene utilizzato per questi scopi, rientra nella categoria più ampia dell'**uso non autorizzato di reti wireless**, talvolta indicato come *wireless theft* o *thiefing*.
 
 ---
 
 ### Warchalking
 
-This is the technique to identify wireless networks and list their characteristics in an easy way by **drawing symbols in public spaces**:
+È una tecnica nata per identificare le reti wireless ed elencarne rapidamente le caratteristiche **disegnando appositi simboli con il gesso negli spazi pubblici**, indicando ad esempio:
 
-- whether the network is open or protected
-- whether Internet access is available
-- what type of security is used
+- se la rete è aperta o protetta
+- se è disponibile l'accesso a Internet
+- quale tipologia di sicurezza o cifratura viene utilizzata
 
 ---
 
 ### Warkitting
 
-A more advanced and potentially dangerous concept is **warkitting**, which combines wardriving with firmware-level attacks.
+Un concetto più avanzato e potenzialmente molto pericoloso è il **warkitting**, che combina il wardriving con attacchi a livello di firmware.
 
-In a warkitting attack, an attacker **replaces or modifies the firmware of a targeted wireless router**, gaining control over the device. Once compromised, the attacker may be able to:
+In un attacco di warkitting, l'attaccante **sostituisce o modifica il firmware di un router wireless target**, acquisendo il pieno controllo del dispositivo. Una volta compromesso il router, l'attaccante può essere in grado di:
 
-- monitor all traffic passing through the router
-- manipulate communications
-- alter content downloaded by users
+- monitorare tutto il traffico che transita attraverso il dispositivo
+- manipolare le comunicazioni
+- alterare i contenuti scaricati dagli utenti (ad esempio iniettando malware)
 
-The concept of warkitting was described in 2006 by researchers **Tsow, Jakobsson, Yang, and Wetzel** in this [paper](https://markus-jakobsson.com/papers/jakobsson-jdfp06-warkit.pdf).
+Il concetto di warkitting è stato descritto nel 2006 dai ricercatori **Tsow, Jakobsson, Yang e Wetzel** in questo [paper](https://markus-jakobsson.com/papers/jakobsson-jdfp06-warkit.pdf).
 
 ---
 
-### Passive Wardriving
+### Wardriving Passivo
 
-The most common form of wardriving is **passive wardriving**, which simply listens for signals transmitted by wireless access points.
+La forma più comune di wardriving è il **wardriving passivo**, che consiste semplicemente nell'ascoltare i segnali trasmessi dagli access point wireless.
 
-Tools such as:
+Strumenti come:
 
 - **Kismet**
 - **KisMAC**
 
-capture the **beacon frames** periodically broadcast by Wi-Fi networks and record information such as the SSID, BSSID, and signal strength.
+catturano i **beacon frame** trasmessi periodicamente in broadcast dalle reti Wi-Fi e registrano informazioni come l'SSID, il BSSID e l'intensità del segnale.
 
-In this scenario the device **does not interact with the network**, it only listens to radio transmissions that are publicly broadcast.  
-
----
-
-### Active Wardriving
-
-Some tools perform a more active type of scanning. For example, **NetStumbler** sends **probe requests** to nearby wireless networks.
-
-Access points automatically respond to these requests, providing information about the network. During this process the scanning device may become **temporarily associated with the network**, even though no actual data traffic is exchanged.
-
-For this reason, **active wardriving raises more legal and ethical questions**, since it involves direct interaction with the network.
-
-Some wardrivers reduce the likelihood of their device being registered on the network by configuring a **static IP address**, avoiding the automatic assignment of an address through DHCP.
+In questo scenario il dispositivo **non interagisce in alcun modo con la rete**, limitandosi ad ascoltare le trasmissioni radio diffuse pubblicamente.
 
 ---
 
-You can easely found how to wardrive on internet!
+### Wardriving Attivo
+
+Alcuni strumenti eseguono invece una scansione di tipo più attivo. Ad esempio, **NetStumbler** invia **probe request** alle reti wireless circostanti.
+
+Gli access point rispondono automaticamente a queste richieste, fornendo informazioni sulla rete. Durante questo processo, il dispositivo che effettua la scansione può risultare **temporaneamente associato alla rete**, anche se non viene scambiato alcun traffico dati vero e proprio.
+
+Per questo motivo, il **wardriving attivo solleva maggiori questioni legali ed etiche**, poiché comporta un'interazione diretta con l'infrastruttura di rete.
+
+Alcuni wardriver riducono la probabilità che il proprio dispositivo venga registrato nei log della rete configurando un **indirizzo IP statico**, evitando così la richiesta e l'assegnazione automatica di un indirizzo tramite DHCP.
 

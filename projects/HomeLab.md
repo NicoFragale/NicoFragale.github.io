@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Home Lab 🦇
+title: Home Lab (Proxmox) 🦇
 permalink: /projects/HomeLab/
 ---
 

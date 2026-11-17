@@ -1,138 +1,131 @@
 ---
 layout: page
-title: Kismet ​🚧​ 
+title: Kismet 🚧
 permalink: /notes/kismet/
 ---
 
-[Kismet](https://www.kismetwireless.net/docs/readme/logging/logging/) is an open source sniffer, WIDS, wardriver, and packet capture tool for Wi-Fi, Bluetooth, BTLE, wireless thermometers, airplanes, power meters, Zigbee, and more.
+[Kismet](https://www.kismetwireless.net/docs/readme/logging/logging/) è uno sniffer open-source, un sistema WIDS (*Wireless Intrusion Detection System*), uno strumento di wardriving e di cattura pacchetti per Wi-Fi, Bluetooth, BLE (BTLE), termometri wireless, aeromobili (ADS-B), contatori intelligenti, Zigbee e molto altro.
 
-It operates almost entirely passively, with a few exceptions and is not an attack tool (generally).
+Opera quasi interamente in modo passivo, salvo rare eccezioni, e in generale non è uno strumento offensivo.
 
-You can use Kismet for passive reconnaissance and to weak or misconfigured networks, but also to monitor suspicious activity inside your network and support activities like wardriving. It is more user-friendly and complete compared to airodump-ng, let's have a look!
+È possibile utilizzare Kismet per la ricognizione passiva e per individuare reti deboli o mal configurate, ma anche per monitorare attività sospette all'interno della propria rete e supportare attività come il wardriving. Rispetto ad `airodump-ng` è molto più intuitivo e completo: diamogli un'occhiata!
 
-## 🖥️ Kismet Web Interface – Home Overview
+## 🖥️ Interfaccia Web di Kismet – Panoramica Home
 
-![kismet](https://nicofragale.github.io/assets/images/kismet.png) 
+<img src="https://nicofragale.github.io/assets/images/kismet.png" alt="kismet" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 
-The image shows the main dashboard of Kismet, accessible through its web interface that collects and displays in real time all detected wireless activity thanks to monitor mode.
+L'immagine mostra la dashboard principale di Kismet, accessibile tramite la sua interfaccia web, che raccoglie e visualizza in tempo reale tutta l'attività wireless rilevata grazie alla *monitor mode*.
 
-At the top, there are different tabs like **Alerts, SSIDs, and ADSB live**, which let you switch between the types of information gathered by Kismet.
+Nella parte superiore sono presenti diverse schede come **Alerts, SSIDs e ADSB live**, che consentono di passare rapidamente tra le varie tipologie di informazioni raccolte da Kismet.
 
-The main part of the page is a table that lists all detected wireless networks (Access Points). For each network, Kismet provides useful details such as:
+La sezione principale della pagina è costituita da una tabella che elenca tutte le reti wireless rilevate (Access Point). Per ciascuna rete, Kismet fornisce dettagli utili come:
 
-- **Type** → what kind of device it is (e.g. Access Point)  
-- **PHY** → the wireless standard used (like IEEE 802.11)  
-- **Encryption** → the security protocol (WPA2, WPA3, etc.)  
-- **Signal (Sgn)** → signal strength, helpful to estimate how close the network is  
-- **Channel (Chan)** → the radio channel being used  
-- **Data / Packets** → how much traffic has been captured  
-- **Clients** → number of devices connected  
+- **Type** → tipologia del dispositivo rilevato (es. Access Point)  
+- **PHY** → standard wireless utilizzato (come IEEE 802.11)  
+- **Encryption** → protocollo di sicurezza adottato (WPA2, WPA3, ecc.)  
+- **Signal (Sgn)** → intensità del segnale, utile per stimare la vicinanza della rete  
+- **Channel (Chan)** → canale radio utilizzato  
+- **Data / Packets** → quantità di traffico catturato  
+- **Clients** → numero di dispositivi connessi  
 
-Each row represents a detected network, and the table updates continuously as new devices are found or activity changes.
+Ogni riga rappresenta una rete rilevata e la tabella si aggiorna continuamente man mano che vengono individuati nuovi dispositivi o cambia l'attività di rete.
 
+## 🚨 Kismet Alerts – Rilevamento delle Minacce in Tempo Reale
 
-## 🚨 Kismet Alerts – Real-Time Threat Detection
+<img src="https://nicofragale.github.io/assets/images/kAlert1.png" alt="Alert1" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 
-![Alert1](https://nicofragale.github.io/assets/images/kAlert1.png) 
+L'immagine mostra il **pannello Alerts di Kismet**, che mette in evidenza una delle sue funzionalità più potenti: la capacità di rilevare attività sospette e potenziali attacchi in tempo reale.
 
-The image shows the **Alerts panel in Kismet**, which highlights one of its most powerful features: the ability to detect suspicious activity and potential attacks in real time.
+In questo caso, possiamo osservare molteplici avvisi relativi a eventi di **deautenticazione/disassociazione broadcast (BCASTDISCON)** che ho eseguito utilizzando il firmware Bruce.  
+L'aspetto fondamentale è che gli alert vengono generati **immediatamente**, non appena il comportamento anomalo viene osservato nell'etere.
 
-In this case, we can see multiple alerts related to **broadcast deauthentication/disassociation events (BCASTDISCON)** that I performed usign Bruce firmware.
-The important aspect here is that the alerts are generated **immediately**, as soon as the behavior is observed.
+<img src="https://nicofragale.github.io/assets/images/kAlert2.png" alt="Alert2" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 
-![Alert2](https://nicofragale.github.io/assets/images/kAlert2.png) 
+Inoltre, il pannello mostra avvisi legati al sistema stesso (come l'esecuzione di Kismet con privilegi di `root`), utili per migliorare la consapevolezza sia in termini di **sicurezza sia di configurazione**.
 
-Additionally, the panel shows system-related warnings (such as running Kismet as root), which help improve both **security and configuration awareness**.
-
-The image shows more details on how the DoS attack was performed, Bruce firmware performs Deauth Attack spoofing AP's Mac Address.
+L'immagine fornisce maggiori dettagli su come è stato condotto l'attacco DoS: il firmware Bruce esegue infatti un *Deauth Attack* falsificando (*spoofing*) l'indirizzo MAC dell'Access Point.
 
 ---
 
-## Access Point Information
+## Informazioni sull'Access Point
 
-![Kismet AP]( /assets/images/kismet-ap.png )
+<img src="/assets/images/kismet-ap.png" alt="Kismet AP" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 
-The image shows key information about a detected Access Point (AP):
+L'immagine mostra le informazioni principali relative a un Access Point (AP) rilevato:
 
-- **SSID** → the network name  
-- **BSSID (MAC address)** → unique identifier of the AP  
-- **Manufacturer** → derived from the MAC address (OUI lookup)  
-- **Channel** → the WiFi channel in use  
-- **Frequency range** → for example, channel 11 typically spans from **2452 MHz to 2472 MHz**
+- **SSID** → il nome della rete  
+- **BSSID (indirizzo MAC)** → identificativo univoco dell'AP  
+- **Manufacturer** → produttore ricavato dall'indirizzo MAC (tramite lookup OUI)  
+- **Channel** → il canale Wi-Fi in uso  
+- **Frequency range** → ad esempio, il canale 11 copre tipicamente l'intervallo da **2452 MHz a 2472 MHz**
 
-The **bar graph** represents how packets are distributed across the channel frequency.
-Each WiFi channel is a **range of frequencies** and the graph shows where signal activity is concentrated within that range. Sometimes, you may also notice activity from **adjacent channels**, due to overlapping frequencies.
+Il **grafico a barre** rappresenta la distribuzione dei pacchetti lungo le frequenze del canale.  
+Ogni canale Wi-Fi corrisponde a un **intervallo di frequenze** e il grafico mostra dove si concentra l'attività del segnale all'interno di tale spettro. Talvolta è possibile notare anche attività proveniente dai **canali adiacenti**, a causa della sovrapposizione delle frequenze (*overlapping*).
 
-To better understand this:
+Per comprendere meglio questo concetto:
 
-- The **channel** = the entire highway  
-- The **frequencies** = the lanes  
-- The **packets** = the cars  
+- Il **canale** = l'intera autostrada  
+- Le **frequenze** = le corsie  
+- I **pacchetti** = le automobili  
 
-Packets do not occupy a single fixed frequency, instead they are distributed across the channel depending on the transmission.This behavior is due to **OFDM (Orthogonal Frequency Division Multiplexing)**, where data is spread across multiple subcarriers.
+I pacchetti non occupano una singola frequenza fissa, ma vengono distribuiti lungo tutto il canale in base alla trasmissione. Questo comportamento è dovuto alla modulazione **OFDM (Orthogonal Frequency Division Multiplexing)**, in cui i dati vengono suddivisi su più sottoportanti (*subcarriers*).
 
-The **donut chart** labeled **Packet Types** shows the nature of the traffic:
+Il **grafico a ciambella** etichettato **Packet Types** mostra invece la natura del traffico catturato:
 
 - **Management / LLC**
-  - Beacon frames  
-  - Probe requests/responses  
-  - Authentication frames  
+  - Beacon frame  
+  - Probe request / response  
+  - Frame di autenticazione  
 - **Data**
-  - Real user traffic (web browsing, applications, etc.)
+  - Traffico dati reale degli utenti (navigazione web, applicazioni, ecc.)
 
 ---
 
-## SSID Behavior
+## Comportamento dell'SSID
 
 #### Advertised SSID
 
-- The network name actively broadcasted by the AP  
-- Sent through **beacon frames**  
-- Visible during passive scanning  
+- Il nome della rete trasmesso attivamente in broadcast dall'AP  
+- Inviato tramite **beacon frame**  
+- Visibile durante la scansione passiva  
 
 #### Responded SSID
 
-- The network name returned when a client actively searches for networks  
-- Sent via **probe response frames**  
+- Il nome della rete restituito quando un client cerca attivamente le reti disponibili  
+- Inviato tramite **probe response frame**  
 
-This distinction highlights the difference between:
-- passive discovery  
-- active probing  
+Questa distinzione mette in luce la differenza tra:
+- rilevamento passivo (*passive discovery*)  
+- sondaggio attivo (*active probing*)  
 
+#### Funzionalità di Sicurezza: MFP
 
-#### Security Feature: MFP
+L'**MFP (Management Frame Protection)** protegge i *management frame* da alterazioni e falsificazioni.
 
-**MFP (Management Frame Protection)** protects management frames from tampering.
+- Se **abilitato** → protezione garantita contro determinati attacchi  
+- Se **non disponibile** → la rete rimane vulnerabile  
 
-- If **enabled** → protection against certain attacks  
-- If **unavailable** → the network is vulnerable  
+Ad esempio, l'assenza di MFP espone la rete ad attacchi come:
+- **attacchi di deautenticazione**
 
-For example, lack of MFP allows attacks such as:
-- **deauthentication attacks**
+#### Ampiezza del Canale (HT Mode)
 
-
-#### Channel Width (HT Mode)
-
-The **HT mode** indicates the channel bandwidth:
+La modalità **HT (High Throughput)** indica la larghezza di banda del canale:
 
 - **HT20** → 20 MHz  
 - **HT40** → 40 MHz  
 
-Wider channels allow higher throughput but increase interference risk.
-
+Canali più ampi consentono un throughput maggiore, ma aumentano il rischio di interferenze.
 
 #### WiFi Bridging
 
-When a device is marked as **WiFi Bridged**, it means:
+Quando un dispositivo viene contrassegnato come **WiFi Bridged**, significa che:
 
-- it is not just a client  
-- it acts as a **bridge between two networks**
+- non opera come un semplice client  
+- agisce come un **bridge tra due reti**
 
-This can happen, for example, in:
-- repeaters  
-- hotspots  
-- routing devices  
+Questo scenario si verifica, ad esempio, nel caso di:
+- ripetitori (*repeater*)  
+- hotspot  
+- dispositivi di routing  
 
----
-
-Stay tuned for more!

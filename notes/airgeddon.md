@@ -4,103 +4,100 @@ title: Airgeddon 🤖
 permalink: /notes/Airgeddon/
 ---
 
-Airgeddon is an open-source Bash script designed to automate and simplify Wi-Fi security auditing. It acts as a wrapper around well-known tools such as `aircrack-ng`, `airodump-ng`, `aireplay-ng`, and others, providing a guided and interactive interface.
+Airgeddon è uno script Bash open-source progettato per automatizzare e semplificare l'auditing di sicurezza delle reti Wi-Fi. Agisce come un *wrapper* attorno a strumenti ben noti come `aircrack-ng`, `airodump-ng`, `aireplay-ng` e altri, offrendo un'interfaccia guidata e interattiva.
 
-Instead of manually executing multiple commands, Airgeddon allows you to perform complex wireless attacks step-by-step through a menu-driven workflow.
+Invece di eseguire manualmente molteplici comandi, Airgeddon consente di condurre complessi attacchi wireless passo dopo passo attraverso un flusso di lavoro basato su menu.
 
-#### Airgeddon Main Menu Overview
+#### Panoramica del Menu Principale di Airgeddon
 
-![Airmenu]( /assets/images/airmenu.png )
+<img src="/assets/images/airmenu.png" alt="Airmenu" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 
+Ogni opzione in Airgeddon rappresenta una specifica fase o categoria di auditing Wi-Fi. Di seguito è riportata una breve descrizione di ciascuna azione disponibile.
 
-Each option in Airgeddon represents a specific phase or category of Wi-Fi auditing. Below is a concise description of each available action.
+0. **Exit the script** → Chiude Airgeddon e termina la sessione.
 
-0. Exit the script → Closes Airgeddon and terminates the session.
+1. **Select another network interface** → Permette di cambiare adattatore di rete tra quelli disponibili (utile se sono collegate più schede Wi-Fi).
 
-1. Select another network interface → Allows switching between available network adapters (useful if multiple Wi-Fi cards are connected).
+2. **Put interface in monitor mode** → Abilita la *monitor mode* per catturare frame 802.11 grezzi (necessaria per la maggior parte degli attacchi).
 
-2. Put interface in monitor mode → Enables monitor mode to capture raw 802.11 frames (required for most attacks).
+3. **Put interface in managed mode** → Ripristina la normale modalità Wi-Fi (*managed mode*) per riconnettersi alle reti.
 
-3. Put interface in managed mode → Restores normal Wi-Fi mode to reconnect to networks.
+4. **DoS attack menu** → Contiene tecniche di Denial-of-Service (ad esempio, *deauthentication flooding*).
 
-4. DoS attack menu → Contains denial-of-service techniques (e.g., deauthentication flooding).
+5. **Handshake/PMKID/Decloaking tools** → Utilizzato per catturare handshake WPA/WPA2 o PMKID e rivelare SSID nascosti.
 
-5. Handshake/PMKID/Decloaking tools → Used to capture WPA/WPA2 handshakes or PMKIDs and reveal hidden SSIDs.
+6. **WPA/WPA2 offline cracking menu** → Consente il cracking delle password utilizzando gli handshake o i PMKID catturati.
 
-6. WPA/WPA2 offline cracking menu → Allows password cracking using captured handshakes or PMKIDs.
+7. **Evil Twin attack menu** → Crea un falso access point per indurre gli utenti a connettersi e catturare potenzialmente le loro credenziali.
 
-7. Evil Twin attack menu → Creates a fake access point to trick users into connecting and potentially capturing credentials.
+8. **WPS attack menu** → Include attacchi contro il protocollo WPS (ad esempio, brute force del PIN, Pixie Dust).
 
-8. WPS attack menu → Includes attacks against WPS (e.g., PIN brute force, Pixie Dust).
+9. **WEP attack menu** → Attacchi legacy mirati alle reti WEP (oggi utili principalmente a scopo didattico).
 
-9. WEP attack menu → Legacy attacks targeting WEP networks (mainly educational today).
+10. **Enterprise attack menu** → Mira alle reti WPA/WPA2 Enterprise (ad esempio, raccolta di credenziali tramite *rogue AP*).
 
-10. Enterprise attack menu → Targets WPA/WPA2 Enterprise networks (e.g., credential harvesting via rogue AP).
+11. **WPA3 attack menu** → Contiene attacchi sperimentali o specifici relativi allo standard WPA3.
 
-11. WPA3 attack menu → Contains experimental or specific attacks related to WPA3.
+12. **Information & Credits** → Mostra informazioni sul progetto, collaboratori e ringraziamenti.
 
-12. Information & Credits → Displays project info, contributors, and acknowledgments.
+13. **Options and language menu** → Impostazioni di configurazione, preferenze dell'interfaccia e selezione della lingua.
 
-13. Options and language menu → Configuration settings, interface preferences, and language selection.
+#### Menu Attacchi DoS (Panoramica Pratica)
 
-#### DoS Attack Menu (Practical Overview)
+<img src="/assets/images/air4.png" alt="Air4" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 
-![Air4]( /assets/images/air4.png )
+Prima di lanciare qualsiasi attacco in questa sezione, è necessario identificare una rete target.  
+Questo si fa tramite l'opzione **4 (Explore for targets)**, che scansiona le reti Wi-Fi nelle vicinanze e permette di selezionare uno specifico access point (BSSID, canale, ESSID).
 
-Before launching any attack in this section, you must first identify a target network.  
-This is done using option **4 (Explore for targets)**, which scans nearby Wi-Fi networks and allows you to select a specific access point (BSSID, channel, ESSID).
+Una volta selezionato un target, diventano disponibili i seguenti attacchi:
 
-Once a target is selected, the following attacks become available:
+5. **Deauthentication / Disassociation (mdk4)** → Esegue un attacco di deautenticazione ad alta velocità utilizzando `mdk4`. Forza i client connessi a disconnettersi dall'access point inviando frame di deautenticazione falsificati (*forged*). Viene spesso usato per catturare gli handshake WPA/WPA2 quando i client si riconnettono. Approfondisci [qui](/notes/deauthentication).
 
-5. Deauthentication / Disassociation (mdk4) → Performs a high-speed deauthentication attack using `mdk4`. It forces connected clients to disconnect from the access point by sending forged deauth frames. This is often used to capture WPA/WPA2 handshakes when clients reconnect. Here for [more](/notes/deauthentication)
+6. **Deauthentication (aireplay-ng)** → Simile all'attacco precedente, ma utilizza `aireplay-ng`. È più controllato e preciso, permettendo spesso di colpire singoli client specifici invece di inondare l'intera rete. Approfondisci [qui](/notes/deauthentication).
 
-6. Deauthentication (aireplay-ng) → Similar to the previous attack but uses `aireplay-ng`. It is more controlled and precise, often targeting specific clients instead of flooding the entire network. Here for [more](/notes/deauthentication)
+7. **Authentication DoS** → Invia un gran numero di false richieste di autenticazione all'access point, tentando di esaurirne le risorse. Questo può impedire agli utenti legittimi di connettersi.
 
-7. Authentication DoS → Sends a large number of fake authentication requests to the access point, attempting to exhaust its resources. This can prevent legitimate users from connecting.
+Consiglio vivamente di testare questi attacchi **esclusivamente sulla propria rete** utilizzando contemporaneamente [Kismet](/notes/kismet) per avere un riscontro visivo di ciò che sta realmente accadendo nell'etere!
 
-I higly reccomend to use this attacks **on your own network** and using meanwhile [kismet](/notes/kismet) in order to have a feedback about what is actually going on!
+*(Attacchi più datati / meno efficaci)*
 
-(Older / less effective attacks)
+8. **Beacon Flood** → Genera un gran numero di falsi access point trasmettendo in broadcast frame *beacon* falsificati. Questo affolla l'ambiente Wi-Fi e può confondere gli utenti o gli scanner di rete.
 
-8. Beacon Flood → Generates a large number of fake access points by broadcasting forged beacon frames. This clutters the Wi-Fi environment and can confuse users or network scanners.
+9. **WIDS / WIPS / WDS Confusion** → Tenta di interferire con i sistemi di rilevamento e prevenzione delle intrusioni wireless generando pattern di traffico anomali o fuorvianti. In alcuni casi, questo crea una finestra temporale in cui è possibile eseguire un attacco reale mentre il sistema di difesa è distratto.
 
-9. WIDS / WIPS / WDS Confusion → Attempts to interfere with wireless intrusion detection/prevention systems by generating misleading or anomalous traffic patterns. In some cases, this creates a window where a real attack can be performed while the defense system is distracted.
+10. **Michael Shutdown Exploitation (TKIP)** → Prende di mira le reti che utilizzano il protocollo obsoleto TKIP. Sfruttando le debolezze nell'algoritmo Michael MIC, può innescare un blocco delle comunicazioni come meccanismo di difesa intrinseco del protocollo stesso. Tuttavia, TKIP è ormai deprecato: le reti moderne usano AES (CCMP) o WPA3 e molti dispositivi disabilitano TKIP per impostazione predefinita.
 
+#### Attacchi di Decloaking (Deautenticazione vs Dizionario)
 
-10. Michael Shutdown Exploitation (TKIP) → Targets networks using the outdated TKIP protocol. By exploiting weaknesses in the Michael MIC algorithm, it can trigger a shutdown of communication as a defensive mechanism of the protocol itself. Unfortunately TKIP is deprecated,modern networks use AES (CCMP) or WPA3 and many devices disable TKIP by default  
+<img src="/assets/images/air5.png" alt="Air5" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 
-#### Decloaking Attacks (Deauthentication vs Dictionary-Based)
+Gli attacchi di *decloaking* vengono utilizzati per rivelare le **reti Wi-Fi nascoste (hidden SSID)**.  
+In queste reti, l'access point non trasmette il proprio nome nei frame *beacon*, facendolo apparire come `<hidden>` durante le scansioni. Tuttavia, l'SSID **non è realmente segreto**, poiché viene comunque trasmesso in chiaro durante la normale comunicazione tra i client e l'access point: "nascosto" NON significa "protetto".
 
-![Air5]( /assets/images/air5.png )
+**Decloaking tramite Deautenticazione (Opzione 8)**
 
-Decloaking attacks are used to reveal **hidden Wi-Fi networks (hidden SSIDs)**.  
-In these networks, the access point does not broadcast its name in beacon frames, making it appear as “<hidden>” during scans. However, the SSID is **not truly secret** beacause it is still transmitted during normal communication between clients and the access point > “hidden” does NOT mean “protected”.
+1. Viene selezionata una rete target (BSSID + canale)  
+2. L'attaccante monitora il traffico in attesa di client connessi  
+3. Viene lanciato un attacco di deautenticazione  
+4. I client sono costretti a disconnettersi  
+5. Al momento della riconnessione, i client inviano richieste contenenti l'SSID  
+6. L'attaccante cattura questi frame e rivela il nome della rete  
 
-In **Decloaking via Deauthentication (Option 8)**
+Questo metodo è **molto veloce e aggressivo**, quindi rumoroso e facilmente rilevabile, ma rimane comunque il più efficace.
 
-1. A target network is selected (BSSID + channel)  
-2. The attacker monitors traffic waiting for connected clients  
-3. A deauthentication attack is launched  
-4. Clients are forced to disconnect  
-5. When reconnecting, clients send requests containing the SSID  
-6. The attacker captures these frames and reveals the network name  
+**Decloaking tramite Dizionario (Opzione 9)**
 
-This method is **very fast and aggressive**, therefore noisy and easy detectable, but still the most effective method.
+1. L'attaccante cattura il traffico di *probe* / associazione  
+2. Viene utilizzata una wordlist (dizionario) di possibili SSID  
+3. Il tool confronta i dati catturati con i possibili SSID presenti nella lista  
+4. Se viene trovata una corrispondenza, l'SSID nascosto viene rivelato  
 
+In alcuni casi:
+- Sfrutta specifici pattern presenti nei frame catturati  
+- Oppure correla il comportamento dei client con SSID già noti  
 
-In **Decloaking via Dictionary (Option 9)**
-
-1. The attacker captures probe/association traffic  
-2. A wordlist (dictionary) of possible SSIDs is used  
-3. The tool compares captured data with possible SSIDs  
-4. If a match is found, the hidden SSID is revealed  
-
-In some cases:
-- It leverages patterns in captured frames  
-- Or correlates client behavior with known SSIDs  
-
-This method is **passive and stealthy**, therefore slower and less reliable and depends on dictionary quality.
+Questo metodo è **passivo e silenzioso (stealth)**, di conseguenza più lento, meno affidabile e strettamente dipendente dalla qualità del dizionario utilizzato.
 
 ---
 
-Stay tuned for more...
+Restate sintonizzati per i prossimi aggiornamenti...

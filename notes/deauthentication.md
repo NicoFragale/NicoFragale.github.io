@@ -4,85 +4,79 @@ title: Deauthentication Attacks 🔫
 permalink: /notes/deauthentication/
 ---
 
-Deauthentication attacks are one of the most common and important techniques in Wi-Fi security auditing.  
-They exploit a fundamental weakness in the IEEE 802.11 protocol: **management frames are not authenticated** in many configurations (especially WPA2 without protection mechanisms like 802.11w).
+Gli attacchi di deautenticazione (*deauthentication attacks*) rappresentano una delle tecniche più comuni e rilevanti nell'auditing di sicurezza delle reti Wi-Fi.  
+Sfruttano una debolezza strutturale del protocollo IEEE 802.11: **i management frame non sono autenticati** in molte configurazioni (specialmente nelle reti WPA2 prive di meccanismi di protezione come lo standard 802.11w).
 
-This means an attacker can forge deauthentication frames and force legitimate clients to disconnect from an access point.
+Ciò significa che un attaccante può falsificare (*forge*) frame di deautenticazione e costringere i client legittimi a disconnettersi da un access point.
 
-#### How Deauthentication Works
+#### Come funziona la Deautenticazione
 
-In a normal Wi-Fi connection, a client remains associated with an access point until one of the two decides to terminate the connection.
+In una normale connessione Wi-Fi, un client rimane associato a un access point finché una delle due parti non decide di terminare la sessione.
 
-A deauthentication attack breaks this relationship by sending forged frames that appear to come from:
-- the Access Point → to disconnect the client  
-- or the Client → to disconnect from the AP  
+Un attacco di deautenticazione interrompe questa relazione inviando frame falsificati che sembrano provenire:
+- dall'Access Point → per disconnettere il client  
+- oppure dal Client → per disconnettersi dall'AP  
 
-As a result, the victim is forced to reconnect, which is extremely useful in attacks like:
-- WPA/WPA2 handshake capture  
-- Evil Twin attacks  
+Di conseguenza, la vittima è costretta a riconnettersi, un evento estremamente utile in attacchi come:
+- Cattura dell'handshake WPA/WPA2  
+- Attacchi Evil Twin  
 
+#### Deautenticazione con mdk4
 
-#### Deauthentication with mdk4
+`mdk4` è un potente strumento progettato per **attacchi wireless aggressivi e ad alta velocità**.
 
-`mdk4` is a powerful tool designed for **high-speed and aggressive wireless attacks**.
+Caratteristiche principali:
+- Invia frame di deautenticazione a frequenza molto elevata  
+- Può colpire più client contemporaneamente  
+- Può inondare l'intera rete (attacco *broadcast*)  
+- Meno preciso, ma molto efficace in ambienti affollati  
 
-Key characteristics:
-- Sends deauthentication frames at very high rates  
-- Can target multiple clients simultaneously  
-- Can flood the entire network (broadcast attack)  
-- Less precise but very effective in noisy environments  
+Caso d'uso tipico:
+- Quando si vuole **costringere rapidamente qualsiasi dispositivo connesso a riconnettersi**
+- Utile quando nessun client si sta riconnettendo autonomamente
 
-Typical use case:
-- You want to **quickly force any connected device to reconnect**
-- Useful when no clients are actively reconnecting on their own
+Limitazioni:
+- Molto rumoroso (facilmente rilevabile)
+- Può compromettere pesantemente il funzionamento dell'intera rete
+- Minore controllo sui singoli target specifici
 
-Limitations:
-- Very noisy (easy to detect)
-- Can disrupt the entire network heavily
-- Less control over specific targets
+#### Deautenticazione con aireplay-ng
 
+`aireplay-ng` fa parte della suite Aircrack-ng e offre un **approccio più controllato e mirato**.
 
-#### Deauthentication with aireplay-ng
+Caratteristiche principali:
+- Può colpire un singolo client specifico (utilizzando il suo indirizzo MAC)  
+- Consente un controllo preciso sul numero e sulla temporizzazione dei pacchetti  
+- Più discreto (*stealth*) rispetto a `mdk4`  
+- Più semplice da integrare in flussi di attacco mirati  
 
-`aireplay-ng` is part of the Aircrack-ng suite and provides a more **controlled and targeted approach**.
+Caso d'uso tipico:
+- Quando si vuole disconnettere **un singolo dispositivo specifico**  
+- Quando si esegue un test controllato in laboratorio  
+- Quando si desidera minimizzare il rumore ed evitare il rilevamento  
 
-Key characteristics:
-- Can target a specific client (using its MAC address)  
-- Allows fine control over the number and timing of packets  
-- More stealthy compared to mdk4  
-- Easier to integrate in precise attack workflows  
+Limitazioni:
+- Più lento rispetto a `mdk4`  
+- Richiede una configurazione più manuale  
+- Meno efficace se è necessario colpire molti client contemporaneamente  
 
-Typical use case:
-- You want to disconnect **one specific device**  
-- You are performing a controlled lab test  
-- You want to minimize noise and avoid detection  
+#### Differenze Principali (mdk4 vs aireplay-ng)
 
-Limitations:
-- Slower than mdk4  
-- Requires more manual setup  
-- Less effective if you need to attack many clients at once  
-
-
-#### Key Differences (mdk4 vs aireplay-ng)
-
-| Feature                  | mdk4                          | aireplay-ng                  |
+| Caratteristica           | mdk4                          | aireplay-ng                  |
 |--------------------------|-------------------------------|------------------------------|
-| Attack style             | Aggressive / Flood            | Controlled / Targeted        |
-| Speed                    | Very high                     | Moderate                     |
-| Precision                | Low                           | High                         |
-| Targeting                | Multiple / Broadcast          | Single client or AP          |
-| Noise / Detectability    | High                          | Lower                        |
-| Typical use              | Force any reconnection        | Targeted disconnection       |
+| Stile di attacco         | Aggressivo / Flood            | Controllato / Mirato         |
+| Velocità                 | Molto elevata                 | Moderata                     |
+| Precisione               | Bassa                         | Alta                         |
+| Targeting                | Multiplo / Broadcast          | Singolo client o AP          |
+| Rumore / Rilevabilità    | Alto                          | Inferiore                    |
+| Utilizzo tipico          | Forzare qualsiasi riconnessione | Disconnessione mirata      |
 
+#### Misure Difensive
 
+Le moderne reti Wi-Fi possono mitigare questi attacchi utilizzando:
 
-#### Defensive Measures
+- **802.11w (Protected Management Frames)** → impedisce l'accettazione di frame di deautenticazione falsificati (*spoofed*)  
+- **WPA3** → include protezioni crittografiche più robuste e rende obbligatorio l'uso dei PMF  
+- **Sistemi di Intrusion Detection (WIDS/WIPS)** → rilevano pattern anomali di pacchetti di deautenticazione  
 
-Modern Wi-Fi networks can mitigate these attacks using:
-
-- **802.11w (Protected Management Frames)** → prevents spoofed deauth frames  
-- WPA3 → includes stronger protections  and mandatory PMF
-- Intrusion Detection Systems (WIDS/WIPS) → detect abnormal deauth patterns  
-
-However, many networks still remain vulnerable, especially legacy WPA2 configurations.
-
+Tuttavia, molte reti rimangono tuttora vulnerabili, in particolare le configurazioni WPA2 legacy.
