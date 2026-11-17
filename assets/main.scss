@@ -117,3 +117,24 @@ h1, h2 {
   color: #e0f7fa;
   text-shadow: 0 0 12px rgba(0, 242, 254, 0.6);
 }
+
+/* Animazione fluida sulle immagini cliccabili */
+a img {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Quando passi il mouse sopra il link, l'immagine si ingrandisce del 5% */
+a:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 242, 254, 0.35); /* Aggiunge anche un leggero bagliore ciano */
+}
+
+/* Link cliccabili nel menu e negli elenchi */
+nav a, ul li a, ol li a {
+  display: inline-block;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover, ul li a:hover, ol li a:hover {
+  transform: scale(1.06);
+}
