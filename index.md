@@ -30,7 +30,18 @@ Qui gli ultimi push:
 
 ---
 
-### Links
+### Link utili
+
+<ul>
+  <li><a href="https://protocol-explorer-alpha.vercel.app">Protocol Explorer</a></li>
+  <li><a href="https://cryptohack.org/courses/">CryptoHack</a></li>
+  <li><a href="https://cyberclash.io/">Cyberclash</a></li>
+  <li><a href="https://www.acn.gov.it/portale/w/la-settimana-cibernetica-del-28-settembre-2025">Agenzia per la cybersicurezza nazionale</a></li>
+</ul>
+
+---
+
+### Link personali
 
 <ul>
   <li><a href="https://github.com/NicoFragale">GitHub</a></li>
