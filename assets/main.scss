@@ -87,3 +87,20 @@ blockquote {
     &:hover { color: $link; }
   }
 }
+
+body {
+  /* Sovrappone una patina nera al 80% di opacità sopra l'immagine per garantire la leggibilità del testo */
+  background-image: linear-gradient(rgba(15, 15, 20, 0.50), rgba(15, 15, 20, 0.80)), url('/assets/images/sfondo.jpg');
+  
+  /* Adatta l'immagine a tutto lo schermo senza deformarla */
+  background-size: cover;
+  
+  /* Centra l'immagine */
+  background-position: center center;
+  
+  /* Mantiene lo sfondo fisso mentre scorri la pagina (effetto parallasse) */
+  background-attachment: scroll;
+  
+  /* Evita che l'immagine si ripeta a mosaico */
+  background-repeat: no-repeat;
+}
