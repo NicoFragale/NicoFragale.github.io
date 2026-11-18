@@ -12,7 +12,7 @@ Questo progetto nasce con l'obiettivo di costruire un **Home Lab** personale par
 Al momento il sistema è nella sua fase iniziale: ho completato l'installazione e la configurazione di base di **Proxmox VE**.
 
 
-### Obiettivi del Progetto e Servizi Pianificati
+### **Obiettivi del Progetto e Servizi Pianificati**
 
 L'idea alla base di questo laboratorio domestico è riprendere il controllo sui propri dati, ridurre la dipendenza da servizi cloud di terze parti e fare pratica concreta con l'amministrazione di sistemi, il networking e la sicurezza delle infrastrutture iniziando ad installare servizi come: Pi-hole, Jellyfin e Immich, il tutto accessibile da remoto tramite VPN
 
