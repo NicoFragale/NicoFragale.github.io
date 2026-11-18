@@ -16,9 +16,8 @@ Le informazioni raccolte possono essere successivamente condivise o caricate su 
 
 Un'analogia efficace consiste nel pensare al wardriving come alla **mappatura dei numeri civici di un quartiere**: invece di annotare edifici e cassette postali, il *wardriver* registra la posizione degli access point wireless che trasmettono il proprio segnale nell'etere.
 
----
 
-### Uso Legittimo e Abuso
+### **Uso Legittimo e Abuso
 
 Il wardriving di per sé non implica necessariamente un comportamento illegale. Nella sua forma base, consiste semplicemente nel **rilevare le reti wireless e raccogliere informazioni tecniche** trasmesse pubblicamente.
 
@@ -30,9 +29,8 @@ Tuttavia, alcuni soggetti approfittano di **impostazioni di sicurezza deboli o m
 
 Quando il wardriving viene utilizzato per questi scopi, rientra nella categoria più ampia dell'**uso non autorizzato di reti wireless**, talvolta indicato come *wireless theft* o *thiefing*.
 
----
 
-### Warchalking
+### **Warchalking**
 
 È una tecnica nata per identificare le reti wireless ed elencarne rapidamente le caratteristiche **disegnando appositi simboli con il gesso negli spazi pubblici**, indicando ad esempio:
 
@@ -40,9 +38,8 @@ Quando il wardriving viene utilizzato per questi scopi, rientra nella categoria 
 - se è disponibile l'accesso a Internet
 - quale tipologia di sicurezza o cifratura viene utilizzata
 
----
 
-### Warkitting
+### **Warkitting**
 
 Un concetto più avanzato e potenzialmente molto pericoloso è il **warkitting**, che combina il wardriving con attacchi a livello di firmware.
 
@@ -54,9 +51,8 @@ In un attacco di warkitting, l'attaccante **sostituisce o modifica il firmware d
 
 Il concetto di warkitting è stato descritto nel 2006 dai ricercatori **Tsow, Jakobsson, Yang e Wetzel** in questo [paper](https://markus-jakobsson.com/papers/jakobsson-jdfp06-warkit.pdf).
 
----
 
-### Wardriving Passivo
+### **Wardriving Passivo**
 
 La forma più comune di wardriving è il **wardriving passivo**, che consiste semplicemente nell'ascoltare i segnali trasmessi dagli access point wireless.
 
@@ -69,9 +65,8 @@ catturano i **beacon frame** trasmessi periodicamente in broadcast dalle reti Wi
 
 In questo scenario il dispositivo **non interagisce in alcun modo con la rete**, limitandosi ad ascoltare le trasmissioni radio diffuse pubblicamente.
 
----
 
-### Wardriving Attivo
+### **Wardriving Attivo**
 
 Alcuni strumenti eseguono invece una scansione di tipo più attivo. Ad esempio, **NetStumbler** invia **probe request** alle reti wireless circostanti.
 

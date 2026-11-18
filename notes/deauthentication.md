@@ -13,7 +13,7 @@ Sfruttano una debolezza strutturale del protocollo IEEE 802.11: **i management f
 
 Ciò significa che un attaccante può falsificare (*forge*) frame di deautenticazione e costringere i client legittimi a disconnettersi da un access point.
 
-#### Come funziona la Deautenticazione
+### **Come funziona la Deautenticazione**
 
 In una normale connessione Wi-Fi, un client rimane associato a un access point finché una delle due parti non decide di terminare la sessione.
 
@@ -25,7 +25,7 @@ Di conseguenza, la vittima è costretta a riconnettersi, un evento estremamente 
 - Cattura dell'handshake WPA/WPA2  
 - Attacchi Evil Twin  
 
-#### Deautenticazione con mdk4
+### **Deautenticazione con mdk4**
 
 `mdk4` è un potente strumento progettato per **attacchi wireless aggressivi e ad alta velocità**.
 
@@ -44,7 +44,7 @@ Limitazioni:
 - Può compromettere pesantemente il funzionamento dell'intera rete
 - Minore controllo sui singoli target specifici
 
-#### Deautenticazione con aireplay-ng
+### **Deautenticazione con aireplay-ng**
 
 `aireplay-ng` fa parte della suite Aircrack-ng e offre un **approccio più controllato e mirato**.
 
@@ -64,7 +64,7 @@ Limitazioni:
 - Richiede una configurazione più manuale  
 - Meno efficace se è necessario colpire molti client contemporaneamente  
 
-#### Differenze Principali (mdk4 vs aireplay-ng)
+### **Differenze Principali (mdk4 vs aireplay-ng)**
 
 | Caratteristica           | mdk4                          | aireplay-ng                  |
 |--------------------------|-------------------------------|------------------------------|
@@ -75,7 +75,7 @@ Limitazioni:
 | Rumore / Rilevabilità    | Alto                          | Inferiore                    |
 | Utilizzo tipico          | Forzare qualsiasi riconnessione | Disconnessione mirata      |
 
-#### Misure Difensive
+### **Misure Difensive**
 
 Le moderne reti Wi-Fi possono mitigare questi attacchi utilizzando:
 

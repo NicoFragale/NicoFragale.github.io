@@ -10,12 +10,12 @@ permalink: /notes/Anonymity/
 
 Ogni dispositivo connesso a una rete deve identificarsi per poter comunicare con altri sistemi tramite il proprio **indirizzo IP**; ciò significa che ogni volta che accediamo a un sito web o a un servizio, una qualche forma di **identità di rete** viene inevitabilmente esposta.
 
-### 1. Indirizzi IP Locali (Reti Private)
+### **1. Indirizzi IP Locali (Reti Private)**
 All'interno di una rete domestica o aziendale, i dispositivi sono collegati a una **rete locale (LAN)** gestita da un router che assegna a ciascun dispositivo un **indirizzo IP privato** utilizzando il protocollo **DHCP (Dynamic Host Configuration Protocol)**.
 
 I tipici intervalli di indirizzi privati rientrano nel range `192.168.0.0 – 192.168.255.255`: questi sono validi **esclusivamente all'interno della rete locale** e non sono direttamente raggiungibili da Internet.
 
-### 2. Dalla Rete Locale a Internet (NAT)
+### **2. Dalla Rete Locale a Internet (NAT)**
 Il **NAT (Network Address Translation)** consente a più dispositivi all'interno di una rete locale di condividere un singolo indirizzo pubblico. Pertanto, quando un dispositivo invia un pacchetto verso Internet:
 
 1. Il pacchetto lascia il dispositivo con il proprio IP privato.
@@ -24,7 +24,7 @@ Il **NAT (Network Address Translation)** consente a più dispositivi all'interno
 
 Il router tiene traccia di queste traduzioni utilizzando una tabella NAT.
 
-### 3. Indirizzo IP Pubblico e Routing su Internet
+### **3. Indirizzo IP Pubblico e Routing su Internet**
 L'indirizzo IP pubblico viene assegnato dal tuo Internet Service Provider (ISP, come TIM, Vodafone, ecc.) nel momento in cui il router si connette alla rete ed è l'indirizzo che i siti web e i server vedono quando ti colleghi.
 
 Puoi scoprire il tuo IP pubblico eseguendo da terminale:
@@ -43,7 +43,7 @@ curl ipinfo.io
 }
 ```
 
-### 4. L'IP può rivelare informazioni
+### **4. L'IP può rivelare informazioni**
 Sebbene un indirizzo IP non riveli direttamente l'identità anagrafica di una persona, può comunque esporre diverse informazioni utili alla profilazione:
 
 - posizione geografica approssimativa
@@ -54,7 +54,7 @@ Sebbene un indirizzo IP non riveli direttamente l'identità anagrafica di una pe
 
 Inoltre, anche se l'indirizzo IP cambia, gli utenti possono comunque essere tracciati attraverso altri meccanismi come il **Browser Fingerprinting** ([testalo qui](https://amiunique.org)).
 
-### 5. Meccanismi Difensivi
+### **5. Meccanismi Difensivi**
 Esistono diversi strumenti e meccanismi per migliorare la privacy e ridurre la tracciabilità:
 
 - Web Browser orientati alla privacy (es. Brave)
@@ -64,9 +64,8 @@ Esistono diversi strumenti e meccanismi per migliorare la privacy e ridurre la t
 - DNS over HTTPS (DoH)
 - DNS over TLS (DoT)
 
----
 
-## Browser
+### **Browser**
 
 Il browser con cui mi sento più sicuro è **Brave**, poiché si concentra fortemente su **privacy e sicurezza**.
 
@@ -87,15 +86,14 @@ Ad esempio, monitoro il mio sito web utilizzando **Google Analytics** e, anche q
 
 [Approfondimento su Brave](https://www.youtube.com/watch?v=4mgMZFHv1uM)
 
----
 
-## Tails OS
+### **Tails OS**
 
 **Tails (The Amnesic Incognito Live System)** è un sistema operativo incentrato sulla privacy, progettato per preservare l'anonimato e non lasciare tracce sul computer utilizzato.
 
 A differenza dei sistemi operativi tradizionali che vengono installati permanentemente su disco, Tails è un **sistema operativo live** che viene eseguito direttamente da una **chiavetta USB o da un DVD**. Ciò significa che è possibile avviare quasi qualsiasi computer con Tails senza modificare il sistema esistente.
 
-### Sistema amnesico
+### **Sistema amnesico**
 
 Il termine **amnesico** indica che il sistema non conserva memoria delle attività svolte dopo lo spegnimento.
 
@@ -109,7 +107,7 @@ Tutto viene eseguito nella **RAM** e, quando il computer viene spento, la memori
 
 Questo rende Tails particolarmente utile quando si lavora su **computer condivisi o macchine non fidate**, anche se sappiamo che a livello forense la RAM può talvolta trattenere tracce residue per un breve intervallo dopo lo spegnimento (*cold boot attacks*).
 
-### Strumenti per la privacy integrati
+### **Strumenti per la privacy integrati**
 
 Tails include diversi strumenti già preconfigurati per la privacy e la sicurezza:
 
@@ -121,7 +119,7 @@ Tails include diversi strumenti già preconfigurati per la privacy e la sicurezz
 
 Questi tool sono già configurati affinché l'utente non debba impostare manualmente le protezioni di base.
 
-### Archiviazione persistente (opzionale)
+### **Archiviazione persistente (opzionale)**
 
 Sebbene Tails sia progettato per dimenticare tutto, è possibile creare uno **spazio di archiviazione persistente cifrato** (*Encrypted Persistent Storage*) sulla chiavetta USB.
 
@@ -134,9 +132,8 @@ Questo consente di salvare in sicurezza:
 
 [Tails spiegato da uno dei miei creator preferiti](https://www.youtube.com/watch?v=IOTCGUQ51xo)
 
----
 
-## VPN
+### ** VPN**
 
 Una **VPN (Virtual Private Network)** è una tecnologia che cifra il traffico Internet e lo instrada attraverso un server remoto prima di raggiungere la destinazione finale. Invece di vedere il tuo indirizzo IP pubblico, i siti web vedono l'indirizzo IP del server VPN. Questo fornisce un ulteriore livello di privacy e impedisce al tuo Internet Service Provider (ISP), agli amministratori di rete o ad eventuali attaccanti su reti pubbliche di monitorare facilmente la tua attività online.
 
@@ -155,7 +152,7 @@ Per queste ragioni, una VPN va considerata come **uno strumento che migliora pri
 
 Per capire cosa fa realmente una VPN, è utile confrontare il funzionamento di una connessione normale con quello di una connessione protetta da VPN.
 
-### Senza VPN (`Tu → ISP → Sito Web`)
+### **Senza VPN (`Tu → ISP → Sito Web`)**
 
 Il tuo **ISP ti assegna un indirizzo IP pubblico**, ed è questo l'indirizzo che i siti web vedono quando ti connetti.
 
@@ -176,7 +173,7 @@ Ma l'ISP **non può vedere**:
 
 *(Se la connessione non è cifrata, ovvero in HTTP, l'ISP potrebbe invece leggere in chiaro anche l'intero contenuto del traffico).*
 
-### Con VPN (`Tu → ISP → Server VPN → Sito Web`)
+### **Con VPN (`Tu → ISP → Server VPN → Sito Web`)**
 
 Quando utilizzi una VPN, il tuo traffico passa comunque attraverso il tuo Internet Service Provider (ISP), poiché è l'entità che ti fornisce l'accesso fisico a Internet. Tuttavia, l'ISP non può vedere la destinazione finale né il contenuto del traffico una volta stabilito il tunnel VPN.
 
@@ -201,9 +198,8 @@ Tuttavia, l'ISP non può vedere:
 
 Infine, il **sito web visitato vedrà esclusivamente l'indirizzo IP del server VPN** e non il tuo.
 
----
 
-## GrapheneOS
+### **GrapheneOS**
 
 **GrapheneOS** è un sistema operativo mobile fortemente incentrato su privacy e sicurezza, sviluppato specificamente per i dispositivi **Google Pixel**.
 
