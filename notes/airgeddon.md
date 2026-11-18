@@ -4,6 +4,7 @@ title: Airgeddon 🤖
 permalink: /notes/Airgeddon/
 ---
 
+
 Airgeddon è uno script Bash open-source progettato per automatizzare e semplificare l'auditing di sicurezza delle reti Wi-Fi. Agisce come un *wrapper* attorno a strumenti ben noti come `aircrack-ng`, `airodump-ng`, `aireplay-ng` e altri, offrendo un'interfaccia guidata e interattiva.
 
 Invece di eseguire manualmente molteplici comandi, Airgeddon consente di condurre complessi attacchi wireless passo dopo passo attraverso un flusso di lavoro basato su menu.

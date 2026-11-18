@@ -4,6 +4,10 @@ title: Kismet 🚧
 permalink: /notes/kismet/
 ---
 
+
+* Placeholder
+{:toc}
+
 [Kismet](https://www.kismetwireless.net/docs/readme/logging/logging/) è uno sniffer open-source, un sistema WIDS (*Wireless Intrusion Detection System*), uno strumento di wardriving e di cattura pacchetti per Wi-Fi, Bluetooth, BLE (BTLE), termometri wireless, aeromobili (ADS-B), contatori intelligenti, Zigbee e molto altro.
 
 Opera quasi interamente in modo passivo, salvo rare eccezioni, e in generale non è uno strumento offensivo.

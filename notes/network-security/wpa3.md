@@ -4,6 +4,10 @@ title: WPA3 💦​
 permalink: /notes/network-security/wpa3/
 ---
 
+
+* Placeholder
+{:toc}
+
 ## Prerequisites
 
 - **Diffie-Hellman Key Exchange**  

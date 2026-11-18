@@ -4,6 +4,10 @@ title: WPA2 4-Way Handshake 🫂​
 permalink: /notes/network-security/wpa2-4way-handshake/
 ---
 
+
+* Placeholder
+{:toc}
+
 ## Prerequisites
 
 1. IEEE 802.11 Link-Layer Fundamentals.

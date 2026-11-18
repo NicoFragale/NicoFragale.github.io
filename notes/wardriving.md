@@ -4,6 +4,10 @@ title: Wardriving 🚗
 permalink: /notes/wardriving/
 ---
 
+
+* Placeholder
+{:toc}
+
 Il **Wardriving** è l'attività di rilevamento e registrazione delle reti Wi-Fi mentre ci si sposta fisicamente attraverso un'area, tipicamente in auto, in bicicletta o a piedi.  
 Per praticare il wardriving si utilizza solitamente un **laptop o un dispositivo portatile dotato di un adattatore Wi-Fi** abbinato a un **ricevitore GPS**, al fine di registrare le coordinate geografiche di ciascuna rete rilevata.
 

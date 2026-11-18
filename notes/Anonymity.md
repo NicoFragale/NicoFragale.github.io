@@ -4,6 +4,10 @@ title: Anonymity 👻
 permalink: /notes/Anonymity/
 ---
 
+
+* Placeholder
+{:toc}
+
 Ogni dispositivo connesso a una rete deve identificarsi per poter comunicare con altri sistemi tramite il proprio **indirizzo IP**; ciò significa che ogni volta che accediamo a un sito web o a un servizio, una qualche forma di **identità di rete** viene inevitabilmente esposta.
 
 ### 1. Indirizzi IP Locali (Reti Private)

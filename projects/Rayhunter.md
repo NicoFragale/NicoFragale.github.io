@@ -4,6 +4,10 @@ title: Rayhunter 🦈
 permalink: /projects/Rayhunter/
 ---
 
+
+* Placeholder
+{:toc}
+
 ## Rayhunter
 
 [Rayhunter](https://github.com/EFForg/rayhunter) è un progetto progettato per rilevare gli **IMSI catcher**, noti anche come **cell-site simulator** o **Stingray**.

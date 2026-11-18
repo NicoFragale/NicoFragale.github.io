@@ -4,7 +4,6 @@ title: Home Lab (Proxmox) 🦇
 permalink: /projects/HomeLab/
 ---
 
-## Indice
 * Placeholder
 {:toc}
 

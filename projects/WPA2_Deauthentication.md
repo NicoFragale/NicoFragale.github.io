@@ -4,6 +4,9 @@ title: WPA2 Deauthentication 👾
 permalink: /projects/WPA2_Deauthentication/
 ---
 
+* Placeholder
+{:toc}
+
 ## Panoramica del Progetto
 
 Questo progetto descrive le fasi necessarie per valutare la sicurezza della mia rete Wi-Fi in un ambiente controllato.

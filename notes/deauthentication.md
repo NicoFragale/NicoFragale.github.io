@@ -4,6 +4,10 @@ title: Deauthentication Attacks 🔫
 permalink: /notes/deauthentication/
 ---
 
+
+* Placeholder
+{:toc}
+
 Gli attacchi di deautenticazione (*deauthentication attacks*) rappresentano una delle tecniche più comuni e rilevanti nell'auditing di sicurezza delle reti Wi-Fi.  
 Sfruttano una debolezza strutturale del protocollo IEEE 802.11: **i management frame non sono autenticati** in molte configurazioni (specialmente nelle reti WPA2 prive di meccanismi di protezione come lo standard 802.11w).
 
