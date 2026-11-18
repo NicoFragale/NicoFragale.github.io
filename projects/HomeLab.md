@@ -4,6 +4,10 @@ title: Home Lab (Proxmox) 🦇
 permalink: /projects/HomeLab/
 ---
 
+## Indice
+* Placeholder
+{:toc}
+
 Questo progetto nasce con l'obiettivo di costruire un **Home Lab** personale partendo dal recupero di hardware già in mio possesso: un vecchio PC portatile riconvertito in un nodo server dedicato.
 
 Al momento il sistema è nella sua fase iniziale: ho completato l'installazione e la configurazione di base di **Proxmox VE**.
