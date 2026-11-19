@@ -12,7 +12,6 @@ permalink: /projects/Pwngotchi/
 
 <img src="https://nicofragale.github.io/assets/images/got.jpg" alt="pwnagotchi" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 
----
 
 ### **Piattaforma Hardware**
 
@@ -32,7 +31,7 @@ Il display mostra un semplice personaggio animato che riflette lo stato attuale 
 - stato della batteria e della memoria
 
 
-### ** Algoritmo di Apprendimento**
+### **Algoritmo di Apprendimento**
 
 Uno degli aspetti più distintivi di Pwnagotchi è l'utilizzo del **reinforcement learning** (apprendimento per rinforzo).
 
@@ -47,13 +46,13 @@ Ad esempio, può imparare:
 Il modello di apprendimento adatta il comportamento del dispositivo con l'obiettivo di massimizzare il numero di handshake catturati.
 
 
-### ** Una volta catturati gli Handshake**
+### **Una volta catturati gli Handshake**
 
 È possibile connettersi al dispositivo tramite SSH e trasferire i file di cattura sul proprio computer per analizzarli utilizzando gli strumenti della [suite Aircrack-ng](/notes/network-security/Aircrack-ng/).  
 È inoltre possibile accedere alla Web UI per modificare alcune funzionalità e l'interfaccia grafica visualizzata sul display Waveshare.
 
 
-### ** Cosa ho imparato**
+### **Cosa ho imparato**
 
 Questo progetto ha rappresentato anche la mia prima esperienza con un **Raspberry Pi**, aiutandomi a comprendere meglio il funzionamento di questo tipo di hardware; ho inoltre imparato a installare e configurare il firmware sul sistema, un passaggio fondamentale per rendere il dispositivo operativo.
 

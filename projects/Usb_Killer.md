@@ -8,7 +8,7 @@ Un progetto non particolarmente difficile che ho realizzato in questi giorni è 
 
 Per questo progetto è possibile utilizzare un **RP2040** (acquistabile facilmente su AliExpress), un **Raspberry Pi Pico** ufficiale oppure una **USB Rubber Ducky** originale di Hak5.
 
-## RP2040
+### **RP2040**
 
 L'**RP2040** è un microcontrollore molto versatile per sistemi embedded e progetti hardware, progettato per controllare e interagire con componenti elettronici come sensori, LED, motori e display, programmabile in **C/C++ o MicroPython**.
 
@@ -16,7 +16,7 @@ L'**RP2040** è un microcontrollore molto versatile per sistemi embedded e proge
 
 Una delle caratteristiche più interessanti dell'RP2040 è il suo sottosistema **Programmable I/O (PIO)**, che consente agli sviluppatori di implementare interfacce hardware personalizzate direttamente via software — anche se questo aspetto esula dai miei interessi principali per questo test.
 
-## Come funziona il progetto
+### **Come funziona il progetto**
 
 In realtà non ho dovuto fare molto, perché mi è bastato configurare l'RP2040 seguendo [questa guida](https://github.com/dbisu/pico-ducky) per emulare una Rubber Ducky di Hak5 e caricare il payload disponibile [qui](https://github.com/hak5/usbrubberducky-payloads/tree/master/payloads/library/prank/-RD-ADV-RickRoll).
 
@@ -25,7 +25,7 @@ Lo script è stato eseguito quasi correttamente, ma il passaggio finale non è a
 
 Per verificare se si trattasse solo di un problema temporaneo, ho scollegato il dispositivo e l'ho ricollegato. Tuttavia, al secondo tentativo, Windows Defender ha rilevato immediatamente l'attività sospetta e ha bloccato l'esecuzione del payload USB.
 
-## Considerazioni Finali
+### **Considerazioni Finali**
 
 Sono consapevole che non si tratti di nulla di particolarmente impressionante, dato che si è trattato principalmente di una semplice configurazione, del caricamento del payload e di un test.
 

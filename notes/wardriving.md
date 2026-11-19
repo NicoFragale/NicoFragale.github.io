@@ -17,7 +17,7 @@ Le informazioni raccolte possono essere successivamente condivise o caricate su 
 Un'analogia efficace consiste nel pensare al wardriving come alla **mappatura dei numeri civici di un quartiere**: invece di annotare edifici e cassette postali, il *wardriver* registra la posizione degli access point wireless che trasmettono il proprio segnale nell'etere.
 
 
-### **Uso Legittimo e Abuso
+### **Uso Legittimo e Abuso**
 
 Il wardriving di per sé non implica necessariamente un comportamento illegale. Nella sua forma base, consiste semplicemente nel **rilevare le reti wireless e raccogliere informazioni tecniche** trasmesse pubblicamente.
 

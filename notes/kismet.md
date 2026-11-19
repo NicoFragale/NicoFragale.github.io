@@ -14,7 +14,7 @@ Opera quasi interamente in modo passivo, salvo rare eccezioni, e in generale non
 
 È possibile utilizzare Kismet per la ricognizione passiva e per individuare reti deboli o mal configurate, ma anche per monitorare attività sospette all'interno della propria rete e supportare attività come il wardriving. Rispetto ad `airodump-ng` è molto più intuitivo e completo: diamogli un'occhiata!
 
-### ** 🖥️ Interfaccia Web di Kismet – Panoramica Home**
+### **🖥️ Interfaccia Web di Kismet – Panoramica Home**
 
 <img src="https://nicofragale.github.io/assets/images/kismet.png" alt="kismet" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 
@@ -34,7 +34,7 @@ La sezione principale della pagina è costituita da una tabella che elenca tutte
 
 Ogni riga rappresenta una rete rilevata e la tabella si aggiorna continuamente man mano che vengono individuati nuovi dispositivi o cambia l'attività di rete.
 
-### ** 🚨 Kismet Alerts – Rilevamento delle Minacce in Tempo Reale**
+### **🚨 Kismet Alerts – Rilevamento delle Minacce in Tempo Reale**
 
 <img src="https://nicofragale.github.io/assets/images/kAlert1.png" alt="Alert1" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 
@@ -50,7 +50,7 @@ Inoltre, il pannello mostra avvisi legati al sistema stesso (come l'esecuzione d
 L'immagine fornisce maggiori dettagli su come è stato condotto l'attacco DoS: il firmware Bruce esegue infatti un *Deauth Attack* falsificando (*spoofing*) l'indirizzo MAC dell'Access Point.
 
 
-### ** Informazioni sull'Access Point**
+### **Informazioni sull'Access Point**
 
 <img src="/assets/images/kismet-ap.png" alt="Kismet AP" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 

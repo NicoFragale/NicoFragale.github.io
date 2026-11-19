@@ -9,6 +9,8 @@ Online si trovano moltissimi tutorial e dimostrazioni — specialmente su YouTub
 
 L'ho installato sul mio **Samsung A50** in un paio d'ore e, dopo averlo testato per un po', sono giunto a una conclusione piuttosto deludente.
 
+<img src="https://nicofragale.github.io/assets/images/nethunter.jpg" alt="Kali NetHunter" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
+
 **Il gioco non vale la candela.**
 
 Sebbene l'idea di avere una piattaforma di penetration testing in tasca sembri entusiasmante, nella pratica risulta piuttosto limitata: molte funzionalità avanzate richiedono infatti un supporto hardware specifico (come chipset Wi-Fi compatibili con la *monitor mode* o la *packet injection*), di cui la maggior parte degli smartphone è semplicemente sprovvista.
@@ -21,4 +23,3 @@ In realtà, se oggi si cercano strumenti portatili per la sicurezza informatica,
 
 Queste configurazioni sono più flessibili, più potenti e spesso molto più pratiche da utilizzare in scenari reali.
 
-<img src="https://nicofragale.github.io/assets/images/nethunter.jpg" alt="Kali NetHunter" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />

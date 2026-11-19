@@ -4,13 +4,10 @@ title: WPA2 4-Way Handshake 🫂
 permalink: /notes/network-security/wpa2-4way-handshake/
 ---
 
-## Indice
-{:.no_toc}
 
 * Placeholder
 {:toc}
 
----
 
 ### **Prerequisiti**
 

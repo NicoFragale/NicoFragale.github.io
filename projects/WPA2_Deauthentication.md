@@ -7,7 +7,7 @@ permalink: /projects/WPA2_Deauthentication/
 * Placeholder
 {:toc}
 
-### ** Panoramica del Progetto**
+### **Panoramica del Progetto**
 
 Questo progetto descrive le fasi necessarie per valutare la sicurezza della mia rete Wi-Fi in un ambiente controllato.
 
@@ -18,7 +18,7 @@ L'analisi è stata eseguita utilizzando gli strumenti della suite [Aircrack-ng](
 Se non hai familiarità con il 4-Way Handshake di WPA2, puoi consultare la spiegazione dettagliata [qui](/notes/network-security/wpa2-4way-handshake/).
 
 
-### ** 1. Ricognizione e Mappatura dell'Ambiente (Osservazione Passiva)**
+### **1. Ricognizione e Mappatura dell'Ambiente (Osservazione Passiva)**
 
 La prima fase consiste nell'osservare l'ambiente wireless circostante.
 
@@ -50,7 +50,7 @@ Infine, consiglio l'utilizzo di **Airgraph-ng** per visualizzare graficamente e 
 <img src="https://nicofragale.github.io/assets/images/airodump.png" alt="airodump" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 
 
-### ** 2. Innesco della Riassociazione e Cattura dell'Handshake**
+### **2. Innesco della Riassociazione e Cattura dell'Handshake**
 
 Il *4-Way Handshake* avviene ogni volta che un client si connette o si riconnette a un access point.
 
@@ -61,7 +61,7 @@ I dispositivi moderni, come gli smartphone recenti, implementano spesso protezio
 <img src="https://nicofragale.github.io/assets/images/aireplay.png" alt="aireplay" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 
 
-### ** 3. Ispezione del Protocollo con Wireshark**
+### **3. Ispezione del Protocollo con Wireshark**
 
 Il traffico catturato può essere analizzato tramite **Wireshark**: filtrando per i frame `eapol` è possibile osservare i 4 messaggi dell'handshake.
 
@@ -70,7 +70,7 @@ Particolare attenzione va posta sui **Messaggi 1 e 2**, poiché contengono i par
 <img src="https://nicofragale.github.io/assets/images/wireshark.png" alt="wireshark" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 
 
-### ** 4. Verifica Offline della Password**
+### **4. Verifica Offline della Password**
 
 Per ciascuna passphrase candidata presente nel dizionario (ad esempio `rockyou.txt`):
 

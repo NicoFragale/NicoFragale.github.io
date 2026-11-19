@@ -4,11 +4,11 @@ title: Software Defined Radio ✈️
 permalink: /projects/Software_Defined_Radio/
 ---
 
-## Hardware utilizzato
+### **Hardware utilizzato**
 - RTL-SDR v3
 - Antenna a 1090 MHz (antenna a dipolo)
 
-## Tracciamento degli Aerei con RTL-SDR
+### **Tracciamento degli Aerei con RTL-SDR**
 
 Utilizzando un ricevitore RTL-SDR è possibile monitorare passivamente le trasmissioni degli aeromobili sulla banda di frequenza a **1090 MHz**, poiché gli aerei commerciali inviano periodicamente informazioni telemetriche tramite il protocollo **ADS-B (Automatic Dependent Surveillance–Broadcast)**, i cui segnali sono trasmessi in chiaro (non cifrati) e in broadcast affinché i sistemi di controllo del traffico aereo e gli altri velivoli nelle vicinanze possano ricevere informazioni sulla posizione e sullo stato del volo.
 
@@ -33,7 +33,7 @@ Per visualizzare su mappa le posizioni decodificate, ho confrontato i dati con a
 
 <img src="https://nicofragale.github.io/assets/images/opensky.png" alt="opensky" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 
-### Vulnerabilità
+### **Vulnerabilità**
 
 Diversi studi accademici hanno dimostrato che il protocollo ADS-B è privo di meccanismi di autenticazione e cifratura, rendendolo teoricamente vulnerabile ad attacchi di *message injection* e *spoofing* in grado di generare "aerei fantasma" (*ghost aircraft*) mediante specifici trasmettitori SDR.  
 

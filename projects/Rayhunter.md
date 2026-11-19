@@ -8,14 +8,14 @@ permalink: /projects/Rayhunter/
 * Placeholder
 {:toc}
 
-### ** Rayhunter**
+### **Rayhunter**
 
 [Rayhunter](https://github.com/EFForg/rayhunter) è un progetto progettato per rilevare gli **IMSI catcher**, noti anche come **cell-site simulator** o **Stingray**.
 
 Mi sono imbattuto in questo progetto mentre studiavo le **infrastrutture di rete mobile** durante il mio corso di *Network Security*. In particolare, l'argomento riguardava il momento in cui un dispositivo mobile si connette a una nuova stazione radio base cellulare per autenticarsi e ottenere l'accesso ai servizi forniti dall'operatore mobile, come chiamate vocali, SMS e connettività dati.
 
 
-### ** Piattaforma Hardware**
+### **Piattaforma Hardware**
 
 Il progetto è stato originariamente progettato per funzionare su un **economico hotspot mobile chiamato Orbic RC400L**, operativo esclusivamente negli Stati Uniti.
 
@@ -28,7 +28,7 @@ La guida ufficiale che descrive la procedura di installazione per il TP-Link M73
 Installare il firmware è relativamente semplice: la documentazione ufficiale su GitHub fornisce una chiara procedura passo-passo e online sono disponibili anche diversi video tutorial.
 
 
-### ** Perché esiste questo progetto?**
+### **Perché esiste questo progetto?**
 
 Per comprendere le motivazioni alla base di Rayhunter, è necessario osservare brevemente come i **dispositivi mobili si autenticano alle reti cellulari**.
 
@@ -42,7 +42,7 @@ Quando uno smartphone viene acceso o entra nell'area di copertura di una nuova s
 L'identificativo utilizzato a questo scopo, inviato dal terminale mobile alla stazione radio base, è l'**IMSI (International Mobile Subscriber Identity)**.
 
 
-### ** Cos'è l'IMSI?**
+### **Cos'è l'IMSI?**
 
 L'IMSI è un identificativo univoco memorizzato all'interno della **scheda SIM** che identifica l'abbonato all'interno della rete mobile.
 
@@ -55,7 +55,7 @@ L'IMSI è un identificativo univoco memorizzato all'interno della **scheda SIM**
 Insieme, questi valori identificano in modo univoco un utente nella rete cellulare globale.
 
 
-### ** Il Problema: gli IMSI Catcher**
+### **Il Problema: gli IMSI Catcher**
 
 La vulnerabilità nasce dal fatto che un dispositivo mobile **non può verificare inizialmente se una stazione radio base sia legittima**, poiché è solo il terminale mobile ad autenticarsi verso la rete.
 
@@ -97,7 +97,7 @@ Questa autenticazione reciproca riduce significativamente l'efficacia delle staz
 Molti attacchi basati su IMSI catcher puntano a forzare i dispositivi a effettuare un **downgrade verso tecnologie cellulari più datate**, in particolare il **2G**, dove le protezioni di sicurezza sono più deboli. Questo è il tipo di attacco più comune, dal momento che i dispositivi danno priorità al mantenimento della connettività in qualsiasi situazione.
 
 
-### ** Come operano i moderni IMSI Catcher**
+### **Come operano i moderni IMSI Catcher**
 
 1. L'attaccante simula una **stazione radio base 4G o 3G**.
 2. I dispositivi mobili nelle vicinanze tentano di connettersi a questa cella.
@@ -114,7 +114,7 @@ I dispositivi mobili selezionano la cella servente in base a diversi parametri r
 Di conseguenza, i dispositivi possono agganciarsi automaticamente all'infrastruttura malevola.
 
 
-### ** Perché gli IMSI Catcher sono difficili da rilevare**
+### **Perché gli IMSI Catcher sono difficili da rilevare**
 
 Gli IMSI catcher sono progettati per comportarsi in modo simile alle stazioni radio base legittime, il che li rende difficili da individuare.
 
@@ -126,7 +126,7 @@ Tuttavia, presentano spesso caratteristiche anomale come:
 - **frequenti richieste di identità da parte della rete**
 
 
-### ** Tracciamento degli IMSI Catturati**
+### **Tracciamento degli IMSI Catturati**
 
 Tracciare i dispositivi utilizzando gli IMSI catturati non implica necessariamente l'intercettazione delle comunicazioni.  
 Nella maggior parte dei casi, l'obiettivo è semplicemente determinare se uno specifico dispositivo sia presente in una determinata area e, se possibile, stimarne la posizione.  
@@ -138,7 +138,7 @@ In presenza di più ricevitori o antenne, è possibile stimare la posizione di u
 Anche senza triangolazione, gli IMSI catcher possono comunque eseguire un **tracciamento temporale**. Registrando quando e dove viene osservato un IMSI, diventa possibile ricostruire un percorso approssimativo degli spostamenti del dispositivo nel tempo.
 
 
-### ** Limiti del Tracciamento basato su IMSI**
+### **Limiti del Tracciamento basato su IMSI**
 
 Sebbene gli IMSI catcher possano fornire informazioni utili sulla localizzazione, questo metodo presenta diversi limiti:
 

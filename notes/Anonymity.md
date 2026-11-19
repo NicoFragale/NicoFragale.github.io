@@ -133,7 +133,7 @@ Questo consente di salvare in sicurezza:
 [Tails spiegato da uno dei miei creator preferiti](https://www.youtube.com/watch?v=IOTCGUQ51xo)
 
 
-### ** VPN**
+### **VPN**
 
 Una **VPN (Virtual Private Network)** è una tecnologia che cifra il traffico Internet e lo instrada attraverso un server remoto prima di raggiungere la destinazione finale. Invece di vedere il tuo indirizzo IP pubblico, i siti web vedono l'indirizzo IP del server VPN. Questo fornisce un ulteriore livello di privacy e impedisce al tuo Internet Service Provider (ISP), agli amministratori di rete o ad eventuali attaccanti su reti pubbliche di monitorare facilmente la tua attività online.
 

@@ -16,9 +16,8 @@ Segui questo [link](https://lilygo.cc/en-us/products/t-embed-cc1101-plus?srsltid
 
 Un altro dispositivo hardware in mio possesso compatibile con questo firmware è l'**M5StickC Plus2**.
 
----
 
-## Primo Modulo: NRF24L01
+### **Primo Modulo: NRF24L01**
 
 <img src="https://nicofragale.github.io/assets/images/menu0.png" alt="NRF24" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);"/>
 
@@ -36,7 +35,7 @@ Attivando il modulo NRF24L01 e posizionandomi **tra i due dispositivi**, l'inter
 
 Tuttavia, allontanandomi dalla linea di comunicazione e posizionandomi **dietro lo speaker o dietro il telefono**, l'effetto di interferenza scompariva e la trasmissione audio continuava normalmente.
 
-### Potenziamento dell'Antenna
+### **Potenziamento dell'Antenna**
 
 Al fine di migliorare le capacità di ricezione e trasmissione del modulo, ho deciso di modificare il dispositivo sostituendo l'**antenna integrata** con una esterna acquistata su AliExpress.
 

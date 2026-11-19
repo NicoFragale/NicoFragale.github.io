@@ -4,13 +4,9 @@ title: WPA3 💦
 permalink: /notes/network-security/wpa3/
 ---
 
-## Indice
-{:.no_toc}
-
 * Placeholder
 {:toc}
 
----
 
 ### **Prerequisiti**
 
