@@ -4,6 +4,9 @@ title: USB Killer 🗡️
 permalink: /projects/Usb_Killer/
 ---
 
+* Placeholder
+{:toc}
+
 Un progetto non particolarmente difficile che ho realizzato in questi giorni è un "USB Killer" (più precisamente un dispositivo **BadUSB / HID**) che non ha "ucciso" nulla, ma ha attivato Windows Defender rilevando una minaccia sul mio computer: lo considero comunque una vittoria.
 
 Per questo progetto è possibile utilizzare un **RP2040** (acquistabile facilmente su AliExpress), un **Raspberry Pi Pico** ufficiale oppure una **USB Rubber Ducky** originale di Hak5.

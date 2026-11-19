@@ -4,6 +4,9 @@ title: Bruce 🦈
 permalink: /projects/Bruce/
 ---
 
+* Placeholder
+{:toc}
+
 [Bruce Firmware (v1.13)](https://bruce.computer) è un firmware multiuso progettato per la sperimentazione wireless e l'analisi delle radiofrequenze tramite dispositivi hardware compatti.
 
 Ho installato Bruce sul mio **C1101 Plus**, un dispositivo portatile progettato per la sperimentazione radio basato su:

@@ -4,12 +4,14 @@ title: Airgeddon 🤖
 permalink: /notes/Airgeddon/
 ---
 
+* Placeholder
+{:toc}
 
 Airgeddon è uno script Bash open-source progettato per automatizzare e semplificare l'auditing di sicurezza delle reti Wi-Fi. Agisce come un *wrapper* attorno a strumenti ben noti come `aircrack-ng`, `airodump-ng`, `aireplay-ng` e altri, offrendo un'interfaccia guidata e interattiva.
 
 Invece di eseguire manualmente molteplici comandi, Airgeddon consente di condurre complessi attacchi wireless passo dopo passo attraverso un flusso di lavoro basato su menu.
 
-#### Panoramica del Menu Principale di Airgeddon
+### **Panoramica del Menu Principale di Airgeddon**
 
 <img src="/assets/images/airmenu.png" alt="Airmenu" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 
@@ -43,7 +45,7 @@ Ogni opzione in Airgeddon rappresenta una specifica fase o categoria di auditing
 
 13. **Options and language menu** → Impostazioni di configurazione, preferenze dell'interfaccia e selezione della lingua.
 
-#### Menu Attacchi DoS (Panoramica Pratica)
+### **Menu Attacchi DoS (Panoramica Pratica)**
 
 <img src="/assets/images/air4.png" alt="Air4" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 
@@ -68,7 +70,7 @@ Consiglio vivamente di testare questi attacchi **esclusivamente sulla propria re
 
 10. **Michael Shutdown Exploitation (TKIP)** → Prende di mira le reti che utilizzano il protocollo obsoleto TKIP. Sfruttando le debolezze nell'algoritmo Michael MIC, può innescare un blocco delle comunicazioni come meccanismo di difesa intrinseco del protocollo stesso. Tuttavia, TKIP è ormai deprecato: le reti moderne usano AES (CCMP) o WPA3 e molti dispositivi disabilitano TKIP per impostazione predefinita.
 
-#### Attacchi di Decloaking (Deautenticazione vs Dizionario)
+### **Attacchi di Decloaking (Deautenticazione vs Dizionario)**
 
 <img src="/assets/images/air5.png" alt="Air5" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 
@@ -98,7 +100,3 @@ In alcuni casi:
 - Oppure correla il comportamento dei client con SSID già noti  
 
 Questo metodo è **passivo e silenzioso (stealth)**, di conseguenza più lento, meno affidabile e strettamente dipendente dalla qualità del dizionario utilizzato.
-
----
-
-Restate sintonizzati per i prossimi aggiornamenti...

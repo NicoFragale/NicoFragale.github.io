@@ -4,6 +4,9 @@ title: Software Defined Radio ✈️
 permalink: /projects/Software_Defined_Radio/
 ---
 
+* Placeholder
+{:toc}
+
 ### **Hardware utilizzato**
 - RTL-SDR v3
 - Antenna a 1090 MHz (antenna a dipolo)
