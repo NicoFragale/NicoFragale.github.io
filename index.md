@@ -7,7 +7,7 @@ permalink: /
 Ciao, sono Nicolò e studio Cybersecurity.
 
 Ho deciso di sfruttare GitHub pages per condividere quello che studio e che sperimento.
-In questo periodo sto studiando Crittografia, Malware Analysis e IoT, e il tempo per HTB non esiste più!
+In questo periodo sto studiando Crittografia, Malware Analysis e IoT, e il tempo per HTB non esiste più, comunque nel tempo libero e a mente spenta sto sviluppando un piccolo giochino 2D con pygame.
 
 Qui gli ultimi push:
 
