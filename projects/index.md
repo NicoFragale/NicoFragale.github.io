@@ -17,7 +17,7 @@ Questa pagina raccoglie i progetti extra universitari a cui mi sono interessato:
 8. **[Software Defined Radio](/projects/Software_Defined_Radio/)** – Esplorazione dello spettro elettromagnetico tramite hardware SDR per intercettare, decodificare e analizzare segnali radio, telemetria IoT e protocolli wireless non convenzionali.
 9. **[USB Killer](/projects/Usb_Killer/)** – Analisi del funzionamento hardware e dei meccanismi di protezione contro dispositivi progettati per scaricare picchi di tensione attraverso le porte USB e danneggiare i circuiti host.
 10. **[WPA2 Deauthentication](/projects/WPA2_Deauthentication/)** – Studio pratico sulla vulnerabilità dei frame di gestione non protetti nello standard 802.11, finalizzato alla disconnessione forzata dei client e all'acquisizione di handshake.
-<!-- 11. **[Malware Analysis](/projects/Malware_Analysis/)** – Analisi statica di due malware APK bancari -->
+11. **[Malware Analysis](/projects/Malware_Analysis/)** – Analisi statica di due malware APK bancari.
 
 
 
