@@ -1,7 +1,7 @@
 ---
 layout: page
 title: HaleHound 🦈
-permalink: /projects/haleHound/
+permalink: /projects/halehound/
 ---
 
 * Placeholder
