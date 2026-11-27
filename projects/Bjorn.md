@@ -6,7 +6,37 @@ permalink: /projects/Bjorn/
 
 Questo è il mio **Bjorn**!
 
-<img src="https://nicofragale.github.io/assets/images/bjorn.jpg" alt="Bjorn" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
+<style>
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  cursor: zoom-out;
+}
+.lightbox:target { display: flex; }
+.lightbox img {
+  max-width: 95vw;
+  max-height: 95vh;
+  border-radius: 15px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+}
+.zoomable { cursor: zoom-in; }
+</style>
+
+<a href="#bjorn-zoom">
+  <img class="zoomable" src="https://nicofragale.github.io/assets/images/bjorn.jpg" alt="Bjorn" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
+</a>
+
+<div id="bjorn-zoom" class="lightbox">
+  <a href="#_">
+    <img src="https://nicofragale.github.io/assets/images/bjorn.jpg" alt="Bjorn" />
+  </a>
+</div>
 
 Sviluppato da [infinition](https://github.com/infinition/Bjorn), **Bjorn** esegue *network scanning*, *vulnerability assessment* e *offensive security*, è progettato per girare su **Raspberry Pi Zero W / Zero 2 W** abbinato a un display **Waveshare e-Paper (e-Ink) da 2.13 pollici**.
 
