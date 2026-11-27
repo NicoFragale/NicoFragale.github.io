@@ -19,6 +19,7 @@ niri organizza le finestre in colonne disposte su un nastro orizzontale. Aprire 
 nuova finestra non ridimensiona quelle esistenti, quindi lo spazio resta sempre
 prevedibile. Il file di configurazione è in KDL e tutti i binding sono scritti a mano.
 
+<img src="https://nicofragale.github.io/assets/images/image.png" alt="Niri" width="250" style="border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
 
 ### Installazione base
 
